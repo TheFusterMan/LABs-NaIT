@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Список самых популярных животных
+	</title>
+</head>
+<body>
+<p>
+	<a href="index.html">Самые популярные животные</a><br>
+	<b><big><a href="list.html">Список самых популярных животных</a></big></b>
+</p>
+<hr>
+<details>
+	<summary>График</summary>
+	<form>
+	<table>
+		<thead>
+		<tr>
+			<th>Значение по оси OX</th>
+			<th>Результат</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>
+				<input type="radio"> Класс<br>
+				<input type="radio"> Ареал обитания<br>
+				<input type="radio"> Охранный статус
+			</td>
+			<td>
+				<input type="checkbox"> Максимальный средний вес<br>
+				<input type="checkbox"> Минимальная продолжительность жизни<br>
+				<input type="checkbox"> Количество видов
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<input type="submit" value="Построить">
+	</form>
+	<p>Здесь будет график</p>
+</details>
+<details>
+	<summary>Фильтр</summary>
+	<form>
+		<p>
+			<label for="name">Название: </label><input type="text" id="name">
+		</p>
+		<p>
+			<label for="class">Класс: </label><input type="text" id="class">
+		</p>
+		<p>
+			<label for="habitat">Ареал обитания: </label><input type="text" id="habitat">
+		</p>
+		<p>
+			<label for="weight">Средний вес, кг: </label><input type="text" id="weight">
+		</p>
+		<p>
+			<label>
+				Продолжительность жизни, лет: от <input type="text">
+			</label>
+			<label>
+				до <input type="text">
+			</label>
+		</p>
+		<input type="submit" value="Найти">
+	</form>
+</details>
+<details>
+	<summary>Сортировка</summary>
+	<form>
+		<p>
+			<label>
+			Первый уровень:
+				<select name="sort1">
+					<option>Нет</option>
+					<option>Название</option>
+					<option>Класс</option>
+					<option>Средний вес, кг</option>
+					<option>Продолжительность жизни, лет</option>
+				</select>
+			</label>
+			<label>
+				по убыванию? <input type="checkbox" name="sort1_desc">
+			</label>
+		</p>
+		<p>
+			<label>
+				Второй уровень:
+				<select name="sort2">
+					<option>Нет</option>
+					<option>Название</option>
+					<option>Класс</option>
+					<option>Средний вес, кг</option>
+					<option>Продолжительность жизни, лет</option>
+				</select>
+			</label>
+			<label>
+				по убыванию? <input type="checkbox" name="sort2_desc">
+			</label>
+		</p>
+		<p>
+			<label>
+				Второй уровень:
+				<select name="sort3">
+					<option>Нет</option>
+					<option>Название</option>
+					<option>Класс</option>
+					<option>Средний вес, кг</option>
+					<option>Продолжительность жизни, лет</option>
+				</select>
+			</label>
+			<label>
+				по убыванию? <input type="checkbox" name="sort3_desc">
+			</label>
+		</p>
+		<input type="submit" value="Сортировать">
+	</form>
+</details>
+<table border="1" cellspacing="0" cellpadding="5">
+	<thead align="center">
+	<tr>
+		<th>Название</th>
+		<th>Класс</th>
+		<th>Ареал обитания</th>
+		<th>Средний вес, кг</th>
+		<th>Продолжительность жизни, лет</th>
+		<th>Охранный статус</th>
+	</tr>
+	</thead>
+	<tbody valign="top">
+	<tr>
+		<td>Собака</td>
+		<td>Млекопитающее</td>
+		<td>Повсеместно (с человеком)</td>
+		<td>5–50 (зависит от породы)</td>
+		<td>10–13</td>
+		<td>Одомашнен</td>
+	</tr>
+	<tr>
+		<td>Кошка</td>
+		<td>Млекопитающее</td>
+		<td>Повсеместно (с человеком)</td>
+		<td>3–7</td>
+		<td>12–15</td>
+		<td>Одомашнен</td>
+	</tr>
+	<tr>
+		<td>Лев</td>
+		<td>Млекопитающее</td>
+		<td>Африка, Индия</td>
+		<td>150–250</td>
+		<td>10–14</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Тигр</td>
+		<td>Млекопитающее</td>
+		<td>Азия</td>
+		<td>100–300</td>
+		<td>10–15</td>
+		<td>Вымирающий</td>
+	</tr>
+	<tr>
+		<td>Слон (Африканский)</td>
+		<td>Млекопитающее</td>
+		<td>Африка</td>
+		<td>4000–6000</td>
+		<td>60–70</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Медведь (Бурый)</td>
+		<td>Млекопитающее</td>
+		<td>Евразия, Северная Америка</td>
+		<td>150–800</td>
+		<td>20–30</td>
+		<td>Вызывающий наименьшие опасения</td>
+	</tr>
+	<tr>
+		<td>Волк</td>
+		<td>Млекопитающее</td>
+		<td>Северное полушарие</td>
+		<td>30–80</td>
+		<td>6–8</td>
+		<td>Вызывающий наименьшие опасения</td>
+	</tr>
+	<tr>
+		<td>Лошадь</td>
+		<td>Млекопитающее</td>
+		<td>Повсеместно (с человеком)</td>
+		<td>400–1000</td>
+		<td>25–30</td>
+		<td>Одомашнен</td>
+	</tr>
+	<tr>
+		<td>Большая панда</td>
+		<td>Млекопитающее</td>
+		<td>Центральный Китай</td>
+		<td>70–120</td>
+		<td>20</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Жираф</td>
+		<td>Млекопитающее</td>
+		<td>Африка</td>
+		<td>800–1900</td>
+		<td>20–25</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Шимпанзе</td>
+		<td>Млекопитающее</td>
+		<td>Центральная Африка</td>
+		<td>40–60</td>
+		<td>40–50</td>
+		<td>Вымирающий</td>
+	</tr>
+	<tr>
+		<td>Белоголовый орлан</td>
+		<td>Птица</td>
+		<td>Северная Америка</td>
+		<td>3–6</td>
+		<td>20–30</td>
+		<td>Вызывающий наименьшие опасения</td>
+	</tr>
+	<tr>
+		<td>Дельфин (Афалина)</td>
+		<td>Млекопитающее</td>
+		<td>Океаны (умеренные воды)</td>
+		<td>150–500</td>
+		<td>40–50</td>
+		<td>Вызывающий наименьшие опасения</td>
+	</tr>
+	<tr>
+		<td>Синий кит</td>
+		<td>Млекопитающее</td>
+		<td>Мировой океан</td>
+		<td>до 150000</td>
+		<td>80–90</td>
+		<td>Вымирающий</td>
+	</tr>
+	<tr>
+		<td>Большая белая акула</td>
+		<td>Хрящевая рыба</td>
+		<td>Мировой океан (прибрежные воды)</td>
+		<td>700–1100</td>
+		<td>30–70</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Лиса (Рыжая)</td>
+		<td>Млекопитающее</td>
+		<td>Северное полушарие</td>
+		<td>5–10</td>
+		<td>3–5</td>
+		<td>Вызывающий наименьшие опасения</td>
+	</tr>
+	<tr>
+		<td>Кенгуру (Рыжий)</td>
+		<td>Млекопитающее</td>
+		<td>Австралия</td>
+		<td>50–90</td>
+		<td>15–20</td>
+		<td>Вызывающий наименьшие опасения</td>
+	</tr>
+	<tr>
+		<td>Императорский пингвин</td>
+		<td>Птица</td>
+		<td>Антарктида</td>
+		<td>20–40</td>
+		<td>20</td>
+		<td>Близкий к уязвимому положению</td>
+	</tr>
+	<tr>
+		<td>Зебра</td>
+		<td>Млекопитающее</td>
+		<td>Африка</td>
+		<td>250–400</td>
+		<td>25</td>
+		<td>Близкий к уязвимому положению</td>
+	</tr>
+	<tr>
+		<td>Коала</td>
+		<td>Млекопитающее</td>
+		<td>Восточная Австралия</td>
+		<td>4–15</td>
+		<td>13–18</td>
+		<td>Уязвимый</td>
+	</tr>
+	</tbody>
+</table>
+</body>
+</html>
