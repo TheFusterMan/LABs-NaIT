@@ -3,41 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>
-		Список самых популярных животных
+		Ассортимент зоомагазина
 	</title>
 </head>
 <body>
 <p>
-	<a href="index.html">Самые популярные животные</a><br>
-	<b><big><a href="list.html">Список самых популярных животных</a></big></b>
+	<a href="index.html">Главная страница</a><br>
+	<b><big><a href="list.html">Каталог товаров</a></big></b>
 </p>
 <hr>
 <details>
 	<summary>График</summary>
 	<form>
-	<table>
-		<thead>
-		<tr>
-			<th>Значение по оси OX</th>
-			<th>Результат</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>
-				<input type="radio"> Класс<br>
-				<input type="radio"> Ареал обитания<br>
-				<input type="radio"> Охранный статус
-			</td>
-			<td>
-				<input type="checkbox"> Максимальный средний вес<br>
-				<input type="checkbox"> Минимальная продолжительность жизни<br>
-				<input type="checkbox"> Количество видов
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<input type="submit" value="Построить">
+		<table>
+			<thead>
+			<tr>
+				<th>Значение по оси OX</th>
+				<th>Результат</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>
+					<input type="radio" name="axis_x"> Категория<br>
+					<input type="radio" name="axis_x"> Производитель<br>
+					<input type="radio" name="axis_x"> Тип товара
+				</td>
+				<td>
+					<input type="checkbox"> Средняя цена<br>
+					<input type="checkbox"> Максимальная цена<br>
+					<input type="checkbox"> Количество товаров
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		<input type="submit" value="Построить">
 	</form>
 	<p>Здесь будет график</p>
 </details>
@@ -45,23 +45,20 @@
 	<summary>Фильтр</summary>
 	<form>
 		<p>
-			<label for="name">Название: </label><input type="text" id="name">
+			<label for="name">Наименование товара: </label><input type="text" id="name">
 		</p>
 		<p>
-			<label for="class">Класс: </label><input type="text" id="class">
+			<label for="category">Категория: </label><input type="text" id="category">
 		</p>
 		<p>
-			<label for="habitat">Ареал обитания: </label><input type="text" id="habitat">
-		</p>
-		<p>
-			<label for="weight">Средний вес, кг: </label><input type="text" id="weight">
+			<label for="brand">Производитель: </label><input type="text" id="brand">
 		</p>
 		<p>
 			<label>
-				Продолжительность жизни, лет: от <input type="text">
+				Цена, руб: от <input type="text" size="8">
 			</label>
 			<label>
-				до <input type="text">
+				до <input type="text" size="8">
 			</label>
 		</p>
 		<input type="submit" value="Найти">
@@ -72,13 +69,13 @@
 	<form>
 		<p>
 			<label>
-			Первый уровень:
+				Первый уровень:
 				<select name="sort1">
 					<option>Нет</option>
-					<option>Название</option>
-					<option>Класс</option>
-					<option>Средний вес, кг</option>
-					<option>Продолжительность жизни, лет</option>
+					<option>Наименование товара</option>
+					<option>Категория</option>
+					<option>Производитель</option>
+					<option>Цена, руб.</option>
 				</select>
 			</label>
 			<label>
@@ -90,10 +87,10 @@
 				Второй уровень:
 				<select name="sort2">
 					<option>Нет</option>
-					<option>Название</option>
-					<option>Класс</option>
-					<option>Средний вес, кг</option>
-					<option>Продолжительность жизни, лет</option>
+					<option>Наименование товара</option>
+					<option>Категория</option>
+					<option>Производитель</option>
+					<option>Цена, руб.</option>
 				</select>
 			</label>
 			<label>
@@ -102,13 +99,13 @@
 		</p>
 		<p>
 			<label>
-				Второй уровень:
+				Третий уровень:
 				<select name="sort3">
 					<option>Нет</option>
-					<option>Название</option>
-					<option>Класс</option>
-					<option>Средний вес, кг</option>
-					<option>Продолжительность жизни, лет</option>
+					<option>Наименование товара</option>
+					<option>Категория</option>
+					<option>Производитель</option>
+					<option>Цена, руб.</option>
 				</select>
 			</label>
 			<label>
@@ -121,174 +118,550 @@
 <table border="1" cellspacing="0" cellpadding="5">
 	<thead align="center">
 	<tr>
-		<th>Название</th>
-		<th>Класс</th>
-		<th>Ареал обитания</th>
-		<th>Средний вес, кг</th>
-		<th>Продолжительность жизни, лет</th>
-		<th>Охранный статус</th>
+		<th>Наименование товара</th>
+		<th>Категория</th>
+		<th>Производитель / Порода</th>
+		<th>Вес / Размер</th>
+		<th>Цена, руб.</th>
+		<th>Наличие на складе</th>
 	</tr>
 	</thead>
 	<tbody valign="top">
 	<tr>
-		<td>Собака</td>
-		<td>Млекопитающее</td>
-		<td>Повсеместно (с человеком)</td>
-		<td>5–50 (зависит от породы)</td>
-		<td>10–13</td>
-		<td>Одомашнен</td>
+		<td>Щенок Лабрадора-ретривера</td>
+		<td>Собаки</td>
+		<td>Лабрадор-ретривер</td>
+		<td>3 месяца</td>
+		<td>35000</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Кошка</td>
-		<td>Млекопитающее</td>
-		<td>Повсеместно (с человеком)</td>
-		<td>3–7</td>
-		<td>12–15</td>
-		<td>Одомашнен</td>
+		<td>Щенок Немецкой овчарки</td>
+		<td>Собаки</td>
+		<td>Немецкая овчарка</td>
+		<td>2.5 месяца</td>
+		<td>40000</td>
+		<td>Под заказ</td>
 	</tr>
 	<tr>
-		<td>Лев</td>
-		<td>Млекопитающее</td>
-		<td>Африка, Индия</td>
-		<td>150–250</td>
-		<td>10–14</td>
-		<td>Уязвимый</td>
+		<td>Корм Royal Canin Maxi Adult</td>
+		<td>Корма для собак</td>
+		<td>Royal Canin</td>
+		<td>15 кг</td>
+		<td>6500</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Тигр</td>
-		<td>Млекопитающее</td>
-		<td>Азия</td>
-		<td>100–300</td>
-		<td>10–15</td>
-		<td>Вымирающий</td>
+		<td>Корм Acana Grasslands Dog</td>
+		<td>Корма для собак</td>
+		<td>Acana</td>
+		<td>11.4 кг</td>
+		<td>7800</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Слон (Африканский)</td>
-		<td>Млекопитающее</td>
-		<td>Африка</td>
-		<td>4000–6000</td>
-		<td>60–70</td>
-		<td>Уязвимый</td>
+		<td>Поводок-рулетка Flexi</td>
+		<td>Аксессуары для собак</td>
+		<td>Flexi</td>
+		<td>5 м</td>
+		<td>1800</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Медведь (Бурый)</td>
-		<td>Млекопитающее</td>
-		<td>Евразия, Северная Америка</td>
-		<td>150–800</td>
-		<td>20–30</td>
-		<td>Вызывающий наименьшие опасения</td>
+		<td>Игрушка-пищалка "Косточка"</td>
+		<td>Игрушки для собак</td>
+		<td>PetFun</td>
+		<td>20 см</td>
+		<td>450</td>
+		<td>Нет в наличии</td>
 	</tr>
 	<tr>
-		<td>Волк</td>
-		<td>Млекопитающее</td>
-		<td>Северное полушарие</td>
-		<td>30–80</td>
-		<td>6–8</td>
-		<td>Вызывающий наименьшие опасения</td>
+		<td>Котенок Мейн-кун</td>
+		<td>Кошки</td>
+		<td>Мейн-кун</td>
+		<td>3 месяца</td>
+		<td>50000</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Лошадь</td>
-		<td>Млекопитающее</td>
-		<td>Повсеместно (с человеком)</td>
-		<td>400–1000</td>
-		<td>25–30</td>
-		<td>Одомашнен</td>
+		<td>Котенок Британской шиншиллы</td>
+		<td>Кошки</td>
+		<td>Британская короткошерстная</td>
+		<td>3.5 месяца</td>
+		<td>45000</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Большая панда</td>
-		<td>Млекопитающее</td>
-		<td>Центральный Китай</td>
-		<td>70–120</td>
-		<td>20</td>
-		<td>Уязвимый</td>
+		<td>Корм Pro Plan Sterilised Cat</td>
+		<td>Корма для кошек</td>
+		<td>Pro Plan</td>
+		<td>10 кг</td>
+		<td>5900</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Жираф</td>
-		<td>Млекопитающее</td>
-		<td>Африка</td>
-		<td>800–1900</td>
-		<td>20–25</td>
-		<td>Уязвимый</td>
+		<td>Влажный корм Sheba</td>
+		<td>Корма для кошек</td>
+		<td>Sheba</td>
+		<td>85 г</td>
+		<td>45</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Шимпанзе</td>
-		<td>Млекопитающее</td>
-		<td>Центральная Африка</td>
-		<td>40–60</td>
-		<td>40–50</td>
-		<td>Вымирающий</td>
+		<td>Наполнитель Fresh Step</td>
+		<td>Товары для кошек</td>
+		<td>Fresh Step</td>
+		<td>15.8 кг</td>
+		<td>2100</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Белоголовый орлан</td>
-		<td>Птица</td>
-		<td>Северная Америка</td>
-		<td>3–6</td>
-		<td>20–30</td>
-		<td>Вызывающий наименьшие опасения</td>
+		<td>Когтеточка-столбик</td>
+		<td>Товары для кошек</td>
+		<td>CatJoy</td>
+		<td>60 см</td>
+		<td>1500</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Дельфин (Афалина)</td>
-		<td>Млекопитающее</td>
-		<td>Океаны (умеренные воды)</td>
-		<td>150–500</td>
-		<td>40–50</td>
-		<td>Вызывающий наименьшие опасения</td>
+		<td>Волнистый попугай</td>
+		<td>Птицы</td>
+		<td>Волнистый попугай</td>
+		<td>4 месяца</td>
+		<td>1200</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Синий кит</td>
-		<td>Млекопитающее</td>
-		<td>Мировой океан</td>
-		<td>до 150000</td>
-		<td>80–90</td>
-		<td>Вымирающий</td>
+		<td>Канарейка</td>
+		<td>Птицы</td>
+		<td>Канарейка</td>
+		<td>6 месяцев</td>
+		<td>3000</td>
+		<td>Нет в наличии</td>
 	</tr>
 	<tr>
-		<td>Большая белая акула</td>
-		<td>Хрящевая рыба</td>
-		<td>Мировой океан (прибрежные воды)</td>
-		<td>700–1100</td>
-		<td>30–70</td>
-		<td>Уязвимый</td>
+		<td>Корм Padovan для попугаев</td>
+		<td>Корма для птиц</td>
+		<td>Padovan</td>
+		<td>1 кг</td>
+		<td>600</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Лиса (Рыжая)</td>
-		<td>Млекопитающее</td>
-		<td>Северное полушарие</td>
-		<td>5–10</td>
-		<td>3–5</td>
-		<td>Вызывающий наименьшие опасения</td>
+		<td>Клетка для птиц Triol</td>
+		<td>Клетки</td>
+		<td>Triol</td>
+		<td>45x30x60 см</td>
+		<td>3200</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Кенгуру (Рыжий)</td>
-		<td>Млекопитающее</td>
-		<td>Австралия</td>
-		<td>50–90</td>
-		<td>15–20</td>
-		<td>Вызывающий наименьшие опасения</td>
+		<td>Сирийский хомяк</td>
+		<td>Грызуны</td>
+		<td>Сирийский хомяк</td>
+		<td>2 месяца</td>
+		<td>500</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Императорский пингвин</td>
-		<td>Птица</td>
-		<td>Антарктида</td>
-		<td>20–40</td>
-		<td>20</td>
-		<td>Близкий к уязвимому положению</td>
+		<td>Морская свинка</td>
+		<td>Грызуны</td>
+		<td>Морская свинка</td>
+		<td>4 месяца</td>
+		<td>1500</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Зебра</td>
-		<td>Млекопитающее</td>
-		<td>Африка</td>
-		<td>250–400</td>
-		<td>25</td>
-		<td>Близкий к уязвимому положению</td>
+		<td>Корм Little One для грызунов</td>
+		<td>Корма для грызунов</td>
+		<td>Little One</td>
+		<td>900 г</td>
+		<td>400</td>
+		<td>В наличии</td>
 	</tr>
 	<tr>
-		<td>Коала</td>
-		<td>Млекопитающее</td>
-		<td>Восточная Австралия</td>
-		<td>4–15</td>
-		<td>13–18</td>
-		<td>Уязвимый</td>
+		<td>Клетка для хомяка с колесом</td>
+		<td>Клетки</td>
+		<td>Ferplast</td>
+		<td>35x25x25 см</td>
+		<td>2500</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Рыбка Гуппи</td>
+		<td>Аквариумистика</td>
+		<td>Гуппи</td>
+		<td>-</td>
+		<td>80</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Рыбка Неон</td>
+		<td>Аквариумистика</td>
+		<td>Неон</td>
+		<td>-</td>
+		<td>100</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Аквариум Aquael 60 л</td>
+		<td>Аквариумы</td>
+		<td>Aquael</td>
+		<td>60 л</td>
+		<td>8500</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Фильтр для аквариума Tetra</td>
+		<td>Оборудование</td>
+		<td>Tetra</td>
+		<td>до 100 л</td>
+		<td>2200</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Корм для рыб TetraMin Flakes</td>
+		<td>Корма для рыб</td>
+		<td>Tetra</td>
+		<td>100 г</td>
+		<td>550</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Красноухая черепаха</td>
+		<td>Рептилии</td>
+		<td>Красноухая черепаха</td>
+		<td>5 см</td>
+		<td>900</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Террариум Exo Terra</td>
+		<td>Террариумы</td>
+		<td>Exo Terra</td>
+		<td>45x45x30 см</td>
+		<td>6000</td>
+		<td>Под заказ</td>
+	</tr>
+	<tr>
+		<td>УФ-лампа для рептилий</td>
+		<td>Оборудование</td>
+		<td>JBL</td>
+		<td>10.0 UVB</td>
+		<td>1600</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Витамины для собак Canina</td>
+		<td>Витамины</td>
+		<td>Canina</td>
+		<td>200 г</td>
+		<td>1300</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Шампунь для щенков "Нежный"</td>
+		<td>Гигиена</td>
+		<td>BioGroom</td>
+		<td>355 мл</td>
+		<td>800</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Миска металлическая на подставке</td>
+		<td>Аксессуары для собак</td>
+		<td>Trixie</td>
+		<td>2x0.75 л</td>
+		<td>950</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Лежанка для собаки (средняя)</td>
+		<td>Товары для собак</td>
+		<td>Yummy</td>
+		<td>70x50 см</td>
+		<td>2400</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Переноска для кошек MPS</td>
+		<td>Переноски</td>
+		<td>MPS</td>
+		<td>№2</td>
+		<td>1900</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Игровой комплекс для кошек</td>
+		<td>Товары для кошек</td>
+		<td>CatLand</td>
+		<td>120 см</td>
+		<td>7500</td>
+		<td>Под заказ</td>
+	</tr>
+	<tr>
+		<td>Лакомство для кошек Dreamies</td>
+		<td>Лакомства</td>
+		<td>Dreamies</td>
+		<td>60 г</td>
+		<td>120</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Декорация для аквариума "Замок"</td>
+		<td>Аквариумистика</td>
+		<td>Prime</td>
+		<td>25 см</td>
+		<td>1100</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Обогреватель для аквариума</td>
+		<td>Оборудование</td>
+		<td>Aquael</td>
+		<td>50 Вт</td>
+		<td>1300</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Декоративный кролик</td>
+		<td>Грызуны</td>
+		<td>Декоративный кролик</td>
+		<td>3 месяца</td>
+		<td>2000</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Сено для грызунов Versele-Laga</td>
+		<td>Корма для грызунов</td>
+		<td>Versele-Laga</td>
+		<td>500 г</td>
+		<td>350</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Поилка для грызунов</td>
+		<td>Аксессуары</td>
+		<td>Trixie</td>
+		<td>250 мл</td>
+		<td>300</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Минеральный камень для птиц</td>
+		<td>Корма для птиц</td>
+		<td>Fiory</td>
+		<td>50 г</td>
+		<td>150</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Качели для попугая</td>
+		<td>Игрушки для птиц</td>
+		<td>Happy Pet</td>
+		<td>15 см</td>
+		<td>250</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Корм для черепах Tetra ReptoMin</td>
+		<td>Корма для рептилий</td>
+		<td>Tetra</td>
+		<td>100 мл</td>
+		<td>400</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Грунт для аквариума (галька)</td>
+		<td>Аквариумистика</td>
+		<td>UDeco</td>
+		<td>5 кг</td>
+		<td>800</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Шиншилла</td>
+		<td>Грызуны</td>
+		<td>Шиншилла</td>
+		<td>6 месяцев</td>
+		<td>4500</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Песок для купания шиншилл</td>
+		<td>Гигиена</td>
+		<td>Little One</td>
+		<td>1 кг</td>
+		<td>320</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Щенок Йоркширского терьера</td>
+		<td>Собаки</td>
+		<td>Йоркширский терьер</td>
+		<td>3 месяца</td>
+		<td>30000</td>
+		<td>Под заказ</td>
+	</tr>
+	<tr>
+		<td>Ошейник кожаный</td>
+		<td>Аксессуары для собак</td>
+		<td>Collar</td>
+		<td>45 см</td>
+		<td>700</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Сухой корм GO! для котят</td>
+		<td>Корма для кошек</td>
+		<td>GO!</td>
+		<td>1.8 кг</td>
+		<td>2400</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Игрушка-удочка для кошек</td>
+		<td>Игрушки для кошек</td>
+		<td>PetFun</td>
+		<td>50 см</td>
+		<td>300</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Попугай Корелла</td>
+		<td>Птицы</td>
+		<td>Корелла</td>
+		<td>5 месяцев</td>
+		<td>4000</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Хорек (фретка)</td>
+		<td>Другие животные</td>
+		<td>Хорек</td>
+		<td>4 месяца</td>
+		<td>12000</td>
+		<td>Под заказ</td>
+	</tr>
+	<tr>
+		<td>Корм для хорьков Bosch</td>
+		<td>Корма</td>
+		<td>Bosch</td>
+		<td>800 г</td>
+		<td>900</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Гамак для хорька</td>
+		<td>Аксессуары</td>
+		<td>Trixie</td>
+		<td>30x30 см</td>
+		<td>600</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Рыбка Петушок</td>
+		<td>Аквариумистика</td>
+		<td>Петушок</td>
+		<td>-</td>
+		<td>450</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Мини-аквариум для петушка</td>
+		<td>Аквариумы</td>
+		<td>Tetra</td>
+		<td>2 л</td>
+		<td>1500</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Антицарапки для кошек</td>
+		<td>Гигиена</td>
+		<td>Cliny</td>
+		<td>Размер M</td>
+		<td>400</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Щетка-фурминатор для вычесывания</td>
+		<td>Груминг</td>
+		<td>FURminator</td>
+		<td>Средняя</td>
+		<td>2800</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Лакомство для собак "Титбит"</td>
+		<td>Лакомства</td>
+		<td>Титбит</td>
+		<td>100 г</td>
+		<td>250</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Адресник-медальон с гравировкой</td>
+		<td>Аксессуары</td>
+		<td>Best Tags</td>
+		<td>3 см</td>
+		<td>500</td>
+		<td>Под заказ</td>
+	</tr>
+	<tr>
+		<td>Книга "Ваш аквариум"</td>
+		<td>Литература</td>
+		<td>Аква-Пресс</td>
+		<td>120 стр</td>
+		<td>650</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Консервы Monge Dog</td>
+		<td>Корма для собак</td>
+		<td>Monge</td>
+		<td>400 г</td>
+		<td>220</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Когтерез для кошек и собак</td>
+		<td>Груминг</td>
+		<td>Hello Pet</td>
+		<td>Малый</td>
+		<td>480</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Автопоилка для животных</td>
+		<td>Аксессуары</td>
+		<td>PetKit</td>
+		<td>2 л</td>
+		<td>3500</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Спрей для приучения к туалету</td>
+		<td>Гигиена</td>
+		<td>Mr.Fresh</td>
+		<td>200 мл</td>
+		<td>380</td>
+		<td>В наличии</td>
+	</tr>
+	<tr>
+		<td>Игуана зеленая</td>
+		<td>Рептилии</td>
+		<td>Игуана</td>
+		<td>15 см</td>
+		<td>8000</td>
+		<td>Под заказ</td>
+	</tr>
+	<tr>
+		<td>Фон для аквариума (пленка)</td>
+		<td>Аквариумистика</td>
+		<td>Juwel</td>
+		<td>60x30 см</td>
+		<td>300</td>
+		<td>В наличии</td>
 	</tr>
 	</tbody>
 </table>
