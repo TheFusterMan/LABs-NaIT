@@ -1,7 +1,8 @@
 body {
     margin: 0;
+    /*font-size: 2vh;*/
 }
-
+                                                                            /* МЕНЮ */
 .menu {
     text-align: center;
     margin-top: 5px;
@@ -43,11 +44,19 @@ body {
     width: 90%;
     margin: 1% auto;
 }
-
+                                                                        /* БЛОК С КАРТИНКАМИ */
 .pictures-block {
     display: inline-block;
     height: 300px;
     width: 100%;
+}
+
+.pictures-block .left-block {
+    float: left;
+}
+
+.pictures-block .right-block {
+    float: right;
 }
 
 .pictures-block .top-block {
@@ -56,28 +65,24 @@ body {
 }
 
 .pictures-block .top-block .left-block {
-    float: left;
     width: 30%;
     height: 100%;
     background-color: yellow;
 }
 
 .pictures-block .top-block .left-block .top-block {
-    float: left;
     width: 100%;
     height: 55%;
     background-color: lime;
 }
 
 .pictures-block .top-block .left-block .bottom-block {
-    float: left;
     width: 100%;
     height: 45%;
     background-color: khaki;
 }
 
 .pictures-block .top-block .right-block {
-    float: right;
     width: 70%;
     height: 100%;
     background-color: pink;
@@ -89,16 +94,108 @@ body {
 }
 
 .pictures-block .bottom-block .left-block {
-    float: left;
     width: 70%;
     height: 100%;
     background-color: green;
 }
 
 .pictures-block .bottom-block .right-block {
-    float: right;
     width: 30%;
     height: 100%;
     background-color: grey;
 }
+                                                                      /* ОБЩИЕ СО СТАТЬЯМИ */
+.section {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+                                                                    /* ЛЕВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
+.left-section {
+    background-color: grey;
+    height: 100%;
+    width: 20%;
+}
+                                                                /* СРЕДНЯЯ СЕКЦИЯ СО СТАТЬЯМИ */
+.middle-section {
+    background-color: blue;
+    border-left: solid thin black;
+    border-right: solid thin black;
+    height: 100%;
+    width: 60%;
+}
 
+.middle-section .top-block .text-block p {
+    display: inline-block;
+    width: 45%;
+    margin: 0 2%;
+}
+
+.middle-section .bottom-block .text-block {
+    width: 100%;
+}
+
+.middle-section .bottom-block p {
+    padding: 0 5%;
+}
+
+.middle-section .bottom-block a {
+    padding: 0 5%;
+}
+
+.middle-section .article img {
+    display: inline-block;
+    margin-top: 3%;
+    width: 40%;
+}
+
+                                                                /* ПРАВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
+.right-section {
+    background-color: orange;
+    height: 100%;
+    width: 20%;
+}
+                                                                 /* ОБЩИЕ ОТДЕЛЬНОЙ СТАТЬИ */
+.article {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    background: lime;
+}
+
+.article .left-block {
+    margin-right: 1%;
+}
+
+.article .right-block {
+    margin-left: 1%;
+}
+
+.article .text-block {
+    display: inline-block;
+    width: 45%;
+}
+
+.article .image-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    background: #599976;
+}
+
+.article .text-block p {
+    text-align: justify;
+}
+
+.article .text-block a {
+    float: right;
+    text-decoration: underline;
+    color: saddlebrown;
+}
+
+.pictures-block img, .articles-block img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
