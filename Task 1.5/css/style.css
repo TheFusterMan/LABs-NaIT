@@ -9,11 +9,11 @@ body {
 }
 
 .item {
-  vertical-align: top;
   display: inline-block;
+  text-align: left;
   padding: 10px;
-  margin: 10px;
-  width: 25%;
+  margin: 10px auto;
+  width: 300px;
 }
 
 .item h3 {
