@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /*font-size: 2vh;*/
+    font-size: 2vh;
 }
                                                                             /* МЕНЮ */
 .menu {
@@ -45,66 +45,97 @@ body {
     margin: 1% auto;
 }
                                                                         /* БЛОК С КАРТИНКАМИ */
+/*.pictures-block {*/
+/*    display: inline-block;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.pictures-block .left-block {*/
+/*    float: left;*/
+/*}*/
+
+/*.pictures-block .right-block {*/
+/*    float: right;*/
+/*}*/
+
+/*.pictures-block .top-block {*/
+/*    height: 62%;*/
+/*}*/
+
+/*.pictures-block .top-block .left-block {*/
+/*    width: 30%;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.pictures-block .top-block .left-block .top-block {*/
+/*    width: 100%;*/
+/*    height: 55%;*/
+/*}*/
+
+/*.pictures-block .top-block .left-block .bottom-block {*/
+/*    width: 100%;*/
+/*    height: 45%;*/
+/*}*/
+
+/*.pictures-block .top-block .right-block {*/
+/*    width: 70%;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.pictures-block .bottom-block {*/
+/*    height: 38%;*/
+/*}*/
+
+/*.pictures-block .bottom-block .left-block {*/
+/*    width: 70%;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.pictures-block .bottom-block .right-block {*/
+/*    width: 30%;*/
+/*    height: 100%;*/
+/*}*/
+
 .pictures-block {
+    font-size: 0;
+}
+
+.pictures-block .top-block .left-block,
+.pictures-block .top-block .right-block,
+.pictures-block .bottom-block .left-block,
+.pictures-block .bottom-block .right-block  {
     display: inline-block;
-    height: 300px;
-    width: 100%;
-}
-
-.pictures-block .left-block {
-    float: left;
-}
-
-.pictures-block .right-block {
-    float: right;
-}
-
-.pictures-block .top-block {
-    height: 62%;
-    background-color: red;
 }
 
 .pictures-block .top-block .left-block {
     width: 30%;
-    height: 100%;
-    background-color: yellow;
-}
-
-.pictures-block .top-block .left-block .top-block {
-    width: 100%;
-    height: 55%;
-    background-color: lime;
-}
-
-.pictures-block .top-block .left-block .bottom-block {
-    width: 100%;
-    height: 45%;
-    background-color: khaki;
+    height: 62%;
 }
 
 .pictures-block .top-block .right-block {
     width: 70%;
-    height: 100%;
-    background-color: pink;
-}
-
-.pictures-block .bottom-block {
-    height: 38%;
-    background-color: blue;
+    height: 62%;
 }
 
 .pictures-block .bottom-block .left-block {
     width: 70%;
-    height: 100%;
-    background-color: green;
+    height: 38%;
 }
 
 .pictures-block .bottom-block .right-block {
     width: 30%;
-    height: 100%;
-    background-color: grey;
+    height: 38%;
+}
+
+.pictures-block .top-block .left-block .top-block {
+    height: 55%;
+}
+
+.pictures-block .top-block .left-block .bottom-block {
+    height: 45%;
 }
                                                                       /* ОБЩИЕ СО СТАТЬЯМИ */
+
 .section {
     display: inline-block;
     box-sizing: border-box;
@@ -112,15 +143,14 @@ body {
 }
                                                                     /* ЛЕВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
 .left-section {
-    background-color: grey;
+    border-right: solid thin black;
     height: 100%;
     width: 20%;
 }
                                                                 /* СРЕДНЯЯ СЕКЦИЯ СО СТАТЬЯМИ */
 .middle-section {
-    background-color: blue;
-    border-left: solid thin black;
-    border-right: solid thin black;
+    /*border-left: solid thin black;*/
+    /*border-right: solid thin black;*/
     height: 100%;
     width: 60%;
 }
@@ -151,7 +181,7 @@ body {
 
                                                                 /* ПРАВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
 .right-section {
-    background-color: orange;
+    border-left: solid thin black;
     height: 100%;
     width: 20%;
 }
@@ -161,7 +191,6 @@ body {
     text-align: center;
     width: 100%;
     margin: 20px 0;
-    background: lime;
 }
 
 .article .left-block {
@@ -181,7 +210,6 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 45%;
-    background: #599976;
 }
 
 .article .text-block p {
@@ -198,4 +226,10 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    border-top: double #BBB;
 }
