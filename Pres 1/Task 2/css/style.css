@@ -1,0 +1,3 @@
+div.main li > [href="#"] {
+    color: green;
+}

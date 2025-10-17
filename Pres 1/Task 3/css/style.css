@@ -1,0 +1,5 @@
+div.main h2,
+div.main ol li:nth-child(2) a,
+div.main p:last-of-type a {
+    color: green;
+}
