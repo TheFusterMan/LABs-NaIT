@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-size: 2vh;
 }
-                                                                            /* МЕНЮ */
+/* МЕНЮ */
 .menu {
     text-align: center;
     margin-top: 5px;
@@ -44,10 +44,10 @@ body {
     width: 90%;
     margin: 1% auto;
 }
-                                                                        /* БЛОК С КАРТИНКАМИ */
+/* БЛОК С КАРТИНКАМИ */
 .pictures-block {
     display: inline-block;
-    height: 300px;
+    height: 60vh;
     width: 100%;
 }
 
@@ -61,105 +61,56 @@ body {
 
 .pictures-block .top-block {
     height: 62%;
-    background-color: red;
 }
 
 .pictures-block .top-block .left-block {
     width: 30%;
     height: 100%;
-    background-color: yellow;
 }
 
 .pictures-block .top-block .left-block .top-block {
     width: 100%;
     height: 55%;
-    background-color: lime;
 }
 
 .pictures-block .top-block .left-block .bottom-block {
     width: 100%;
     height: 45%;
-    background-color: khaki;
 }
 
 .pictures-block .top-block .right-block {
     width: 70%;
     height: 100%;
-    background-color: pink;
 }
 
 .pictures-block .bottom-block {
     height: 38%;
-    background-color: blue;
 }
 
 .pictures-block .bottom-block .left-block {
     width: 70%;
     height: 100%;
-    background-color: green;
 }
 
 .pictures-block .bottom-block .right-block {
     width: 30%;
     height: 100%;
-    background-color: grey;
 }
-
-/*.pictures-block {*/
-/*    font-size: 0;*/
-/*}*/
-
-/*.pictures-block .top-block .left-block,*/
-/*.pictures-block .top-block .right-block,*/
-/*.pictures-block .bottom-block .left-block,*/
-/*.pictures-block .bottom-block .right-block  {*/
-/*    display: inline-block;*/
-/*}*/
-
-/*.pictures-block .top-block .left-block {*/
-/*    width: 30%;*/
-/*    height: 62%;*/
-/*}*/
-
-/*.pictures-block .top-block .right-block {*/
-/*    width: 70%;*/
-/*    height: 62%;*/
-/*}*/
-
-/*.pictures-block .bottom-block .left-block {*/
-/*    width: 70%;*/
-/*    height: 38%;*/
-/*}*/
-
-/*.pictures-block .bottom-block .right-block {*/
-/*    width: 30%;*/
-/*    height: 38%;*/
-/*}*/
-
-/*.pictures-block .top-block .left-block .top-block {*/
-/*    height: 55%;*/
-/*}*/
-
-/*.pictures-block .top-block .left-block .bottom-block {*/
-/*    height: 45%;*/
-/*}*/
-                                                                      /* ОБЩИЕ СО СТАТЬЯМИ */
+/* ОБЩИЕ СО СТАТЬЯМИ */
 
 .section {
     display: inline-block;
     box-sizing: border-box;
     vertical-align: top;
 }
-                                                                    /* ЛЕВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
+/* ЛЕВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
 .left-section {
     border-right: solid thin black;
     height: 100%;
     width: 20%;
 }
-                                                                /* СРЕДНЯЯ СЕКЦИЯ СО СТАТЬЯМИ */
+/* СРЕДНЯЯ СЕКЦИЯ СО СТАТЬЯМИ */
 .middle-section {
-    /*border-left: solid thin black;*/
-    /*border-right: solid thin black;*/
     height: 100%;
     width: 60%;
 }
@@ -168,6 +119,11 @@ body {
     display: inline-block;
     width: 45%;
     margin: 0 2%;
+}
+
+.middle-section .bottom-block {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .middle-section .bottom-block .text-block {
@@ -181,25 +137,18 @@ body {
 .middle-section .bottom-block a {
     padding: 0 5%;
 }
-
-.article img {
-    margin-top: 3%;
-    width: 100%;
-    object-fit: cover;
-}
-
-                                                                /* ПРАВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
+/* ПРАВАЯ СЕКЦИЯ СО СТАТЬЯМИ */
 .right-section {
     border-left: solid thin black;
     height: 100%;
     width: 20%;
 }
-                                                                 /* ОБЩИЕ ОТДЕЛЬНОЙ СТАТЬИ */
+/* ОБЩИЕ ОТДЕЛЬНОЙ СТАТЬИ */
 .article {
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin: 20px 0;
+    margin: 2em 0;
 }
 
 .article .left-block {
@@ -213,12 +162,16 @@ body {
 .article .text-block {
     display: inline-block;
     width: 45%;
+    height: 20vw;
+    overflow: scroll;
 }
 
 .article .image-block {
     display: inline-block;
     vertical-align: top;
     width: 45%;
+    height: 20vw;
+    overflow: hidden;
 }
 
 .article .text-block p {
@@ -235,6 +188,7 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .footer {
