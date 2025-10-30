@@ -1,5 +1,4 @@
 /*менюшки в 2 колонки, все остальное в одну grid*/
-
 body {
     margin: 0;
     font-size: 2vh;
@@ -32,14 +31,29 @@ nav a {
     font-size: 1.25em;
 }
 
-nav li:first-child {
+nav .active {
     border-left-style: double;
     border-right-style: double;
 }
 
-nav li:first-child a {
+nav .active a {
     color: green;
     font-weight: bold;
+}
+
+@media all and (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        width: 45%;
+        text-align: center;
+    }
+
+    nav .active {
+        border-bottom-style: double;
+    }
 }
 
 .content {
@@ -89,6 +103,7 @@ nav li:first-child a {
 
 .articles-block .section:nth-child(1) {
     border-right: solid thin black;
+    text-align: right;
     width: 20%;
 }
 
@@ -98,6 +113,7 @@ nav li:first-child a {
 
 .articles-block .section:nth-child(3) {
     border-left: solid thin black;
+    text-align: left;
     width: 20%;
 }
 
@@ -114,6 +130,7 @@ article .text-block {
 
 article .image-block {
     background: #599976;
+
     width: 45%;
 }
 
@@ -123,43 +140,68 @@ a {
 }
 
 /* СРЕДНИИЙ БЛОК СО СТАТЬЯМИ */
-.articles-block .section:nth-child(2) article:nth-child(1) {
+.articles-block .section:nth-child(2) article:first-child {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1.75fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-areas:
             "header header header"
-            "content content image";
+            "content1 content2 image";
 }
 
-.articles-block .section:nth-child(2) article:nth-child(1)  h3 {
+.articles-block .section:nth-child(2) article:first-child  h3 {
     grid-area: header;
     text-align: center;
 }
 
-.articles-block .section:nth-child(2) article:nth-child(1) .content {
-    grid-area: content;
-}
+/*.articles-block .section:nth-child(2) article:first-child .content {*/
+/*    grid-area: content;*/
+/*}*/
 
-.articles-block .section:nth-child(2) article:nth-child(1) .content .text-block {
+.articles-block .section:nth-child(2) article:first-child .content .text-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
-.articles-block .section:nth-child(2) article:nth-child(1) .content .text-block p {
+.articles-block .section:nth-child(2) article:first-child .content .text-block p {
     width: 50%;
 }
 
-.articles-block .section:nth-child(2) article:nth-child(1) .content .text-block div {
+.articles-block .section:nth-child(2) article:first-child .content .text-block p:first-child {
+    grid-area: content1;
+}
+
+.articles-block .section:nth-child(2) article:first-child .content .text-block p:last-child {
+    grid-area: content2;
+}
+
+.articles-block .section:nth-child(2) article:first-child .content .text-block div {
     width: 100%;
     text-align: right;
 }
 
-.articles-block .section:nth-child(2) article:nth-child(1) .image-block {
+.articles-block .section:nth-child(2) article:first-child .image-block {
     grid-area: image;
     width: 100%;
+}
+
+.articles-block .section:nth-child(2) article:last-child {
+    padding-top: 0;
+}
+
+.articles-block .section:nth-child(2) article:last-child .text-block {
+    width: 100%;
+    text-align: right;
+}
+
+.articles-block .section:nth-child(2) article:last-child .text-block h3 {
+    text-align: center;
+}
+
+.articles-block .section:nth-child(2) article:last-child .text-block p {
+    text-align: justify;
 }
 
 p {
