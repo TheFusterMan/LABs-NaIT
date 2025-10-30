@@ -1,0 +1,200 @@
+/*менюшки в 2 колонки, все остальное в одну grid*/
+
+body {
+    margin: 0;
+    font-size: 2vh;
+}
+/* МЕНЮ */
+nav {
+    margin-top: 5px;
+    width: 100%;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-color: #BBB;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 1%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+
+nav li:first-child {
+    border-left-style: double;
+    border-right-style: double;
+}
+
+nav li:first-child a {
+    color: green;
+    font-weight: bold;
+}
+
+@media all and (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        width: 45%;
+        text-align: center;
+    }
+
+    nav .active {
+        border-bottom-style: double;
+    }
+}
+
+.content {
+    width: 90%;
+    margin: 1% auto;
+}
+
+.pictures-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.8fr 1fr;
+    grid-template-areas:
+        "grey green green"
+        "brown green green"
+        "red red blue";
+    height: 300px;
+}
+
+.pictures-block img:nth-child(1) {
+    grid-area: grey;
+    background: grey;
+}
+
+.pictures-block img:nth-child(2) {
+    grid-area: brown;
+    background: brown;
+}
+
+.pictures-block img:nth-child(3) {
+    grid-area: green;
+    background: green;
+}
+
+.pictures-block img:nth-child(4) {
+    grid-area: red;
+    background: red;
+}
+
+.pictures-block img:nth-child(5) {
+    grid-area: blue;
+    background: blue;
+}
+
+.articles-block {
+    display: flex;
+}
+
+.articles-block .section:nth-child(1) {
+    border-right: solid thin black;
+    text-align: right;
+    width: 20%;
+}
+
+.articles-block .section:nth-child(2) {
+    width: 60%;
+}
+
+.articles-block .section:nth-child(3) {
+    text-align: left;
+    border-left: solid thin black;
+    width: 20%;
+}
+
+.articles-block h3 {
+    text-align: center;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    word-wrap: break-word;
+}
+
+article .text-block {
+    width: 45%;
+}
+
+article .image-block {
+    background: #599976;
+    width: 45%;
+}
+
+/* СРЕДНИИЙ БЛОК СО СТАТЬЯМИ */
+.articles-block .section:nth-child(2) article:nth-child(1) {
+    flex-wrap: wrap;
+}
+
+.articles-block .section:nth-child(2) article:nth-child(1) .content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.articles-block .section:nth-child(2) article:nth-child(1) h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.articles-block .section:nth-child(2) article:first-child .text-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.articles-block .section:nth-child(2) article:first-child .text-block p {
+    width: 45%;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.articles-block .section:nth-child(2) article:first-child .text-block > div {
+    width: 100%;
+    text-align: right;
+}
+
+.articles-block .section:nth-child(2) article:first-child .image-block {
+    width: 45%;
+}
+
+.articles-block .section:nth-child(2) article:last-child .text-block {
+    width: 100%;
+    text-align: right;
+}
+
+.articles-block .section:nth-child(2) article:last-child .text-block h3 {
+    text-align: center;
+}
+
+.articles-block .section:nth-child(2) article:last-child .text-block p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: underline;
+    color: saddlebrown;
+}
+
+p {
+    background: #BBBBBB;
+    text-align: justify;
+}
