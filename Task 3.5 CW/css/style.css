@@ -1,0 +1,9 @@
+.lead {
+    text-align: justify;
+}
+
+@media (max-width: 576px) {
+    .lead p {
+        font-size: 1rem;
+    }
+}
