@@ -163,7 +163,6 @@ body {
     display: inline-block;
     width: 45%;
     height: 20vw;
-    overflow: scroll;
 }
 
 .article .image-block {

@@ -32,7 +32,7 @@ nav a {
     font-size: 1.25em;
 }
 
-nav li:first-child {
+nav .active {
     border-left-style: double;
     border-right-style: double;
 }
@@ -40,21 +40,6 @@ nav li:first-child {
 nav li:first-child a {
     color: green;
     font-weight: bold;
-}
-
-@media all and (max-width: 600px) {
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    nav li {
-        width: 45%;
-        text-align: center;
-    }
-
-    nav .active {
-        border-bottom-style: double;
-    }
 }
 
 .content {
@@ -201,4 +186,75 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+footer {
+    font-weight: bold;
+    border-top: double #BBB;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        width: 45%;
+        text-align: center;
+    }
+
+    nav .active {
+        border-style: none;
+    }
+
+    .articles-block {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .articles-block .section {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article .text-block,
+    article .image-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .articles-block .section:nth-child(1) {
+        width: 100%;
+        border-right: none;
+    }
+
+    .articles-block .section:nth-child(2) {
+        width: 100%;
+    }
+
+    .articles-block .section:nth-child(2) article:nth-child(1) .content {
+        width: 100%;
+    }
+
+    .articles-block .section:nth-child(3) {
+        width: 100%;
+        border-left: none;
+    }
+
+    article p {
+        text-align: left;
+    }
 }
