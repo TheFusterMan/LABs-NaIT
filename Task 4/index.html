@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Зоомагазин</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/mdb.min.css" />
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-light navbar-light" >
@@ -43,7 +41,7 @@
         <div class="row g-0">
 
             <!-- Левая колонка -->
-            <div class="col-4 d-flex flex-column">
+            <div class="col-4 d-flex flex-column hover-zoom">
 
                 <!-- Верхний (собака) -->
                 <img src="img/dog.jpg" alt="Собака" class="w-100 h-100">
@@ -54,7 +52,7 @@
             </div>
 
             <!-- Правая колонка -->
-            <div class="col-8">
+            <div class="col-8 hover-zoom">
 
                 <!-- Единственный блок (лев) -->
                 <img src="img/lion.jpg" alt="Лев" class="w-100 h-100">
@@ -67,12 +65,12 @@
         <div class="row g-0">
 
             <!-- Левый блок (тигр) -->
-            <div class="col-8">
+            <div class="col-8 hover-zoom">
                 <img src="img/tiger.jpg" alt="Тигр" class="w-100 h-100">
             </div>
 
             <!-- Правый блок (слон) -->
-            <div class="col-4">
+            <div class="col-4 hover-zoom">
                 <img src="img/elephant.jpg" alt="Слон" class="w-100 h-100 col-4">
             </div>
 
@@ -91,24 +89,24 @@
                 <!-- Первая статья -->
                 <div class="row m-1 g-3">
                     <div class="col-6 d-flex flex-column">
-                        <h5 class="fw-bold text-center">Заголовок</h5>
-                        <p class="flex-grow-1 text-break">Хеллоу ворлд пиплссссссссссс ссссссссссссссссссссссссссссссссссссссссссссссссссссс</p>
+                        <h5 class="fw-bold text-center">Медведь</h5>
+                        <p class="flex-grow-1 text-break">Медведь — крупное всеядное млекопитающее, символ дикой природы и необузданной силы.</p>
                         <p class="text-end mb-0"><a href="#" class="text-decoration-underline text-warning">Подробнее»</a></p>
                     </div>
-                    <div class="col-6">
-                        <img class="h-100 w-100"  src="img/bear.jpg">
+                    <div class="col-6 hover-zoom">
+                        <img class="h-100 w-100" src="img/bear.jpg">
                     </div>
                 </div>
 
                 <!-- Вторая статья -->
                 <div class="row m-1 g-3">
                     <div class="col-6 d-flex flex-column">
-                        <h5 class="fw-bold text-center">Заголовок</h5>
-                        <p class="flex-grow-1 text-break">Хеллоу ворлд пиплссссссссссс ссссссссссссссссссссссссссссссссссссссссссссссссссссс</p>
+                        <h5 class="fw-bold text-center">Волк</h5>
+                        <p class="flex-grow-1 text-break">Волк — умный и выносливый хищник, являющийся прямым предком всех пород домашних собак.</p>
                         <p class="text-end mb-0"><a href="#" class="text-decoration-underline text-warning">Подробнее»</a></p>
                     </div>
-                    <div class="col-6">
-                        <img class="h-100 w-100"  src="img/wolf.jpg">
+                    <div class="col-6 hover-zoom">
+                        <img class="h-100 w-100" src="img/wolf.jpg">
                     </div>
                 </div>
 
@@ -122,15 +120,15 @@
                 <!-- Первая статья в центре -->
                 <div class="mb-5">
                     <div class="row g-3">
-                        <h5 class="fw-bold text-center">Заголовок</h5>
+                        <h5 class="fw-bold text-center">Обезьяна</h5>
                         <div class="col-6 d-flex flex-column">
                             <div class="flex-row gap-3">
-                                <p class="text-break">ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ</p>
-                                <p class="text-break">ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫыыыыыыыыЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ</p>
+                                <p class="text-break">Обезьяны — это обширная группа приматов, известных своим высоким интеллектом и ловкостью.</p>
+                                <p class="text-break">Обезьяны — это обширная группа приматов, известных своим высоким интеллектом и ловкостью.</p>
                             </div>
                             <p class="mb-0 text-end"><a href="#" class="text-decoration-underline text-warning">Подробнее»</a></p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 hover-zoom">
                             <img src="img/monkey.jpg" class="h-100 w-100">
                         </div>
                     </div>
@@ -138,7 +136,7 @@
 
                 <!-- Вторая (полноширинная) статья в центре -->
                 <div>
-                    <h5 class="fw-bold text-center">Заголовок</h5>
+                    <h5 class="fw-bold text-center">Орел</h5>
                     <p class="text-break">ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ</p>
                     <p class="mb-0 text-end"><a href="#" class="text-decoration-underline text-warning">Подробнее»</a></p>
                 </div>
@@ -152,24 +150,24 @@
                 <!-- Первая статья -->
                 <div class="row m-1 g-3">
                     <div class="col-6 d-flex flex-column">
-                        <h5 class="fw-bold text-center">Заголовок</h5>
-                        <p class="flex-grow-1 text-break">Хеллоу ворлд пиплссссссссссс ссссссссссссссссссссссссссссссссссссссссссссссссссссс</p>
+                        <h5 class="fw-bold text-center">Орел</h5>
+                        <p class="flex-grow-1 text-break">Орёл — крупная хищная птица, которая во многих культурах является символом власти и свободы.</p>
                         <p class="text-end mb-0"><a href="#" class="text-decoration-underline text-warning">Подробнее»</a></p>
                     </div>
-                    <div class="col-6">
-                        <img class="h-100 w-100"  src="img/bear.jpg">
+                    <div class="col-6 hover-zoom">
+                        <img class="h-100 w-100"  src="img/eagle.jpg">
                     </div>
                 </div>
 
                 <!-- Вторая статья -->
                 <div class="row m-1 g-3">
                     <div class="col-6 d-flex flex-column">
-                        <h5 class="fw-bold text-center">Заголовок</h5>
-                        <p class="flex-grow-1 text-break">Хеллоу ворлд пиплссссссссссс ссссссссссссссссссссссссссссссссссссссссссссссссссссс</p>
+                        <h5 class="fw-bold text-center">Дельфин</h5>
+                        <p class="flex-grow-1 text-break">Дельфины — высокоинтеллектуальные морские млекопитающие, известные своей игривостью.</p>
                         <p class="text-end mb-0"><a href="#" class="text-decoration-underline text-warning">Подробнее»</a></p>
                     </div>
-                    <div class="col-6">
-                        <img class="h-100 w-100"  src="img/wolf.jpg">
+                    <div class="col-6 hover-zoom">
+                        <img class="h-100 w-100"  src="img/dolphine.jpg">
                     </div>
                 </div>
 
@@ -186,47 +184,5 @@
             </div>
         </div>
     </footer>
-
-    <p>
-        <a href="articles/bear.html"><img alt="Медведб" src="img/bear.jpg" width="100" height="159" align="middle"></a>
-        <b>Медведь</b>
-    </p>
-    <p>
-        Медведь — крупное всеядное млекопитающее, символ дикой природы и необузданной силы.
-    </p>
-
-    <p>
-        <a href="articles/wolf.html"><img alt="Волк" src="img/wolf.jpg" width="100" height="159" align="middle"></a>
-        <b>Волк</b>
-    </p>
-    <p>
-        Волк — умный и выносливый хищник, являющийся прямым предком всех пород домашних собак.
-    </p>
-
-    <p>
-        <a href="articles/monkey.html"><img alt="Обезьяна" src="img/monkey.jpg" width="100" height="159" align="middle"></a>
-        <b>Обезьяна</b>
-    </p>
-    <p>
-        Обезьяны — это обширная группа приматов, известных своим высоким интеллектом и ловкостью.
-    </p>
-
-    <p>
-        <a href="articles/eagle.html"><img alt="Орел" src="img/eagle.jpg" width="100" height="159" align="middle"></a>
-        <b>Орел</b>
-    </p>
-    <p>
-        Орёл — крупная хищная птица, которая во многих культурах является символом власти и свободы.
-    </p>
-
-    <p>
-        <a href="articles/dolphine.html"><img alt="Дельфин" src="img/dolphine.jpg" width="100" height="159" align="middle"></a>
-        <b>Дельфин</b>
-    </p>
-    <p>
-        Дельфины — высокоинтеллектуальные морские млекопитающие, известные своей игривостью.
-    </p>
-
-    <hr>
 </body>
 </html>
