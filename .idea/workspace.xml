@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task 3.5 CW/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/pages/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/styles/header.styl" beforeDir="false" afterPath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/styles/header.styl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Task 4.5 CW/practicum_pug" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/index.htm" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="33K4FUe0KyftH7NJ3oHA75xUMKX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.htm.executor": "Run",
+    "JavaScript Debug.index.html (1).executor": "Run",
+    "JavaScript Debug.index.html (2).executor": "Run",
+    "JavaScript Debug.index.html (3).executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.list.html.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Task 2",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\practicum_pug\src" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\practicum_pug" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4\img" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 3.5 CW\images" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 1.5\reference" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Task 2.1/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Task 2.2/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Task 2.3/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/TFL/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html (3)" />
+        <item itemvalue="JavaScript Debug.index.html (2)" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="" />
+      <created>1759052327183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759052327183</updated>
+      <workItem from="1759052329797" duration="9586000" />
+      <workItem from="1759064062226" duration="353000" />
+      <workItem from="1759457859009" duration="689000" />
+      <workItem from="1759458758615" duration="881000" />
+      <workItem from="1759459675184" duration="596000" />
+      <workItem from="1759462407497" duration="4366000" />
+      <workItem from="1759470793867" duration="502000" />
+      <workItem from="1759546539681" duration="102000" />
+      <workItem from="1759744134315" duration="237000" />
+      <workItem from="1759905511588" duration="17000" />
+      <workItem from="1759906794072" duration="11000" />
+      <workItem from="1759907063218" duration="178000" />
+      <workItem from="1759923515778" duration="8825000" />
+      <workItem from="1759978796862" duration="8233000" />
+      <workItem from="1759997700834" duration="8563000" />
+      <workItem from="1760006984523" duration="619000" />
+      <workItem from="1760050875582" duration="1224000" />
+      <workItem from="1760424251320" duration="172000" />
+      <workItem from="1760499648247" duration="941000" />
+      <workItem from="1760507144815" duration="3078000" />
+      <workItem from="1760605211659" duration="7427000" />
+      <workItem from="1760658592901" duration="2036000" />
+      <workItem from="1760661528567" duration="223000" />
+      <workItem from="1760672089904" duration="10806000" />
+      <workItem from="1760703388998" duration="8650000" />
+      <workItem from="1760749802705" duration="1985000" />
+      <workItem from="1760758357462" duration="3075000" />
+      <workItem from="1760761475811" duration="46000" />
+      <workItem from="1761793682543" duration="7658000" />
+      <workItem from="1761812202320" duration="1722000" />
+      <workItem from="1761813950376" duration="1974000" />
+      <workItem from="1761881857970" duration="3245000" />
+      <workItem from="1761887659808" duration="5180000" />
+      <workItem from="1761917643271" duration="7749000" />
+      <workItem from="1762082749889" duration="106000" />
+      <workItem from="1762083279493" duration="7146000" />
+      <workItem from="1762090512736" duration="3327000" />
+      <workItem from="1762128691678" duration="169000" />
+      <workItem from="1762135198866" duration="1575000" />
+      <workItem from="1762429560676" duration="114000" />
+      <workItem from="1762921098095" duration="4905000" />
+      <workItem from="1763022536937" duration="1945000" />
+      <workItem from="1763079475890" duration="269000" />
+      <workItem from="1763080309704" duration="873000" />
+      <workItem from="1763088569946" duration="359000" />
+      <workItem from="1763091386921" duration="10660000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.styl" />
+  </component>
+</project>
