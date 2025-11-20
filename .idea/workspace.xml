@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task 3.5 CW/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug" beforeDir="false" afterPath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/pages/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/styles/header.styl" beforeDir="false" afterPath="$PROJECT_DIR$/Task 4.5 CW/practicum_pug/src/styles/header.styl" afterDir="false" />
     </list>
@@ -155,7 +155,7 @@
       <workItem from="1763079475890" duration="269000" />
       <workItem from="1763080309704" duration="873000" />
       <workItem from="1763088569946" duration="359000" />
-      <workItem from="1763091386921" duration="10660000" />
+      <workItem from="1763091386921" duration="10773000" />
     </task>
     <servers />
   </component>
