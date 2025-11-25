@@ -1,0 +1,116 @@
+extends template.pug
+
+block nav
+    +createMenu(dictMenu, 'Каталог животных')
+
+block content
+    main.container
+        h1 Каталог животных
+
+        //- Блок настроек (график, фильтр, сортировка)
+        details
+            summary График
+            form.settings-form
+                p
+                    b Значение по оси OX
+                p
+                    label
+                        input(type="radio" name="axis_x")
+                        |  Категория
+                    br
+                    label
+                        input(type="radio" name="axis_x")
+                        |  Порода
+
+                p
+                    b Результат
+                p
+                    label
+                        input(type="checkbox")
+                        |  Средняя цена
+                    br
+                    label
+                        input(type="checkbox")
+                        |  Максимальная цена
+                    br
+                    label
+                        input(type="checkbox")
+                        |  Среднее количество
+                    br
+                    label
+                        input(type="checkbox")
+                        |  Общее количество
+
+                input(type="submit" value="Построить")
+            p Здесь будет график
+
+        // Блок Фильтр
+        details
+            summary Фильтр
+            form.settings-form
+                p
+                    label(for="animal_name") Название животного:
+                    input(type="text" id="animal_name")
+                p
+                    label(for="category") Категория:
+                    input(type="text" id="category")
+                p
+                    label(for="breed") Порода:
+                    input(type="text" id="breed")
+                p
+                    label Количество: от
+                        input(type="text" size="8")
+                    label  до
+                        input(type="text" size="8")
+                p
+                    label Цена, руб: от
+                        input(type="text" size="8")
+                    label  до
+                        input(type="text" size="8")
+
+                input(type="submit" value="Найти")
+
+        // Блок Сортировка
+        details
+            summary Сортировка
+            form.settings-form
+                p
+                    label Первый уровень:
+                        select(name="sort1")
+                            option Нет
+                            option Название животного
+                            option Категория
+                            option Порода
+                            option Количество
+                            option Цена, руб.
+                    label  по убыванию?
+                        input(type="checkbox" name="sort1_desc")
+
+                p
+                    label Второй уровень:
+                        select(name="sort2")
+                            option Нет
+                            option Название животного
+                            option Категория
+                            option Порода
+                            option Количество
+                            option Цена, руб.
+                    label  по убыванию?
+                        input(type="checkbox" name="sort2_desc")
+
+                p
+                    label Третий уровень:
+                        select(name="sort3")
+                            option Нет
+                            option Название животного
+                            option Категория
+                            option Порода
+                            option Количество
+                            option Цена, руб.
+                    label  по убыванию?
+                        input(type="checkbox" name="sort3_desc")
+
+                input(type="submit" value="Сортировать")
+
+        //- Таблица
+        +createTable(tableHeader, tableData)

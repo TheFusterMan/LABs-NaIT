@@ -1,0 +1,38 @@
+mixin createMenu(menu, active)
+    nav.menu
+        ul.menu__list
+            each value, key in menu
+                li.menu__item(class= (active == key ? 'menu__item--active' : ''))
+                    a.menu__link(href= value)= key
+
+mixin createSideCard(item, type)
+    article.card(class=`card--${type}`)
+        if type == 'right'
+            .card__image-box
+                img.card__img(src= require("../images/" + item.img) alt= item.header)
+
+        .card__content
+            h3.card__title= item.header
+            p.card__text= item.text
+            a.card__link(href= item.link) Подробнее»
+
+        if type == 'left'
+            .card__image-box
+                img.card__img(src= require("../images/" + item.img) alt= item.header)
+
+//- ИСПРАВИТЬ
+mixin createTable(header, data)
+    table.data-table
+        thead
+            tr
+                each head in header
+                    th= head
+        tbody
+            each row in data
+                tr
+                    td= row.name
+                    td= row.cat
+                    td= row.breed
+                    td= row.qty
+                    td= row.price
+                    td= row.status

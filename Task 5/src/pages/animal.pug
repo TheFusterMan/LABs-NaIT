@@ -1,0 +1,14 @@
+extends template.pug
+
+block nav
+    +createMenu(dictMenu, 'Главная')
+
+block content
+    main.container
+        h1 Медведь
+        section.detail-view
+            img.detail-view__img(src= require("../images/bear.jpg"))
+            div.detail-view__info
+                p Медведи — род млекопитающих отряда хищных.
+                p Они всеядны, хорошо лазают и плавают, быстро бегают, могут стоять и проходить короткие расстояния на задних лапах.
+                a.card__link(href="index.html") Вернуться назад

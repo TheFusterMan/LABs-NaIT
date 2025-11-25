@@ -1,0 +1,48 @@
+extends template.pug
+
+block nav
+    +createMenu(dictMenu, 'Главная')
+
+block content
+    section.gallery-grid
+        //- Первой картинке даем ссылку на детальную страницу (по заданию)
+        a.gallery-grid__item.gallery-grid__item(href="animal.html")
+            img(src= require("../images/" + galleryImages[0]))
+
+        .gallery-grid__item.gallery-grid__item--wide
+            img(src= require("../images/" + galleryImages[1]))
+        .gallery-grid__item.gallery-grid__item
+            img(src= require("../images/" + galleryImages[2]))
+        .gallery-grid__item.gallery-grid__item--long
+            img(src= require("../images/" + galleryImages[3]))
+        .gallery-grid__item
+            img(src= require("../images/" + galleryImages[4]))
+
+    //- ОСНОВНОЙ КОНТЕНТ (3 колонки)
+    main.main-layout
+        //- Левая колонка
+        aside.main-layout__col.main-layout__col--left
+            each item in leftColArticles
+                +createSideCard(item, 'left')
+
+        //- Центральная колонка
+        section.main-layout__col.main-layout__col--center
+            article.central-block
+                h3.central-block__title= centerColData.header
+                .central-block__body
+                    .central-block__text
+                        p= centerColData.text1
+                        p= centerColData.text2
+                        a.card__link(href="#") Подробнее»
+                    .central-block__img
+                        img(src= require("../images/" + centerColData.img))
+
+            article.central-block.central-block--bottom
+                h3.central-block__title= centerColData.footerHeader
+                p= centerColData.footerText
+                a.card__link(href="#") Подробнее»
+
+        //- Правая колонка
+        aside.main-layout__col.main-layout__col--right
+            each item in rightColArticles
+                +createSideCard(item, 'right')
