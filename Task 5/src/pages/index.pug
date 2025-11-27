@@ -29,13 +29,12 @@ block content
         section.main-layout__col.main-layout__col--center
             article.central-block
                 h3.central-block__title= centerColData.header
-                .central-block__body
-                    .central-block__text
-                        p= centerColData.text1
-                        p= centerColData.text2
-                        a.card__link(href="#") Подробнее»
-                    .central-block__img
-                        img(src= require("../images/" + centerColData.img))
+                .central-block__text
+                    p= centerColData.text1
+                    p= centerColData.text2
+                    a.card__link(href="#") Подробнее»
+                .central-block__img
+                    img(src= require("../images/" + centerColData.img))
 
             article.central-block.central-block--bottom
                 h3.central-block__title= centerColData.footerHeader
