@@ -4,6 +4,7 @@ accentColor = #4CAF50
 lightBg = #f9f9f9
 borderColor = #ddd
 gapSize = 20px
+linkColor = saddlebrown
 
 // --- Общие стили ---
 body
@@ -75,17 +76,15 @@ body
       height 100%
       object-fit cover
 
-    &--wide // Бирюзовая область (2x1 сверху)
+    &--wide
       grid-column 2 / 4
       grid-row 1 / 3
 
-    &--long // Розовая (2x1 снизу)
+    &--long
       grid-column 1 / 3
       grid-row 3 / 3
 
-    // Остальные ячейки занимают свободное место автоматически
-
-// --- Основная раскладка (3 колонки) ---
+// --- СТАТЬИ ---
 .main-layout
   display grid
   grid-template-columns 20% 1fr 20% // Левая, Центр, Правая
@@ -94,7 +93,6 @@ body
   max-width 1400px
   margin 0 auto
 
-  // Адаптивность для мобильных
   @media (max-width: 900px)
     grid-template-columns 1fr
 
@@ -113,32 +111,50 @@ body
 
 // --- Карточки (БЭМ) ---
 .card
+  display flex
+  justify-content space-between
+  word-wrap break-word
+
+  &__content
+  &__text-block
+    width 45%
+    @media (max-width: 1000px)
+      width 100%
+      text-align center
+
   &__image-box
-    margin-bottom 10px
-    background #eee
+    width 45%
+    height 100%
 
   &__img
+    object-fit cover
     width 100%
-    display block
+    height 100%
 
   &__title
-    font-size 1.2rem
-    margin 5px 0
+    text-align center
 
   &__text
-    font-size 0.9rem
-    line-height 1.4
+    text-align justify
 
   &__link
-    color mainColor
+    color linkColor
     text-decoration underline
-    font-size 0.8rem
     cursor pointer
     &:hover
       color accentColor
 
 // --- Центральный блок ---
 .central-block
+  display flex
+  justify-content space-between
+  word-wrap break-word
+  flex-wrap wrap
+
+  &__title
+    width 100%
+    text-align center
+
   &__body
     display grid
     grid-template-columns 1fr 1fr
@@ -146,15 +162,25 @@ body
     @media (max-width: 600px)
       grid-template-columns 1fr
 
+  &__text
+    display flex
+    gap 5%
+    flex-wrap wrap
+    text-align justify
+
+  &__text p
+    width 45%
+
   &__img img
     width 100%
 
   &--bottom
-    margin-top 20px
-    border-top 1px solid borderColor
-    padding-top 20px
     text-align center
 
+  &--bottom p
+    text-align justify
+    width 100%
+    
 // --- Стили для таблицы и формы ---
 
 .data-table
