@@ -9,6 +9,11 @@ body
   padding 0
   font-size 1.25em
 
+// --- Миксин для ховера ---
+img-hover-effect()
+  &:hover
+    transform scale(1.05)
+
 // --- Меню ---
 .menu
   width 100%
@@ -59,7 +64,7 @@ body
     img
       width 100%
       height 100%
-      object-fit cover
+      img-hover-effect()
 
     &--wide
       grid-column 2 / 4
@@ -100,7 +105,6 @@ body
   word-wrap break-word
 
   &__content
-  &__text-block
     width 45%
     @media (max-width: 1000px)
       width 100%
@@ -111,9 +115,9 @@ body
     height 100%
 
   &__img
-    object-fit cover
     width 100%
     height 100%
+    img-hover-effect()
 
   &__title
     text-align center
@@ -165,7 +169,7 @@ body
     img
       width 100%
       height 100%
-      object-fit cover
+      img-hover-effect()
 
   &--bottom
     grid-template-rows 1fr 1fr 1fr
@@ -238,8 +242,51 @@ main.container h1
       text-align center
       font-size 1.25em
 
-// --- Маленький экран ---
-@media (max-width: 1000px)
+// --- Средний---
+@media (max-width: 1500px)
+
+  .gallery-grid
+    grid-template-columns 1fr 1fr
+    grid-template-rows auto auto auto
+
+  .main-layout
+    grid-template-columns 1fr 1fr
+    gap 15px
+
+    &__col--center
+      grid-column 1 / -1
+      grid-row 1
+      border-bottom 1px solid borderColor
+      padding-bottom 20px
+      margin-bottom 10px
+
+    &__col--left
+      grid-column 1 / 2
+      grid-row 2
+      border-right 1px solid borderColor
+      border-bottom none
+      padding-right 10px
+
+    &__col--right
+      grid-column 2 / 3
+      grid-row 2
+      border-left none
+      padding-left 10px
+
+  .card
+    flex-direction column
+    align-items center
+
+    &__image-box
+      width 100%
+      margin-bottom 10px
+
+    &__content
+      width 100%
+      text-align center
+
+// --- Маленький ---
+@media (max-width: 800px)
 
   // --- Главная ---
 
@@ -296,68 +343,6 @@ main.container h1
     display flex
     flex-direction column
     gap 10px
-
-  // --- Каталог животных ---
-
-  .settings-form
-    padding 10px
-    border 1px solid borderColor
-    background #f9f9f9
-
-    label
-      display block
-      margin-bottom 5px
-
-    input[type="text"]
-    input[type="submit"]
-    input[type="button"]
-    select
-      width 100%
-
-  // Таблица в карточки
-  .data-table
-    display block
-    width 100%
-
-    thead
-      display none
-
-    tbody
-      display block
-      width 100%
-
-    tr
-      display block
-      margin-bottom 20px
-      border 2px solid borderColor
-      padding 10px
-      border-radius 10px
-
-    td
-      display flex
-      justify-content space-between
-      border none
-      border-bottom 1px solid #eee
-      text-align right
-
-      &:last-child
-        border-bottom none
-
-      &:before
-        font-weight bold
-
-      &:nth-of-type(1):before
-        content "Название"
-      &:nth-of-type(2):before
-        content "Категория"
-      &:nth-of-type(3):before
-        content "Порода"
-      &:nth-of-type(4):before
-        content "Количество"
-      &:nth-of-type(5):before
-        content "Цена"
-      &:nth-of-type(6):before
-        content "Наличие"
 
   // --- Детальная ---
   .detail-view
