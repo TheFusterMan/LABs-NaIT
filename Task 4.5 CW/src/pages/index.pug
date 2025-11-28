@@ -1,0 +1,15 @@
+extends template
+
+block nav
+  nav
+    +createMenu(dictMenu, 'Главная')
+
+block content
+  div.images
+    each pict in listImages
+      a(href= "building.html")
+        img(src= require("../images/" + pict))
+
+  article
+    each item in listSections
+      +createSection(item)
