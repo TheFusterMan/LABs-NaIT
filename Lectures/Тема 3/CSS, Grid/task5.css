@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "menu content article"
+    "footer footer footer";
+}
+
+.menu {
+  grid-area: menu;
+  background: lightgreen;
+}

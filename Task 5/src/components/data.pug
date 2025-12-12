@@ -64,6 +64,60 @@ block variables
             link: 'index.html',
             linkText: 'Вернуться назад'
         }
+
+    -
+        var graphData = {
+            title: 'График',
+            oxTitle: 'Значение по оси OX',
+            oxOptions: [
+                { value: 'category', text: 'Категория' },
+                { value: 'breed', text: 'Порода' }
+            ],
+            resultTitle: 'Результат',
+            resultOptions: [
+                { name: 'res_avg_price', text: 'Средняя цена' },
+                { name: 'res_max_price', text: 'Максимальная цена' },
+                { name: 'res_avg_qty', text: 'Среднее количество' },
+                { name: 'res_total_qty', text: 'Общее количество' }
+            ],
+            btnText: 'Построить',
+            placeholder: 'Здесь будет график'
+        }
+
+        var filterData = {
+            title: 'Фильтр',
+            textInputs: [
+                { id: 'animal_name', label: 'Название животного:' },
+                { id: 'category', label: 'Категория:' },
+                { id: 'breed', label: 'Порода:' }
+            ],
+            rangeInputs: [
+                { label: 'Количество:', nameFrom: 'qty_from', nameTo: 'qty_to' },
+                { label: 'Цена, руб:', nameFrom: 'price_from', nameTo: 'price_to' }
+            ],
+            labels: { from: 'от', to: 'до' },
+            btnText: 'Найти'
+        }
+
+        var sortData = {
+            title: 'Сортировка',
+            levels: [
+                { label: 'Первый уровень:', name: 'sort1' },
+                { label: 'Второй уровень:', name: 'sort2' },
+                { label: 'Третий уровень:', name: 'sort3' }
+            ],
+            options: [
+                'Нет',
+                'Название животного',
+                'Категория',
+                'Порода',
+                'Количество',
+                'Цена, руб.'
+            ],
+            labelDesc: 'по убыванию?',
+            btnText: 'Сортировать'
+        }
+
     -
         var tableHeader = ['Название животного', 'Категория', 'Порода', 'Количество', 'Цена, руб.', 'Наличие']
         var tableData = [

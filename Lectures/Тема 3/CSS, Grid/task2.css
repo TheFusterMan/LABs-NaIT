@@ -1,0 +1,3 @@
+.main li > a[href="#"] {
+  color: green;
+}

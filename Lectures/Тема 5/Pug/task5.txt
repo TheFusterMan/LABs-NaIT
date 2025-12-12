@@ -1,0 +1,14 @@
+- var n = 8;
+- var i = 0;
+
+table
+  while i < n
+    tr
+      - var j = 0;
+      while j < n
+        if (i + j) % 2 == 0
+          td.white
+        else
+          td.black
+        - j++ 
+    - i++

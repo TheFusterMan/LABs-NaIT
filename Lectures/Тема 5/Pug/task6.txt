@@ -1,0 +1,7 @@
+mixin createList(tagType, items, formatTag)
+  #{tagType}
+    each item in items
+      li
+        #{formatTag}= item
+
++createList('ul', ['Python', 'JavaScript', 'Java'], 'strong')

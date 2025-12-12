@@ -20,6 +20,64 @@ mixin createSideCard(item, type)
             .card__image-box
                 img.card__img(src= require("../images/" + item.img) alt= item.header)
 
+mixin createGraph(data)
+    details
+        summary= data.title
+        form.settings-form
+            p
+                b= data.oxTitle
+            p
+                each opt in data.oxOptions
+                    label
+                        input(type="radio" name="axis_x" value= opt.value)
+                        |  #{opt.text}
+                    br
+
+            p
+                b= data.resultTitle
+            p
+                each opt in data.resultOptions
+                    label
+                        input(type="checkbox" name= opt.name)
+                        |  #{opt.text}
+                    br
+
+            input(type="submit" value= data.btnText)
+        p= data.placeholder
+
+mixin createFilter(data)
+    details
+        summary= data.title
+        form.settings-form
+            each field in data.textInputs
+                p
+                    label(for= field.id)= field.label
+                    input(type="text" id= field.id name= field.id)
+
+            each range in data.rangeInputs
+                p
+                    label #{range.label} #{data.labels.from}
+                        input(type="text" size="8" name= range.nameFrom)
+                    label  #{data.labels.to}
+                        input(type="text" size="8" name= range.nameTo)
+
+            input(type="submit" value= data.btnText)
+
+mixin createSort(data)
+    details
+        summary= data.title
+        form.settings-form
+            each level in data.levels
+                p
+                    label #{level.label}
+                        select(name= level.name)
+                            each opt in data.options
+                                option= opt
+                    label  #{data.labelDesc}
+                        input(type="checkbox" name= level.name + "_desc")
+
+            input(type="submit" value= data.btnText)
+
 mixin createTable(header, data)
     table.data-table
         thead

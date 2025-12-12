@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Task 6/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 1/Task 1/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 1/Task 1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 1/Task 2/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 1/Task 2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 1/Task 3/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 1/Task 3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 2/Task 1/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 2/Task 1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 2/Task 2/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres 2/Task 2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/components/data.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Task 5/src/components/data.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/components/mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Task 5/src/components/mixin.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/pages/list.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Task 5/src/pages/list.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task 5/src/styles/main.styl" beforeDir="false" afterPath="$PROJECT_DIR$/Task 5/src/styles/main.styl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +33,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,30 +54,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.htm.executor": "Run",
-    "JavaScript Debug.index.html (1).executor": "Run",
-    "JavaScript Debug.index.html (2).executor": "Run",
-    "JavaScript Debug.index.html (3).executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.list.html.executor": "Run",
-    "Node.js.index.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Task 5",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.htm.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (3).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.list.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pleaz/WebstormProjects/LABs-NaIT/Task 5&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 5" />
@@ -169,7 +185,9 @@
       <workItem from="1764252430691" duration="4479000" />
       <workItem from="1764257728858" duration="189000" />
       <workItem from="1764283337492" duration="11696000" />
-      <workItem from="1764299402030" duration="7959000" />
+      <workItem from="1764299402030" duration="10031000" />
+      <workItem from="1765342555130" duration="952000" />
+      <workItem from="1765494273544" duration="6986000" />
     </task>
     <servers />
   </component>

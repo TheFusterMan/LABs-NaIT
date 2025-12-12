@@ -1,0 +1,11 @@
+.title-main {
+  text-align: center;
+  color: maroon;
+  text-decoration: underline;
+}
+
+.title-sub {
+  text-align: center;
+  color: maroon;
+  font-style: italic;
+}

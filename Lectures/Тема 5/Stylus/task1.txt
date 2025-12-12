@@ -1,0 +1,6 @@
+size = 1%
+
+section
+  box-shadow size size (size * 2) rgba(0, 0, 0, 0.5)
+  padding (size * 2)
+  margin (size * 4)
