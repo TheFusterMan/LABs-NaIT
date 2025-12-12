@@ -71,9 +71,10 @@ mixin createSort(data)
                 p
                     label #{level.label}
                         select(name= level.name)
+                            option= "Нет"
                             each opt in data.options
                                 option= opt
-                    label  #{data.labelDesc}
+                    label #{data.labelDesc}
                         input(type="checkbox" name= level.name + "_desc")
 
             input(type="submit" value= data.btnText)
@@ -87,9 +88,5 @@ mixin createTable(header, data)
         tbody
             each row in data
                 tr
-                    td= row.name
-                    td= row.cat
-                    td= row.breed
-                    td= row.qty
-                    td= row.price
-                    td= row.status
+                    each val in row
+                        td= val
