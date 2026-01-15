@@ -5,10 +5,9 @@ const keys = [
 ];
 const alphabet = "абвгдежзийклмнопрстуфхцчшщъыьэюя".split("");
 
-function createPolybiusMatrix(keyword, rows, cols) {
+function createMatrix(keyword, rows, cols) {
     const uniqueChars = [];
-    const cleanKey = keyword.toLowerCase().replace(/ё/g, 'е');
-    const allChars = cleanKey.split("").concat(alphabet);
+    const allChars = keyword.toLowerCase().split("").concat(alphabet);
 
     allChars.forEach(char => {
         if (!uniqueChars.includes(char)) {
@@ -49,25 +48,19 @@ function decrypt(text, matrix) {
                 }
             }
 
-            if (foundRow !== -1) break;
+            if (foundRow !== -1) {
+                break;
+            }
         }
 
         if (foundRow !== -1) {
             let nextRow = foundRow + 1;
 
-            // let prevRow = foundRow - 1;
-
             if (nextRow === rows) {
                 nextRow = 0;
             }
 
-            // if (prevRow < 0) {
-            //     prevRow = rows - 1;
-            // }
-
             result.push(matrix[nextRow][foundCol]);
-
-            // result.push(matrix[prevRow][foundCol]);
         }
     });
 
@@ -87,11 +80,11 @@ function printMatrix(matrix, rows, cols) {
 }
 
 keys.forEach(key => {
-    let matrix = createPolybiusMatrix(key, 4, 8);
+    let matrix = createMatrix(key, 4, 8);
     printMatrix(matrix, 4, 8);
     console.log(`${key} - 4x8 - ${decrypt(encryptedText, matrix)}`);
 
-    matrix = createPolybiusMatrix(key, 8, 4);
+    matrix = createMatrix(key, 8, 4);
     printMatrix(matrix, 8, 4);
     console.log(`${key} - 8x4 - ${decrypt(encryptedText, matrix)}`);
 });

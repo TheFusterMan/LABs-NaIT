@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Калькулятор дробей (Вариант 47)</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Калькулятор дробей</h1>
+
+    <div class="fractionType-area">
+        <label for="fractionType"><b>Форма дробей:</b></label>
+        <select id="fractionType">
+            <option value="simple">Простая дробь</option>
+            <option value="mixed">Смешанная дробь</option>
+        </select>
+        <button type="button" onclick="changeVisibility()">Показать</button>
+    </div>
+
+    <div class="fractions-area">
+        <div class="fraction-area">
+            <div class="fraction-title">Дробь 1</div>
+            <div class="fraction-input">
+
+                <div class="input-z hidden">
+                    <input type="text" id="f1-z" placeholder="Цел">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div>
+                    <input type="text" id="f1-n" placeholder="Числ">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="divider">/</div>
+                <div>
+                    <input type="text" id="f1-d" placeholder="Знам">
+                    <span class="error-msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fraction-area">
+            <div class="fraction-title">Дробь 2</div>
+            <div class="fraction-input">
+
+                <div class="input-z hidden">
+                    <input type="text" id="f2-z" placeholder="Цел">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div>
+                    <input type="text" id="f2-n" placeholder="Числ">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="divider">/</div>
+                <div>
+                    <input type="text" id="f2-d" placeholder="Знам">
+                    <span class="error-msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="operations-area">
+        <div class="cb-header"><b>Выберите операции:</b></div>
+        <label><input type="checkbox" name="op" value="sub"> Разность (-)</label>
+        <label><input type="checkbox" name="op" value="div"> Частное (/)</label>
+        <label><input type="checkbox" name="op" value="sum"> Сумма (+)</label>
+    </div>
+    <div class="controls" style="border: none; padding: 0;">
+        <button type="button" onclick="calcResult()">Вычислить</button>
+        <button type="button" onclick="clearFields()">Очистить</button>
+    </div>
+
+    <div id="results" class="results-area"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
