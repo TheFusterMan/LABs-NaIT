@@ -1,3 +1,24 @@
+let buttons = document.querySelectorAll('button');
+
+buttons[0].onclick = changeVisibility;
+buttons[1].onclick = calcResult;
+buttons[2].onclick = clearFields;
+
+document.querySelectorAll('input[type="text"]').forEach(input => {
+    input.oninput = function() {
+        this.classList.remove('error');
+        if (this.nextElementSibling) {
+            this.nextElementSibling.textContent = '';
+        }
+    };
+});
+
+document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.onchange = function() {
+        document.querySelector('.operations-area').classList.remove('error-box');
+    };
+});
+
 function getGCD(a, b) {
     if (b === 0) {
         return a;
@@ -36,7 +57,7 @@ function getFractionFromInput(prefix) {
             return 0;
         }
 
-        if (v === '' || isNaN(v) || (suffix === '-d' && +v === 0)) {
+        if (v === '' || isNaN(v) || +v % 1 !== 0 || (suffix === '-d' && +v === 0)) {
             el.classList.add('error');
             return null;
         }
@@ -98,8 +119,6 @@ function drawFraction(frac) {
     return html + '</div>';
 }
 
-// ============================ СОБЫТИЯ КНОПОК ===============================
-
 let resultsEl = document.getElementById('results');
 
 function changeVisibility() {
@@ -138,11 +157,23 @@ function calcResult() {
         return;
     }
 
-    let checkboxes = document.getElementsByName('op');
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
-    if (checkboxes.length === 0) {
-        resultsEl.innerHTML = '<div class="result-item" style="border-left-color:red">Выберите хотя бы одну операцию!</div>';
-        return;
+    let opsArea = document.querySelector('.operations-area');
+
+    let atLeastOneChecked = false;
+    checkboxes.forEach((el) => {
+        if (el.checked === true) {
+            atLeastOneChecked = true;
+        }
+    });
+
+    if (!atLeastOneChecked) {
+        opsArea.classList.add('error-box');
+        resultsEl.innerHTML = '<div class="result-item">Выберите хотя бы одну операцию!</div>';
+        resultsEl.classList.add('error-msg');
+    } else {
+        resultsEl.classList.remove('error-msg');
     }
 
     for (let checkbox of checkboxes) {
@@ -172,6 +203,7 @@ function calcResult() {
         } else if (op === 'div') {
             if (f2.n === 0) {
                 error = 'Деление на 0';
+                document.getElementById('f2-n').classList.add('error');
             }
             else {
                 res = {
@@ -195,7 +227,8 @@ function calcResult() {
 
         if (error) {
             row.style.borderColor = 'red';
-            row.innerHTML = expression + `<span style="color:red">${error}</span>`;
+            row.classList.add('error-msg')
+            row.innerHTML = expression + `<span>${error}</span>`;
         } else {
             row.innerHTML = expression + `<b>${drawFraction(res)}</b>`;
         }

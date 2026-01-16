@@ -1,0 +1,64 @@
+<head>
+    <title>Вариант 13</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <button onclick="changePage('test')">Преобразовать</button>
+    <h3>Язык программирования</h3>
+    <div>Python</div>
+    <div>C</div>
+    <div><a href="#">Java</a></div>
+    <h3>История создания</h3>
+    <div id="test">
+        <div>Python
+            <ul>
+                <li>создан в 1989-1991;</li>
+                <li>автор - Гвид ван Россум</li>
+                <li>создан в 1989-1991;</li>
+                <li>автор - Гвид ван Россум</li>
+            </ul>
+        </div>
+        <p>C разработан в 1969-1973 годах.</p>
+        <p>Java разработан в 1990-1996 годах.</p>
+        <div>JavaScript разработан в 1996 году.</div>
+        <div>Prolog
+            <p>разработан в 1972 году.</p>
+        </div>
+    </div>
+<script>
+    function changePage(elementId) {
+        let element = document.getElementById(elementId);
+
+        if (element) {
+            let els = element.querySelectorAll("div, ul, ol");
+
+            for (let i = els.length - 1; i > -1; i--) {
+                let el = els[i]
+                let q = el.children.length;
+
+                if (q > 0 && q < 3) {
+                    let fc = el.children[0];
+
+                    for (let i = 0; i < 3 - q; i++) {
+                        let clone = fc.cloneNode(true);
+                        el.appendChild(clone);
+                    }
+                } else if (q === 0) {
+                    for (let i = 0; i < 3; i++) {
+                        let newP = document.createElement("p");
+                        newP.textContent = "Новый элемент";
+                        el.appendChild(newP);
+                    }
+                } else if (q > 3) {
+                    let elch = el.children;
+
+                    for (let i = elch.length - 1; i > 2; i--) {
+                        elch[i].remove();
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

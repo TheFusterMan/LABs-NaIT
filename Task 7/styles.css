@@ -41,6 +41,12 @@ button:hover {
     background-color: dimgrey;
 }
 
+.operations-area.error-box {
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 5px;
+}
+
 .cb-header {
     margin-bottom: 15px;
 }
