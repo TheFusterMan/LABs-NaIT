@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CT 8/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CT 8/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FW/Task 1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FW/Task 1/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FW/Task 1/task.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FW/Task 2/task.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FW/Task 2/task.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FW/Task 3/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FW/Task 3/task.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/CSS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task 7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task 7/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task 7/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task 7/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task 7/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Task 7/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -52,11 +59,12 @@
     &quot;JavaScript Debug.index.html (3).executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.list.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.code.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pleaz/WebstormProjects/LABs-NaIT/Task 5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pleaz/WebstormProjects/LABs-NaIT/FW/Task 3&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -70,9 +78,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 3" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 2" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 1" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 1\images" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 5" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 5\images" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\src\pages" />
@@ -191,7 +201,10 @@
       <workItem from="1768525409716" duration="12000" />
       <workItem from="1768525620946" duration="1061000" />
       <workItem from="1768526701473" duration="890000" />
-      <workItem from="1768528364519" duration="5783000" />
+      <workItem from="1768528364519" duration="6066000" />
+      <workItem from="1768975930844" duration="1460000" />
+      <workItem from="1769079664199" duration="6000" />
+      <workItem from="1771577320661" duration="4006000" />
     </task>
     <servers />
   </component>

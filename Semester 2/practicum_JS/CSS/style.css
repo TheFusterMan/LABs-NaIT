@@ -1,0 +1,22 @@
+#list {
+    border-spacing: 0;
+    width: 100%;
+}
+
+#list th, #list td {
+    border: thin solid lightgrey;
+    padding: 8px;
+}
+
+#list th {
+    background-color: darkgrey;
+    font-weight: bold;
+}
+
+#list td {
+    text-align: left;
+}
+
+#list tr {
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,15 @@
+.pict img {
+    width: 18vw;
+    height: 18vw;
+    min-width: 170px;
+    min-height: 170px;
+}
+
+@media (max-width: 600px) {
+    .pict img {
+        width: 80vw;
+        height: 80vw;
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
