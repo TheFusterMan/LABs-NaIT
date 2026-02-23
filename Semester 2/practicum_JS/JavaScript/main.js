@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
     fieldsFirst.addEventListener('change', function() {
         changeNextSelect(this, 'fieldsSecond');
     });
+
+    const sortBtn = sortForm.querySelector('input[value="Сортировать"]');
+    sortBtn.addEventListener('click', function() {
+        sortTable('list', sortForm);
+    });
 });
 
 // формирование полей элемента списка с заданным текстом и значением
