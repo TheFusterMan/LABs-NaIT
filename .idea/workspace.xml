@@ -5,10 +5,264 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t5_alt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t5_alt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t7_alt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t7_alt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 1/t9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Class Task 1/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/table.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/practicum_JS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CT 8/Task/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CT 8/Task/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CT 8/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CT 8/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/images/image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/images/image_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/images/image_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/images/image_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/images/image_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 1/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 2/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 2/task.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 3/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW/Task 3/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, Grid/task1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, Grid/task2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, Grid/task4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, Grid/task4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, Grid/task5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, дерево документа/task1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, дерево документа/task2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/CSS, дерево документа/task3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/Адаптивная верстка/task1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/Адаптивная верстка/task3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/Основы CSS/task1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/Основы CSS/task2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/Основы CSS/task2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 3/Основы CSS/task3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 4/task1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 4/task2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 4/task3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 4/task4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 5/Pug/task2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 5/Pug/task3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 5/Pug/task4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 5/Pug/task5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 5/Pug/task6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 5/Stylus/task1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 6/task1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 6/task2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 6/task3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lectures/Тема 6/task4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_JS/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_JS/JavaScript/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_JS/JavaScript/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_JS/JavaScript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_JS/JavaScript/sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/JavaScript/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_JS/JavaScript/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/practicum_JS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_JS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1.5/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1.5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1.5/reference/P51003-155218 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1.5/reference/P51003-155226 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1.5/reference/P51003-155232 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/bear.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/cat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/dog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/dolphine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/eagle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/elephant.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/lion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/monkey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/tiger.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/articles/wolf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/bear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/dolphine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/eagle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/elephant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/lion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/monkey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/tiger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/img/wolf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 1/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2.1/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2.1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2.5/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2.5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2.5/reference/IMG_20251017_154746_553 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2.5/reference/IMG_20251017_154746_767 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/bear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/dolphine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/eagle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/elephant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/lion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/monkey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/tiger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/img/wolf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/content.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image11.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/image9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/java.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/javascript.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/prolog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/python.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/images/ruby.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 CW/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/content.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/task/S51101-00184067.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/task/S51101-00185355.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/task/S51101-00190213.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.5 HW/task/S51101-00190752.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/bear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/dolphine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/eagle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/elephant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/lion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/monkey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/tiger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/img/wolf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/CSS/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/components/data.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/components/header.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/components/mixin.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/content.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/image9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/images/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/pages/building.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/pages/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/pages/template.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/src/styles/header.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 CW/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/src/pages/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/src/styles/header.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4.5 HW/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/css/mdb.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/css/mdb.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/css/mdb.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/bear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/burger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/dolphine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/eagle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/elephant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/lion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/monkey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/tiger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/img/wolf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/js/mdb.es.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/js/mdb.es.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/js/mdb.umd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 4/js/mdb.umd.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/components/data.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/components/mixin.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/bear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/dolphine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/eagle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/elephant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/lion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/monkey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/tiger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/images/wolf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/pages/animal.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/pages/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/pages/list.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/pages/template.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/src/styles/main.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 5/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 6/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 7/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 7/styles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,35 +306,45 @@
     &quot;JavaScript Debug.list.html.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.code.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t1.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t10.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t2.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t3.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t4.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t5.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t5_alt.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t6.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.t9.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pleaz/WebstormProjects/LABs-NaIT/FW/Task 3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Lectures/Lecture 1&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 1" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 3" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 2" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 1" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 1\images" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 1" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\src\pages" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\practicum_pug\src" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\practicum_pug" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4\img" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 3.5 CW\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -197,7 +461,21 @@
       <workItem from="1769079664199" duration="6000" />
       <workItem from="1771577320661" duration="4006000" />
       <workItem from="1771600796086" duration="69000" />
-      <workItem from="1771854648220" duration="2239000" />
+      <workItem from="1771854648220" duration="2287000" />
+      <workItem from="1771857061784" duration="6000" />
+      <workItem from="1771941582849" duration="6344000" />
+      <workItem from="1771996609649" duration="755000" />
+      <workItem from="1771997727273" duration="3282000" />
+      <workItem from="1772011200860" duration="3239000" />
+      <workItem from="1772032448272" duration="2900000" />
+      <workItem from="1772071038580" duration="2929000" />
+      <workItem from="1772115198170" duration="5960000" />
+      <workItem from="1772154812673" duration="10370000" />
+      <workItem from="1772166229851" duration="2010000" />
+      <workItem from="1772175955728" duration="670000" />
+      <workItem from="1772178514741" duration="1986000" />
+      <workItem from="1772181307517" duration="322000" />
+      <workItem from="1772181750292" duration="4408000" />
     </task>
     <servers />
   </component>
@@ -205,6 +483,10 @@
     <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="javascript:npm:stylus-loader" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:stylus" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:webpack" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:pug" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.styl" />
   </component>
 </project>

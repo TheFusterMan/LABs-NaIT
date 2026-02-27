@@ -30,6 +30,30 @@ const createSortArr = (data) => {
     return sortArr;
 };
 
+// САМОСТОЯТЕЛЬНО
+// Реализовать функцию для сброса сортировки, которая:
+//
+// формирует поля формы для настройки сортировки как при загрузке страницы;
+//
+// восстанавливает на странице ту таблицу, которая была до применения сортировки;
+//
+// Связать эту функцию с событием клик по кнопке Сбросить сортировку.
+const resetSortForm = (sortForm) => {
+    const allSelect = sortForm.getElementsByTagName('select');
+    for (let select of allSelect) {
+        select.innerHTML = '';
+    }
+    setSortSelects(buildings, sortForm);
+    sortForm.reset();
+};
+
+const clearSort = (idTable, sortForm) => {
+    resetSortForm(sortForm);
+
+    const filterForm = document.getElementById('filter');
+    filterTable(buildings, idTable, filterForm);
+};
+
 const sortTable = (idTable, formData) => {
 
     // формируем управляющий массив для сортировки
@@ -60,10 +84,9 @@ const sortTable = (idTable, formData) => {
 
             // САМОСТОЯТЕЛЬНО: Исправить функцию sortTable() так, чтобы данные в столбцах с числами (Год и
             // Высота) сортировались как числа, а не как строки.
-            if (!isNaN(parseFloat(firstCell)) && !isNaN(parseFloat(secondCell))) {
+            if (column === 4 || column === 5) {
                 comparison = parseFloat(firstCell) - parseFloat(secondCell);
             } else {
-                // используем localeCompare для корректного сравнения
                 comparison = firstCell.localeCompare(secondCell);
             }
 

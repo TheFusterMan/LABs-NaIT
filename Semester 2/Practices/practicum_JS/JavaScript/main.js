@@ -14,6 +14,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const sortForm = document.getElementById('sort');
+
+    const resetSortBtn = sortForm.querySelector('input[value="Сбросить сортировку"]');
+    resetSortBtn.addEventListener('click', function() {
+        clearSort('list', sortForm);
+    });
+
+    // В обработчик события поля Найти и Очистить фильтры добавить сброс всех уровней
+    // сортировки в форме (как при загрузке страницы) и вывод данных в таблице в том порядке,
+    // в котором они хранятся в массиве buildings.
+    findBtn.addEventListener('click', function() {
+        resetSortForm(sortForm);
+        filterTable(buildings, 'list', form);
+    });
+
+    // В обработчик события поля Найти и Очистить фильтры добавить сброс всех уровней сортировки в форме
+    // (как при загрузке страницы) и вывод данных в таблице в том порядке,
+    // в котором они хранятся в массиве buildings.
+    clearBtn.addEventListener('click', function() {
+        resetSortForm(sortForm);
+        clearFilter('list', buildings, form);
+    });
+
     setSortSelects(buildings, sortForm);
 
     const fieldsFirst = document.getElementById('fieldsFirst');

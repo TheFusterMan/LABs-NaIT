@@ -12,8 +12,9 @@
     <script src="JavaScript/sort.js"></script>
 </head>
 <body>
-    <p>Фильтр</p>
+<div class="forms-container">
     <form id="filter">
+        <h3>Фильтр</h3>
         <p>
             <label for="structure">Название:</label>
             <input type="text" id="structure">
@@ -43,8 +44,8 @@
         <input type="button" value="Найти">
         <input type="button" value="Очистить фильтры">
     </form>
-    <p>Сортировка</p>
     <form id="sort">
+        <h3>Сортировка</h3>
         <p> Сортировать по</p>
         <p>
             <select id="fieldsFirst">
@@ -59,6 +60,7 @@
         <input type="button" value="Сортировать">
         <input type="button" value="Сбросить сортировку">
     </form>
+</div>
     <table id="list">
     </table>
 </body>
