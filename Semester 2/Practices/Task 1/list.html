@@ -2,14 +2,12 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>
-		Ассортимент зоомагазина
-		<script defer src="data.js"></script>
-		<script defer src="table.js"></script>
-		<script defer src="filter.js"></script>
-		<script defer src="sort.js"></script>
-		<script defer src="main.js"></script>
-	</title>
+	<title>Ассортимент зоомагазина</title>
+	<script src="JavaScript/data.js"></script>
+	<script src="JavaScript/main.js"></script>
+	<script src="JavaScript/table.js"></script>
+	<script src="JavaScript/filter.js"></script>
+	<script src="JavaScript/sort.js"></script>
 </head>
 <body>
 <p>
@@ -22,8 +20,8 @@
 	<form>
 		<p><b>Значение по оси OX</b></p>
 		<p>
-			<label><input type="radio" name="axis_x"> Категория</label><br>
-			<label><input type="radio" name="axis_x"> Порода</label>
+			<label><input type="radio" id="axis_x"> Категория</label><br>
+			<label><input type="radio" id="axis_y"> Порода</label>
 		</p>
 		<p><b>Результат</b></p>
 		<p>
@@ -37,641 +35,73 @@
 	<p>Здесь будет график</p>
 </details>
 
-<details>
+<details open>
 	<summary>Фильтр</summary>
-	<form>
+	<form id="filter">
 		<p>
-			<label for="animal_name">Название животного: </label><input type="text" id="animal_name">
+			<label for="animal_name">Название животного: </label>
+			<input type="text" id="animal_name">
 		</p>
 		<p>
-			<label for="category">Категория: </label><input type="text" id="category">
+			<label for="category">Категория: </label>
+			<input type="text" id="category">
 		</p>
 		<p>
-			<label for="breed">Порода: </label><input type="text" id="breed">
+			<label for="breed">Порода: </label>
+			<input type="text" id="breed">
 		</p>
 		<p>
-			<label>Количество: от <input type="text" size="8"></label>
-			<label>до <input type="text" size="8"></label>
+			<label for="breed">Наличие: </label>
+			<input type="text" id="availability">
 		</p>
 		<p>
-			<label>Цена, руб: от <input type="text" size="8"></label>
-			<label>до <input type="text" size="8"></label>
+			<label>Количество:</label>
+			от <input type="number" size="8" id="quantityFrom">
+			до <input type="number" size="8" id="quantityTo">
 		</p>
-		<input type="submit" value="Найти">
+		<p>
+			<label>Цена, руб: </label>
+			от <input type="number" size="8" id="priceFrom">
+			до <input type="number" size="8" id="priceTo">
+		</p>
+		<input type="button" value="Найти">
+		<input type="button" value="Очистить фильтры">
 	</form>
 </details>
 
-<details>
+<details open>
 	<summary>Сортировка</summary>
-	<form>
+	<form id="sort">
 		<p>
+			<label>Первый уровень:</label>
+			<select id="fields1">
+			</select>
+
 			<label>
-				Первый уровень:
-				<select name="sort1">
-					<option>Нет</option>
-					<option>Название животного</option>
-					<option>Категория</option>
-					<option>Порода</option>
-					<option>Количество</option>
-					<option>Цена, руб.</option>
-				</select>
-			</label>
-			<label>
-				по убыванию? <input type="checkbox" name="sort1_desc">
+				по убыванию? <input type="checkbox" id="fields1_desc">
 			</label>
 		</p>
 		<p>
+			<label>Второй уровень:</label>
+			<select id="fields2">
+			</select>
 			<label>
-				Второй уровень:
-				<select name="sort2">
-					<option>Нет</option>
-					<option>Название животного</option>
-					<option>Категория</option>
-					<option>Порода</option>
-					<option>Количество</option>
-					<option>Цена, руб.</option>
-				</select>
-			</label>
-			<label>
-				по убыванию? <input type="checkbox" name="sort2_desc">
+				по убыванию? <input type="checkbox" id="fields2_desc">
 			</label>
 		</p>
 		<p>
+			<label>Третий уровень:</label>
+			<select id="fields3">
+			</select>
 			<label>
-				Третий уровень:
-				<select name="sort3">
-					<option>Нет</option>
-					<option>Название животного</option>
-					<option>Категория</option>
-					<option>Порода</option>
-					<option>Количество</option>
-					<option>Цена, руб.</option>
-				</select>
-			</label>
-			<label>
-				по убыванию? <input type="checkbox" name="sort3_desc">
+				по убыванию? <input type="checkbox" id="fields3_desc">
 			</label>
 		</p>
-		<input type="submit" value="Сортировать">
+		<input type="button" value="Сортировать">
+		<input type="button" value="Сбросить сортировку">
 	</form>
 </details>
-<table border="1" cellspacing="0" cellpadding="5">
-	<thead align="center">
-	<tr>
-		<th>Название животного</th>
-		<th>Категория</th>
-		<th>Порода</th>
-		<th>Количество</th>
-		<th>Цена, руб.</th>
-		<th>Наличие</th>
-	</tr>
-	</thead>
-	<tbody valign="top">
-	<tr>
-		<td>Щенок Лабрадора-ретривера</td>
-		<td>Собаки</td>
-		<td>Лабрадор-ретривер</td>
-		<td>3</td>
-		<td>35000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Немецкой овчарки</td>
-		<td>Собаки</td>
-		<td>Немецкая овчарка</td>
-		<td>0</td>
-		<td>40000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Щенок Йоркширского терьера</td>
-		<td>Собаки</td>
-		<td>Йоркширский терьер</td>
-		<td>0</td>
-		<td>30000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Щенок Сибирского хаски</td>
-		<td>Собаки</td>
-		<td>Сибирский хаски</td>
-		<td>2</td>
-		<td>45000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Мопса</td>
-		<td>Собаки</td>
-		<td>Мопс</td>
-		<td>4</td>
-		<td>38000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Французского бульдога</td>
-		<td>Собаки</td>
-		<td>Французский бульдог</td>
-		<td>0</td>
-		<td>55000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Щенок Корги</td>
-		<td>Собаки</td>
-		<td>Вельш-корги пемброк</td>
-		<td>0</td>
-		<td>60000</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Чихуахуа</td>
-		<td>Собаки</td>
-		<td>Чихуахуа</td>
-		<td>5</td>
-		<td>25000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Мейн-кун</td>
-		<td>Кошки</td>
-		<td>Мейн-кун</td>
-		<td>2</td>
-		<td>50000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Британской шиншиллы</td>
-		<td>Кошки</td>
-		<td>Британская короткошерстная</td>
-		<td>3</td>
-		<td>45000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Шотландской вислоухой</td>
-		<td>Кошки</td>
-		<td>Скоттиш-фолд</td>
-		<td>0</td>
-		<td>40000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Котенок Сфинкса</td>
-		<td>Кошки</td>
-		<td>Канадский сфинкс</td>
-		<td>1</td>
-		<td>65000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Бенгальской кошки</td>
-		<td>Кошки</td>
-		<td>Бенгальская</td>
-		<td>0</td>
-		<td>70000</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Абиссинской кошки</td>
-		<td>Кошки</td>
-		<td>Абиссинская</td>
-		<td>2</td>
-		<td>48000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Волнистый попугай</td>
-		<td>Птицы</td>
-		<td>Волнистый попугай</td>
-		<td>12</td>
-		<td>1200</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Канарейка</td>
-		<td>Птицы</td>
-		<td>Канарейка</td>
-		<td>0</td>
-		<td>3000</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Попугай Корелла</td>
-		<td>Птицы</td>
-		<td>Корелла</td>
-		<td>8</td>
-		<td>4000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Амадин Гульда</td>
-		<td>Птицы</td>
-		<td>Амадин</td>
-		<td>15</td>
-		<td>2500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Попугай Жако</td>
-		<td>Птицы</td>
-		<td>Жако</td>
-		<td>0</td>
-		<td>90000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Попугай Ара</td>
-		<td>Птицы</td>
-		<td>Ара</td>
-		<td>0</td>
-		<td>150000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Сирийский хомяк</td>
-		<td>Грызуны</td>
-		<td>Сирийский хомяк</td>
-		<td>18</td>
-		<td>500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Морская свинка</td>
-		<td>Грызуны</td>
-		<td>Морская свинка</td>
-		<td>7</td>
-		<td>1500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Декоративный кролик</td>
-		<td>Грызуны</td>
-		<td>Декоративный кролик</td>
-		<td>5</td>
-		<td>2000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Шиншилла</td>
-		<td>Грызуны</td>
-		<td>Шиншилла</td>
-		<td>6</td>
-		<td>4500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Хомяк Джунгарский</td>
-		<td>Грызуны</td>
-		<td>Джунгарский хомяк</td>
-		<td>25</td>
-		<td>400</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Декоративная крыса</td>
-		<td>Грызуны</td>
-		<td>Дамбо</td>
-		<td>11</td>
-		<td>800</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Песчанка</td>
-		<td>Грызуны</td>
-		<td>Монгольская песчанка</td>
-		<td>0</td>
-		<td>600</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Дегу</td>
-		<td>Грызуны</td>
-		<td>Чилийская белка</td>
-		<td>4</td>
-		<td>1800</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Рыбка Гуппи</td>
-		<td>Аквариумистика</td>
-		<td>Гуппи</td>
-		<td>50</td>
-		<td>80</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Рыбка Неон</td>
-		<td>Аквариумистика</td>
-		<td>Неон</td>
-		<td>45</td>
-		<td>100</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Рыбка Петушок</td>
-		<td>Аквариумистика</td>
-		<td>Петушок</td>
-		<td>10</td>
-		<td>450</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Золотая рыбка</td>
-		<td>Аквариумистика</td>
-		<td>Оранда</td>
-		<td>12</td>
-		<td>500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Скалярия</td>
-		<td>Аквариумистика</td>
-		<td>Скалярия обыкновенная</td>
-		<td>20</td>
-		<td>300</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Сом Анциструс</td>
-		<td>Аквариумистика</td>
-		<td>Анциструс</td>
-		<td>0</td>
-		<td>250</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Меченосец</td>
-		<td>Аквариумистика</td>
-		<td>Меченосец</td>
-		<td>30</td>
-		<td>150</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Креветка Вишня</td>
-		<td>Аквариумистика</td>
-		<td>Neocaridina davidi</td>
-		<td>100</td>
-		<td>120</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Улитка Ампулярия</td>
-		<td>Аквариумистика</td>
-		<td>Ампулярия</td>
-		<td>40</td>
-		<td>90</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Красноухая черепаха</td>
-		<td>Рептилии</td>
-		<td>Красноухая черепаха</td>
-		<td>8</td>
-		<td>900</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Игуана зеленая</td>
-		<td>Рептилии</td>
-		<td>Игуана</td>
-		<td>0</td>
-		<td>8000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Бородатая агама</td>
-		<td>Рептилии</td>
-		<td>Агама</td>
-		<td>3</td>
-		<td>7500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Эублефар</td>
-		<td>Рептилии</td>
-		<td>Пятнистый эублефар</td>
-		<td>5</td>
-		<td>5000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Йеменский хамелеон</td>
-		<td>Рептилии</td>
-		<td>Хамелеон</td>
-		<td>0</td>
-		<td>9000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Молочная змея</td>
-		<td>Рептилии</td>
-		<td>Королевская змея Кэмпбелла</td>
-		<td>0</td>
-		<td>8500</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Среднеазиатская черепаха</td>
-		<td>Рептилии</td>
-		<td>Сухопутная черепаха</td>
-		<td>4</td>
-		<td>6000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Хорек (фретка)</td>
-		<td>Другие животные</td>
-		<td>Хорек</td>
-		<td>0</td>
-		<td>12000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Африканский ёж</td>
-		<td>Другие животные</td>
-		<td>Карликовый ёж</td>
-		<td>3</td>
-		<td>7000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Сахарный поссум</td>
-		<td>Другие животные</td>
-		<td>Летающая белка</td>
-		<td>0</td>
-		<td>10000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Аксолотль</td>
-		<td>Земноводные</td>
-		<td>Ambystoma mexicanum</td>
-		<td>6</td>
-		<td>2500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Красноглазая квакша</td>
-		<td>Земноводные</td>
-		<td>Древесная лягушка</td>
-		<td>0</td>
-		<td>3000</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Шпорцевая лягушка</td>
-		<td>Земноводные</td>
-		<td>Xenopus laevis</td>
-		<td>9</td>
-		<td>800</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Паук-птицеед</td>
-		<td>Паукообразные</td>
-		<td>Brachypelma smithi</td>
-		<td>2</td>
-		<td>4500</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Скорпион Императорский</td>
-		<td>Паукообразные</td>
-		<td>Pandinus imperator</td>
-		<td>0</td>
-		<td>5500</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Индийский палочник</td>
-		<td>Насекомые</td>
-		<td>Carausius morosus</td>
-		<td>22</td>
-		<td>300</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Мадагаскарский таракан</td>
-		<td>Насекомые</td>
-		<td>Gromphadorhina portentosa</td>
-		<td>35</td>
-		<td>200</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Таксы</td>
-		<td>Собаки</td>
-		<td>Такса</td>
-		<td>2</td>
-		<td>32000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Пуделя</td>
-		<td>Собаки</td>
-		<td>Той-пудель</td>
-		<td>0</td>
-		<td>48000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Щенок Ротвейлера</td>
-		<td>Собаки</td>
-		<td>Ротвейлер</td>
-		<td>1</td>
-		<td>50000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Бигля</td>
-		<td>Собаки</td>
-		<td>Бигль</td>
-		<td>0</td>
-		<td>42000</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Сиамской кошки</td>
-		<td>Кошки</td>
-		<td>Сиамская</td>
-		<td>3</td>
-		<td>35000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Рэгдолл</td>
-		<td>Кошки</td>
-		<td>Рэгдолл</td>
-		<td>0</td>
-		<td>55000</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Попугай Розелла</td>
-		<td>Птицы</td>
-		<td>Пёстрая розелла</td>
-		<td>4</td>
-		<td>8000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Хомяк Роборовского</td>
-		<td>Грызуны</td>
-		<td>Карликовый хомяк</td>
-		<td>16</td>
-		<td>700</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Рыбка Данио</td>
-		<td>Аквариумистика</td>
-		<td>Данио-рерио</td>
-		<td>60</td>
-		<td>90</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Тритон Испанский</td>
-		<td>Земноводные</td>
-		<td>Иглистый тритон</td>
-		<td>0</td>
-		<td>1200</td>
-		<td>Нет в наличии</td>
-	</tr>
-	<tr>
-		<td>Богомол</td>
-		<td>Насекомые</td>
-		<td>Орхидейный богомол</td>
-		<td>0</td>
-		<td>1500</td>
-		<td>Под заказ</td>
-	</tr>
-	<tr>
-		<td>Краб Радужный</td>
-		<td>Ракообразные</td>
-		<td>Cardisoma armatum</td>
-		<td>5</td>
-		<td>2200</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Щенок Шпица</td>
-		<td>Собаки</td>
-		<td>Померанский шпиц</td>
-		<td>2</td>
-		<td>58000</td>
-		<td>В наличии</td>
-	</tr>
-	<tr>
-		<td>Котенок Мейн-кун (черный)</td>
-		<td>Кошки</td>
-		<td>Мейн-кун</td>
-		<td>1</td>
-		<td>52000</td>
-		<td>В наличии</td>
-	</tr>
-	</tbody>
-</table>
+	<table border="1" cellspacing="0" cellpadding="5" id="list">
+	</table>
 </body>
 </html>
