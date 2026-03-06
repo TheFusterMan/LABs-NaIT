@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/CSS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/JavaScript/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/JavaScript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/Resources/d3.v7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -84,11 +88,11 @@
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 1\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_D3\Resources" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_D3\JavaScript" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 1" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\src\pages" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\practicum_pug\src" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\practicum_pug" />
     </key>
   </component>
   <component name="RunManager">
@@ -230,7 +234,9 @@
       <workItem from="1772540783525" duration="1000" />
       <workItem from="1772702144807" duration="234000" />
       <workItem from="1772769952333" duration="56000" />
-      <workItem from="1772779786022" duration="193000" />
+      <workItem from="1772779786022" duration="611000" />
+      <workItem from="1772785967831" duration="84000" />
+      <workItem from="1772786595496" duration="4072000" />
     </task>
     <servers />
   </component>
@@ -243,5 +249,17 @@
     <option featureType="dependencySupport" implementationName="javascript:npm:webpack" />
     <option featureType="dependencySupport" implementationName="javascript:npm:pug" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.styl" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/data.js</url>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
