@@ -6,40 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 1/Task 1/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 1/Task 1/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/JavaScript/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/JavaScript/filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/JavaScript/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/JavaScript/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/JavaScript/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/bear.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/cat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/dog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/dolphine.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/eagle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/elephant.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/lion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/monkey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/tiger.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/articles/wolf.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/bear.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/cat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/dolphine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/eagle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/elephant.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/lion.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/monkey.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/tiger.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/img/wolf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1 json/list.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/JavaScript/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 1/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 1/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +223,14 @@
       <workItem from="1772405102941" duration="1707000" />
       <workItem from="1772455747479" duration="6889000" />
       <workItem from="1772510970103" duration="63000" />
-      <workItem from="1772512509566" duration="5088000" />
+      <workItem from="1772512509566" duration="5152000" />
+      <workItem from="1772518448808" duration="815000" />
+      <workItem from="1772520928748" duration="719000" />
+      <workItem from="1772536439459" duration="1000" />
+      <workItem from="1772540783525" duration="1000" />
+      <workItem from="1772702144807" duration="234000" />
+      <workItem from="1772769952333" duration="56000" />
+      <workItem from="1772779786022" duration="193000" />
     </task>
     <servers />
   </component>
