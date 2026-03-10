@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/JavaScript/path.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/JavaScript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/JavaScript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.D3 HW.executor": "Run",
     "JavaScript Debug.PractD3.executor": "Run",
     "JavaScript Debug.index.htm.executor": "Run",
     "JavaScript Debug.index.html (1).executor": "Run",
@@ -94,8 +92,8 @@
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\src\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.PractD3">
-    <configuration name="PractD3" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/LABs-NaIT/Semester 2/Practices/practicum_D3/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.D3 HW">
+    <configuration name="D3 HW" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/LABs-NaIT/Semester 2/Practices/Task 2/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Task 2.1/index.html" useBuiltInWebServerPort="true">
@@ -108,14 +106,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.PractD3" />
+      <item itemvalue="JavaScript Debug.D3 HW" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
       <item itemvalue="JavaScript Debug.index.html (3)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.PractD3" />
+        <item itemvalue="JavaScript Debug.D3 HW" />
         <item itemvalue="JavaScript Debug.index.html (3)" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
@@ -243,6 +241,7 @@
       <workItem from="1772785967831" duration="84000" />
       <workItem from="1772786595496" duration="4072000" />
       <workItem from="1773108657232" duration="9936000" />
+      <workItem from="1773124197455" duration="7219000" />
     </task>
     <servers />
   </component>
