@@ -7,32 +7,63 @@
     <script src="Resources/d3.v7.min.js"> </script>
     <script src="JavaScript/main.js"></script>
     <script src="JavaScript/image.js"></script>
+    <script src="JavaScript/path.js"></script>
 </head>
 <body>
     <form id="setting">
-        <p>Координаты рисунка<br>
+        <p id="paths_settings" style="display: none">Пути перемещения<br>
+            <select>
+                <option>Буквой «Г»</option>
+                <option>По кругу</option>
+            </select>
+        </p>
+
+        <p id="coords_settings">Координаты рисунка<br>
             <label for="cx">x: </label>
-            <input type="number" id="cx" value="100" max="600" min="0"><br>
+            <input type="number" id="cx" value="300" max="600" min="0">
+            <span id="cx_expand" style="display: none">до <input type="number" id="cx_finish" value="550" max="600" min="0"></span>
+            <br>
             <label for="cy">y: </label>
-            <input type="number" id="cy" value="100" max="600" min="0">
+            <input type="number" id="cy" value="300" max="600" min="0">
+            <span id="cy_expand" style="display: none">до <input type="number" id="cy_finish" value="550" max="600" min="0"></span>
         </p>
 
-        <p>Масштаб<br>
+        <p id="scale_settings">Масштаб<br>
             <label for="sx">по x: </label>
-            <input type="number" id="sx" value="2" max="600" min="0"><br>
+            <input type="number" id="sx" value="1" max="600" min="0">
+            <span id="sx_expand" style="display: none">до <input type="number" id="sx_finish" value="1.5" max="600" min="0"></span>
+            <br>
             <label for="sy">по y: </label>
-            <input type="number" id="sy" value="2" max="600" min="0">
+            <input type="number" id="sy" value="1" max="600" min="0">
+            <span id="sy_expand" style="display: none">до <input type="number" id="sy_finish" value="1.5" max="600" min="0"></span>
         </p>
 
-        <p>Поворот<br>
+        <p id="rotation_settings">Поворот<br>
             <label for="ang">угол: </label>
-            <input type="number" id="ang" value="180" max="360" min="0"><br>
+            <input type="number" id="ang" value="0" max="360" min="0">
+            <span id="ang_expand" style="display: none">до <input type="number" id="ang_finish" value="180" max="360" min="0"></span>
+            <br>
         </p>
+
+        <input type="button" value="Нарисовать">
+        <input type="button" value="Очистить">
 
         <p>
-            <input type="button" value="Нарисовать">
-            <input type="button" value="Очистить">
+            <input type="checkbox" id="animation"></input>
+            Включить анимацию?
+            <span id="animation_expand" style="display: none">
+                <select id="animations_types_select">
+                    <option>linear</option>
+                    <option>elastic</option>
+                    <option>bounce</option>
+                </select>
+                <br>
+                <input type="checkbox" id="path_animation"></input>
+                Перемещение вдоль пути?
+            </span>
         </p>
+
+        <input type="button" value="Анимировать" style="display: none">
     </form>
 
 
