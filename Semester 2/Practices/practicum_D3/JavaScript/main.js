@@ -69,7 +69,7 @@ const runAnimation = (dataForm) => {
 }
 
 const enableAnimsFields = (isChecked, drawButton, animateButton, pathAnimCheckbox) => {
-    expandIds = ['cx_expand', 'cy_expand', 'sx_expand', 'sy_expand', 'ang_expand', 'animation_expand'];
+    const expandIds = ['cx_expand', 'cy_expand', 'sx_expand', 'sy_expand', 'ang_expand', 'animation_expand'];
 
     if (isChecked) {
         expandIds.forEach(id => document.getElementById(id).style.display = '');

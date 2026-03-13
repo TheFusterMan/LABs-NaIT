@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/Resources/d3.v7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 2/t6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Class Task 2/Resources/d3.v7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Class Task 2/t1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Class Task 2/t1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 2/JavaScript/path.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 2/JavaScript/path.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/JavaScript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/JavaScript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,6 +68,10 @@
     "JavaScript Debug.index.html (3).executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.list.html.executor": "Run",
+    "JavaScript Debug.t1.html.executor": "Run",
+    "JavaScript Debug.t3.html.executor": "Run",
+    "JavaScript Debug.t4.html.executor": "Run",
+    "JavaScript Debug.t5.html.executor": "Run",
     "Node.js.code.js.executor": "Run",
     "Node.js.index.js.executor": "Run",
     "Node.js.main.js.executor": "Run",
@@ -64,7 +87,7 @@
     "Node.js.t9.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/practicum_D3/index.html",
+    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/Class Task 2",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,21 +101,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Class Task 2" />
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 2" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 1" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 3" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 2" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 1" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 1\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 2" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_D3\Resources" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_D3\JavaScript" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 1" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Task 4.5 CW\src\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.D3 HW">
+  <component name="RunManager">
     <configuration name="D3 HW" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/LABs-NaIT/Semester 2/Practices/Task 2/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -241,7 +264,14 @@
       <workItem from="1772785967831" duration="84000" />
       <workItem from="1772786595496" duration="4072000" />
       <workItem from="1773108657232" duration="9936000" />
-      <workItem from="1773124197455" duration="7219000" />
+      <workItem from="1773124197455" duration="7344000" />
+      <workItem from="1773206070498" duration="4642000" />
+      <workItem from="1773219687201" duration="6629000" />
+      <workItem from="1773294622150" duration="820000" />
+      <workItem from="1773310862493" duration="3000" />
+      <workItem from="1773372228949" duration="654000" />
+      <workItem from="1773388375332" duration="4000" />
+      <workItem from="1773390540865" duration="2419000" />
     </task>
     <servers />
   </component>

@@ -3,8 +3,6 @@ function createPath() {
     const width = svg.attr("width")
     const height = svg.attr("height")
     let data = [];
-    // используем параметрическую форму описания круга
-    // центр расположен в центре svg-элемента, а радиус равен трети высоты/ширины
     const r = 100;
     const xOffset = 600;
     const yOffset = 600;
