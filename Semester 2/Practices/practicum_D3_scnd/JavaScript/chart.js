@@ -17,12 +17,15 @@ function createArrGraph(data, key) {
 
 function drawGraph(data) {
     // значения по оси ОХ
-    const xKeysSelect = document.getElementById("x_keys")
-    const keyX = xKeysSelect.value;
+    const keyX = document.querySelector('input[name="axis_selection"]:checked').value;
+    console.log(keyX);
 
     // создаем массив для построения графика
     let arrGraph = createArrGraph(data, keyX);
-    arrGraph.sort((a, b) => a.labelX <= b.labelX ? -1 : 1);
+
+    if (keyX === "Год") {
+        arrGraph.sort((a, b) => a.labelX <= b.labelX ? -1 : 1);
+    }
 
     const svg = d3.select("svg")
     svg.selectAll('*').remove();

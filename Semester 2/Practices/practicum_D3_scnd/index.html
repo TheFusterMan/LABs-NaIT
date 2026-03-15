@@ -12,12 +12,33 @@
 <body>
     <h3>Список самых высоких зданий</h3>
 
+    <p>Значение по оси OX</p>
+
+    <input type="radio" id="country" name="axis_selection" value="Страна" checked>
+    <label for="country">Страна</label><br>
+
+    <input type="radio" id="year" name="axis_selection" value="Год">
+    <label for="year">Год</label><br>
+
+    <p>Значение по оси OY</p>
+
+    <input type="checkbox" id="max_height" checked>
+    <label for="max_height">Максимальная высота</label><br>
+
+    <input type="checkbox" id="min_height">
+    <label for="min_height">Минимальная высота</label><br>
+
+    <br>
+    <label for="type">Тип графика</label>
+    <select id="type">
+        <option>Точечная диаграмма</option>
+        <option>Гистограмма</option>
+    </select>
+    <br><br>
+
+    <input type="button" value="Построить"><br>
+
     <svg></svg><br>
-    <label for="max_height">Отображать максимальные высоты:</label>
-    <input type="checkbox" id="max_height" checked><br>
-    <label for="min_height">Отображать минимальныые высоты:</label>
-    <input type="checkbox" id="min_height"><br>
-    <select id="x_keys"></select>
 
     <br>
 
