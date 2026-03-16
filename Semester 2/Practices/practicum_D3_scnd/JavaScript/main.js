@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    drawGraph(buildings);
+    const dataForm = document.getElementById("settings");
+
+    drawGraph(buildings, dataForm);
     showTable('build', buildings);
 
     const buildButton = document.querySelector('input[value="Построить"]');
     buildButton.addEventListener('click', () => {
-        drawGraph(buildings);
+        drawGraph(buildings, dataForm);
     })
 
     const table = document.getElementById('build');

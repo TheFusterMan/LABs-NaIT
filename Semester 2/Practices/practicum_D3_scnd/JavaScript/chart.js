@@ -3,7 +3,6 @@
 //   key - поле, по которому осуществляется группировка
 
 function createArrGraph(data, key) {
-
     const groupObj = d3.group(data, d => d[key]);
 
     let arrGraph = [];
@@ -15,10 +14,9 @@ function createArrGraph(data, key) {
     return arrGraph;
 }
 
-function drawGraph(data) {
+function drawGraph(data, dataForm) {
     // значения по оси ОХ
     const keyX = document.querySelector('input[name="axis_selection"]:checked').value;
-    console.log(keyX);
 
     // создаем массив для построения графика
     let arrGraph = createArrGraph(data, keyX);
@@ -38,17 +36,35 @@ function drawGraph(data) {
         marginY: 50
     }
 
+    const isMaxHeight = dataForm.querySelector("#max_height").checked;
+    const isMinHeight = dataForm.querySelector("#min_height").checked;
+    let whichToShow = (isMaxHeight && isMinHeight) ? "both" : (isMinHeight ? "min" : (isMaxHeight ? "max" : ""));
+
     // создаем шкалы преобразования и выводим оси
-    const [scX, scY] = createAxis(svg, arrGraph, attr_area);
+    const [scX, scY] = createAxis(svg, arrGraph, attr_area, whichToShow);
 
     // рисуем график
-    createChart(svg, arrGraph, scX, scY, attr_area)
+    if(isMaxHeight) {
+        createChart(svg, arrGraph, scX, scY, attr_area, "red", true)
+    }
+    if(isMinHeight) {
+        createChart(svg, arrGraph, scX, scY, attr_area, "blue", false)
+    }
 }
 
-function createAxis(svg, data, attr_area){
+function createAxis(svg, data, attr_area, show_min_max) {
     // находим интервал значений, которые нужно отложить по оси OY
     // максимальное и минимальное значение и максимальных высот по каждой стране
-    const [min, max] = d3.extent(data.map(d => d.values[1]));
+    let values = [];
+
+    if (["min", "both"].includes(show_min_max)) {
+        values = values.concat(data.map(d => d.values[0]));
+    }
+    if (["max", "both"].includes(show_min_max)) {
+        values = values.concat(data.map(d => d.values[1]));
+    }
+
+    const [min, max] = d3.extent(values);
 
     // функция интерполяции значений на оси
     // по оси ОХ текстовые значения
@@ -82,35 +98,16 @@ function createAxis(svg, data, attr_area){
     return [scaleX, scaleY]
 }
 
-function createChart(svg, data, scaleX, scaleY, attr_area) {
+function createChart(svg, data, scaleX, scaleY, attr_area, color, is_max) {
     const r = 4;
 
-    const maxHeightCheckbox = document.getElementById("max_height");
-    const minHeightCheckbox = document.getElementById("min_height");
-
-    if (maxHeightCheckbox.checked) {
-        const dots = svg.selectAll(".dot")
-            .data(data)
-            .enter()
-            .append("circle")
-            .attr("r", r)
-            .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
-            .attr("cy", d => scaleY(d.values[1]))
-            .attr("transform", `translate(${attr_area.marginX}, ${attr_area.marginY})`)
-            .style("fill", "red")
-    }
-
-    if (minHeightCheckbox.checked) {
-        const dots = svg.selectAll(".dot")
-            .data(data)
-            .enter()
-            .append("circle")
-            .attr("r", r)
-            .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
-            .attr("cy", d => scaleY(d.values[0]))
-            .attr("transform", `translate(${attr_area.marginX}, ${attr_area.marginY})`)
-            .style("fill", "blue")
-
-        dots.sort(compareByYear);
-    }
+    const dots = svg.selectAll(".dot")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("r", r)
+        .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
+        .attr("cy", d => scaleY(d.values[is_max ? 1 : 0]))
+        .attr("transform", `translate(${attr_area.marginX}, ${attr_area.marginY})`)
+        .style("fill", color)
 }
