@@ -2,12 +2,12 @@
 //   data - исходный массив (например, buildings)
 //   key - поле, по которому осуществляется группировка
 
-function createArrGraph(data, key) {
-    const groupObj = d3.group(data, d => d[key]);
+function createArrGraph(data, keyX, keyY) {
+    const groupObj = d3.group(data, d => d[keyX]);
 
     let arrGraph = [];
     for(let entry of groupObj) {
-        const minMax = d3.extent(entry[1].map(d => d['Высота']));
+        const minMax = d3.extent(entry[1].map(d => d[keyY]));
         arrGraph.push({labelX : entry[0], values : minMax});
     }
 
@@ -16,14 +16,11 @@ function createArrGraph(data, key) {
 
 function drawGraph(data, dataForm) {
     // значения по оси ОХ
-    const keyX = document.querySelector('input[name="axis_selection"]:checked').value;
+    const keyX = document.querySelector('input[name="x_values"]:checked').value;
+    const keyY = document.querySelector('input[name="y_values"]:checked').value;
 
     // создаем массив для построения графика
-    let arrGraph = createArrGraph(data, keyX);
-
-    if (keyX === "Год") {
-        arrGraph.sort((a, b) => a.labelX <= b.labelX ? -1 : 1);
-    }
+    let arrGraph = createArrGraph(data, keyX, keyY);
 
     const svg = d3.select("svg")
     svg.selectAll('*').remove();
@@ -33,42 +30,35 @@ function drawGraph(data, dataForm) {
         width: parseFloat(svg.style('width')),
         height: parseFloat(svg.style('height')),
         marginX: 50,
-        marginY: 50
+        marginY: 100
     }
-
-    const isMaxHeight = dataForm.querySelector("#max_height").checked;
-    const isMinHeight = dataForm.querySelector("#min_height").checked;
-    let whichToShow = (isMaxHeight && isMinHeight) ? "both" : (isMinHeight ? "min" : (isMaxHeight ? "max" : ""));
-
-    const selectedOption = dataForm.querySelector("#type").value;
 
     // создаем шкалы преобразования и выводим оси
-    const [scX, scY] = createAxis(svg, arrGraph, attr_area, whichToShow);
+    const [scX, scY] = createAxis(svg, arrGraph, attr_area, ["max", "min"]);
+
+    const collorsForOptions = {
+        "max": "red",
+        "avg": "yellow",
+        "min": "blue",
+    }
 
     // рисуем график или гистограмму
-    if(isMaxHeight) {
-        (selectedOption === "Точечная диаграмма")
-            ? createChart(svg, arrGraph, scX, scY, attr_area, "red", true)
-            : createHistogram(svg, arrGraph, scX, scY, attr_area, "red", true)
-    }
-    if(isMinHeight) {
-        (selectedOption === "Точечная диаграмма")
-            ? createChart(svg, arrGraph, scX, scY, attr_area, "blue", false)
-            : createHistogram(svg, arrGraph, scX, scY, attr_area, "blue", false)
-    }
+    createChart(svg, arrGraph, scX, scY, attr_area, collorsForOptions["min"], true);
+    createHistogram(svg, arrGraph, scX, scY, attr_area, collorsForOptions["min"], true);
 }
 
-function createAxis(svg, data, attr_area, show_min_max) {
+function createAxis(svg, data, attr_area, options_to_show) {
     // находим интервал значений, которые нужно отложить по оси OY
     // максимальное и минимальное значение и максимальных высот по каждой стране
     let values = [];
 
-    if (["min", "both"].includes(show_min_max)) {
+    if (options_to_show.includes("min")) {
         values = values.concat(data.map(d => d.values[0]));
     }
-    if (["max", "both"].includes(show_min_max)) {
+    if (options_to_show.includes("max")) {
         values = values.concat(data.map(d => d.values[1]));
     }
+
 
     const [min, max] = d3.extent(values);
 

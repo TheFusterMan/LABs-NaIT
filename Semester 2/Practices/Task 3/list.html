@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ассортимент зоомагазина</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="JavaScript/data.js"></script>
+	<script src="JavaScript/main.js"></script>
+	<script src="JavaScript/table.js"></script>
+	<script src="JavaScript/filter.js"></script>
+	<script src="JavaScript/sort.js"></script>
+	<script src="JavaScript/chart.js"></script>
+	<script src="Resources/d3.v7.min.js"></script>
+</head>
+<body>
+<p>
+	<a href="index.html">Самые популярные животные</a><br>
+	<b><big><a href="list.html">Каталог животных</a></big></b>
+</p>
+<hr>
+<details open>
+	<summary>График</summary>
+	<form id="graph_settings">
+		<p><b>Значение по оси OX</b></p>
+		<p>
+			<label><input type="radio" name="x_values" value="Категория" checked> Категория</label><br>
+			<label><input type="radio" name="x_values" value="Порода"> Порода</label>
+		</p>
+		<p><b>Значение по оси OY</b></p>
+		<p>
+			<label><input type="radio" name="y_values" value="Количество" checked> Количество</label><br>
+			<label><input type="radio" name="y_values" value="Цена, руб."> Цена</label>
+		</p>
+		<p><b>Результат</b></p>
+		<p>
+			<label><input type="checkbox">Максимальное значение</label><br>
+			<label><input type="checkbox">Среднее значение</label><br>
+			<label><input type="checkbox">Минимальное значение</label><br>
+		</p>
+		<input type="button" value="Построить">
+	</form>
+	<svg></svg>
+</details>
+
+<details>
+	<summary>Фильтр</summary>
+	<form id="filter">
+		<p>
+			<label for="animal_name">Название животного: </label>
+			<input type="text" id="animal_name">
+		</p>
+		<p>
+			<label for="category">Категория: </label>
+			<input type="text" id="category">
+		</p>
+		<p>
+			<label for="breed">Порода: </label>
+			<input type="text" id="breed">
+		</p>
+		<p>
+			<label for="breed">Наличие: </label>
+			<input type="text" id="availability">
+		</p>
+		<p>
+			<label>Количество:</label>
+			от <input type="number" size="8" id="quantityFrom">
+			до <input type="number" size="8" id="quantityTo">
+		</p>
+		<p>
+			<label>Цена, руб: </label>
+			от <input type="number" size="8" id="priceFrom">
+			до <input type="number" size="8" id="priceTo">
+		</p>
+		<input type="button" value="Найти">
+		<input type="button" value="Очистить фильтры">
+	</form>
+</details>
+
+<details>
+	<summary>Сортировка</summary>
+	<form id="sort">
+		<p>
+			<label>Первый уровень:</label>
+			<select id="fields1">
+			</select>
+
+			<label>
+				по убыванию? <input type="checkbox" id="fields1_desc">
+			</label>
+		</p>
+		<p>
+			<label>Второй уровень:</label>
+			<select id="fields2">
+			</select>
+			<label>
+				по убыванию? <input type="checkbox" id="fields2_desc">
+			</label>
+		</p>
+		<p>
+			<label>Третий уровень:</label>
+			<select id="fields3">
+			</select>
+			<label>
+				по убыванию? <input type="checkbox" id="fields3_desc">
+			</label>
+		</p>
+		<input type="button" value="Сортировать">
+		<input type="button" value="Сбросить сортировку">
+	</form>
+</details>
+	<table border="1" cellspacing="0" cellpadding="5" id="list">
+	</table>
+</body>
+</html>

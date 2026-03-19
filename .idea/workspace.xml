@@ -5,9 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/CSS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/JavaScript/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/JavaScript/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/JavaScript/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/JavaScript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/JavaScript/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/JavaScript/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/Resources/d3.v7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/bear.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/cat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/dog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/dolphine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/eagle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/elephant.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/lion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/monkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/tiger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/articles/wolf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/bear.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/dog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/dolphine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/eagle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/elephant.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/lion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/monkey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/tiger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/img/wolf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 3/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/JavaScript/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/JavaScript/chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/JavaScript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/JavaScript/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_D3_scnd/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,56 +71,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.D3 HW.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.PractD3.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.htm.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (3).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.list.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t1.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t3.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t4.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t5.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.code.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t1.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t10.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t2.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t3.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t4.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t5.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t5_alt.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t6.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t9.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/practicum_D3_scnd/index.html&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.D3 HW.executor": "Run",
+    "JavaScript Debug.PractD3.executor": "Run",
+    "JavaScript Debug.index.htm.executor": "Run",
+    "JavaScript Debug.index.html (1).executor": "Run",
+    "JavaScript Debug.index.html (2).executor": "Run",
+    "JavaScript Debug.index.html (3).executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.list.html.executor": "Run",
+    "JavaScript Debug.t1.html.executor": "Run",
+    "JavaScript Debug.t3.html.executor": "Run",
+    "JavaScript Debug.t4.html.executor": "Run",
+    "JavaScript Debug.t5.html.executor": "Run",
+    "Node.js.code.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "Node.js.script.js.executor": "Run",
+    "Node.js.t1.js.executor": "Run",
+    "Node.js.t10.js.executor": "Run",
+    "Node.js.t2.js.executor": "Run",
+    "Node.js.t3.js.executor": "Run",
+    "Node.js.t4.js.executor": "Run",
+    "Node.js.t5.js.executor": "Run",
+    "Node.js.t5_alt.js.executor": "Run",
+    "Node.js.t6.js.executor": "Run",
+    "Node.js.t9.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/Task 3",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 3" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_D3_scnd" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Class Task 2" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 2" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 1" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\FW\Task 3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 2" />
@@ -101,12 +131,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Semester 2/Practices/practicum_D3_scnd/index.html" useBuiltInWebServerPort="true">
+    <configuration name="list.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Semester 2/Practices/Task 3/list.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.list.html" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +274,9 @@
       <workItem from="1773458706493" duration="4715000" />
       <workItem from="1773468804781" duration="16000" />
       <workItem from="1773584090868" duration="1609000" />
-      <workItem from="1773644529674" duration="2963000" />
+      <workItem from="1773644529674" duration="3119000" />
+      <workItem from="1773708769184" duration="1000" />
+      <workItem from="1773898996588" duration="7906000" />
     </task>
     <servers />
   </component>
