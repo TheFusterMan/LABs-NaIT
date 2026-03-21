@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
     const dataForm = document.getElementById("settings");
 
+    const clearStyle = (e) => {
+        e.target.style.outline = "none";
+    }
+
+    const maxHeightCheckbox = dataForm.querySelector("#max_height");
+    maxHeightCheckbox.addEventListener("change", (e) => {
+        e.target.style.outline = "none";
+    });
+    const minHeightCheckbox = dataForm.querySelector("#min_height");
+    minHeightCheckbox.addEventListener("change", (e) => {
+        e.target.style.outline = "none";
+    });
+
     drawGraph(buildings, dataForm);
     showTable('build', buildings);
 

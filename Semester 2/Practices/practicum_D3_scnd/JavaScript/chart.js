@@ -36,8 +36,23 @@ function drawGraph(data, dataForm) {
         marginY: 50
     }
 
-    const isMaxHeight = dataForm.querySelector("#max_height").checked;
-    const isMinHeight = dataForm.querySelector("#min_height").checked;
+
+    const svgNode = svg.nodes()[0];
+    const maxHeightCheckbox = dataForm.querySelector("#max_height");
+    const minHeightCheckbox = dataForm.querySelector("#min_height");
+    const isMaxHeight = maxHeightCheckbox.checked;
+    const isMinHeight = minHeightCheckbox.checked;
+
+    if(!isMaxHeight && !isMinHeight) {
+        console.log(maxHeightCheckbox);
+        maxHeightCheckbox.style.outline = "2px solid red";
+        minHeightCheckbox.style.outline = "2px solid red";
+        svgNode.style.display = "none";
+        return;
+    } else {
+        svgNode.style.display = "block";
+    }
+
     let whichToShow = (isMaxHeight && isMinHeight) ? "both" : (isMinHeight ? "min" : (isMaxHeight ? "max" : ""));
 
     const selectedOption = dataForm.querySelector("#type").value;
@@ -113,13 +128,22 @@ function createChart(svg, data, scaleX, scaleY, attr_area, color, is_max) {
         .append("circle")
         .attr("r", r)
         .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
-        .attr("cy", d => scaleY(d.values[is_max ? 1 : 0]))
+        .attr("cy", d => {
+            let yPos = scaleY(d.values[is_max ? 1 : 0])
+
+            console.log(d.values)
+            if (d.values[0] === d.values[1]) {
+                yPos += is_max ? -r / 4 : r / 4
+            }
+
+            return yPos;
+        })
         .attr("transform", `translate(${attr_area.marginX}, ${attr_area.marginY})`)
         .style("fill", color)
 }
 
 function createHistogram(svg, data, scaleX, scaleY, attr_area, color, is_max) {
-    const w = 4;
+    const w = 8;
 
     const rects = svg.selectAll(".rects")
         .data(data)
