@@ -29,5 +29,5 @@ function drawSmile(svg) {
         .attr("d", arc({startAngle: Math.PI /3 * 2, endAngle: Math.PI/3 * 4}))
         .style("stroke", "brown")
 
-    return smile
+    return smile;
 }

@@ -27,13 +27,13 @@ const runAnimation = () => {
     pict.attr("transform", `translate(${halfWidth},${halfHeight}) scale(${1}, ${1})`)
         .attr("opacity", 1)
         .transition()
-        .duration(1000)
+        .duration(3000)
         .attr("transform", `translate(${halfWidth},${halfHeight}) scale(${10}, ${10})`)
         .attr("opacity", 0)
-        .on("end", () => explodeCircle(svg, halfWidth, halfHeight));
+        .on("end", () => splitCircle(svg, halfWidth, halfHeight));
 }
 
-const explodeCircle = (svg, halfWidth, halfHeight) => {
+const splitCircle = (svg, halfWidth, halfHeight) => {
     clear(svg);
     const getRandomNumber = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;

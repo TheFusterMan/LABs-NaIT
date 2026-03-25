@@ -8,7 +8,8 @@ function createArrGraph(data, keyX, keyY) {
     let arrGraph = [];
     for(let entry of groupObj) {
         const minMax = d3.extent(entry[1].map(d => d[keyY]));
-        arrGraph.push({labelX : entry[0], values : minMax});
+        let minMaxAvg = [...minMax, (minMax[0] + minMax[1]) / 2];
+        arrGraph.push({labelX : entry[0], values : minMaxAvg});
     }
 
     return arrGraph;
@@ -42,9 +43,44 @@ function drawGraph(data, dataForm) {
         "min": "blue",
     }
 
-    // рисуем график или гистограмму
-    createChart(svg, arrGraph, scX, scY, attr_area, collorsForOptions["min"], true);
-    createHistogram(svg, arrGraph, scX, scY, attr_area, collorsForOptions["min"], true);
+    let maxCheckbox = dataForm.querySelector('input[value="max"]');
+    let avgCheckbox = dataForm.querySelector('input[value="avg"]');
+    let minCheckbox = dataForm.querySelector('input[value="min"]');
+
+    let checkboxes = [maxCheckbox, avgCheckbox, minCheckbox];
+    let selectedOptions = checkboxes.filter(d => d.checked).map(d => d.value);
+
+    let svgNode = svg.nodes()[0];
+
+    if (selectedOptions.length === 0) {
+        checkboxes.forEach(checkbox => {
+            checkbox.style.outline = "2px solid red";
+        });
+        svgNode.style.display = "none";
+    } else {
+        svgNode.style.display = "block";
+    }
+
+    let type = dataForm.querySelector("#type").value;
+
+    switch(type) {
+        case "dots":
+            selectedOptions.forEach(option => {
+                createChart(svg, arrGraph, scX, scY, attr_area, collorsForOptions[option], option);
+            });
+            break;
+        case "column":
+            selectedOptions.forEach(option => {
+                createHistogram(svg, arrGraph, scX, scY, attr_area, collorsForOptions[option], option);
+            });
+            break;
+        case "graph":
+            selectedOptions.forEach(option => {
+                createPath(svg, arrGraph, scX, scY, attr_area, collorsForOptions[option], option);
+                createChart(svg, arrGraph, scX, scY, attr_area, collorsForOptions[option], option);
+            });
+            break;
+    }
 }
 
 function createAxis(svg, data, attr_area, options_to_show) {
@@ -94,8 +130,10 @@ function createAxis(svg, data, attr_area, options_to_show) {
     return [scaleX, scaleY]
 }
 
-function createChart(svg, data, scaleX, scaleY, attr_area, color, is_max) {
+function createChart(svg, data, scaleX, scaleY, attr_area, color, option) {
     const r = 4;
+
+    let value_type = option === "max" ? 1 : option === "min" ? 0 : 2;
 
     const dots = svg.selectAll(".dot")
         .data(data)
@@ -103,22 +141,52 @@ function createChart(svg, data, scaleX, scaleY, attr_area, color, is_max) {
         .append("circle")
         .attr("r", r)
         .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
-        .attr("cy", d => scaleY(d.values[is_max ? 1 : 0]))
+        .attr("cy", d => scaleY(d.values[value_type]) + (
+            (d.values[0] === d.values[1] && option !== "avg")
+            ? (option === "max") ? -r : r
+            : 0
+        ))
         .attr("transform", `translate(${attr_area.marginX}, ${attr_area.marginY})`)
         .style("fill", color)
 }
 
-function createHistogram(svg, data, scaleX, scaleY, attr_area, color, is_max) {
+function createPath(svg, data, scaleX, scaleY, attr_area, color, option) {
+    const collisionOffset = 4;
+    const line_width = "2";
+    let value_type = option === "max" ? 1 : option === "min" ? 0 : 2;
+
+    const line = d3.line()
+        .x(d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
+        .y(d => scaleY(d.values[value_type]) + (
+            (d.values[0] === d.values[1] & option !== "avg")
+            ? (option === "max") ? -collisionOffset : collisionOffset
+            : 0
+        ));
+
+    svg.append("path")
+        .datum(data)
+        .attr("d", line)
+        .attr("transform", `translate(${attr_area.marginX}, ${attr_area.marginY})`)
+        .style("stroke-width", line_width)
+        .style("stroke", color)
+}
+
+function createHistogram(svg, data, scaleX, scaleY, attr_area, color, option) {
     const w = 4;
+
+    let x_offset = option !== "avg"
+        ? option === "max" ? -w : w
+        : 0;
+    let value_type = option === "max" ? 1 : option === "min" ? 0 : 2;
 
     const rects = svg.selectAll(".rects")
         .data(data)
         .enter()
         .append("rect")
-        .attr("x", d => scaleX(d.labelX) + scaleX.bandwidth() / 2 - (is_max ? 0 : w))
-        .attr("y", d => scaleY(d.values[is_max ? 1 : 0]))
+        .attr("x", d => scaleX(d.labelX) + scaleX.bandwidth() / 2 - x_offset)
+        .attr("y", d => scaleY(d.values[value_type]))
         .attr("width", w)
-        .attr("height", d => attr_area.height - scaleY(d.values[is_max ? 1 : 0]) - 2 * attr_area.marginY)
+        .attr("height", d => attr_area.height - scaleY(d.values[value_type]) - 2 * attr_area.marginY)
         .attr("transform", `translate(${attr_area.marginX}, ${attr_area.marginY})`)
         .style("fill", color)
 }

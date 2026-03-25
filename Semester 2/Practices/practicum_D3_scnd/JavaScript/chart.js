@@ -44,7 +44,6 @@ function drawGraph(data, dataForm) {
     const isMinHeight = minHeightCheckbox.checked;
 
     if(!isMaxHeight && !isMinHeight) {
-        console.log(maxHeightCheckbox);
         maxHeightCheckbox.style.outline = "2px solid red";
         minHeightCheckbox.style.outline = "2px solid red";
         svgNode.style.display = "none";

@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
     const dataForm = document.getElementById("graph_settings");
 
+    const maxCheckbox = dataForm.querySelector('input[value="max"]');
+    const avgCheckbox = dataForm.querySelector('input[value="avg"]');
+    const minCheckbox = dataForm.querySelector('input[value="min"]');
+
+    let checkboxes = [maxCheckbox, avgCheckbox, minCheckbox];
+
+    checkboxes.forEach(d => {
+        d.addEventListener("change", () => {
+            checkboxes.forEach(d => {
+                d.style.outline = "none";
+            });
+        })
+    });
+
     drawGraph(animals, dataForm);
 
     const buildButton = dataForm.querySelector('input[value="Построить"]');

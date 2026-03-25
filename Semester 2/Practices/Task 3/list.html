@@ -31,11 +31,19 @@
 			<label><input type="radio" name="y_values" value="Количество" checked> Количество</label><br>
 			<label><input type="radio" name="y_values" value="Цена, руб."> Цена</label>
 		</p>
+		<p><b>Тип</b></p>
+		<p>
+			<select id="type">
+				<option value="dots">Точечная диаграмма</option>
+				<option value="graph">График</option>
+				<option value="column">Столбчатая диаграмма</option>
+			</select>
+		</p>
 		<p><b>Результат</b></p>
 		<p>
-			<label><input type="checkbox">Максимальное значение</label><br>
-			<label><input type="checkbox">Среднее значение</label><br>
-			<label><input type="checkbox">Минимальное значение</label><br>
+			<label><input type="checkbox" value="max" checked>Максимальное значение</label><br>
+			<label><input type="checkbox" value="avg">Среднее значение</label><br>
+			<label><input type="checkbox" value="min">Минимальное значение</label><br>
 		</p>
 		<input type="button" value="Построить">
 	</form>
