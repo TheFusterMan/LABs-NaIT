@@ -1,68 +1,64 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const dataForm = document.getElementById("graph_settings");
+    const dataForm = d3.select("#graph_settings");
 
-    const maxCheckbox = dataForm.querySelector('input[value="max"]');
-    const avgCheckbox = dataForm.querySelector('input[value="avg"]');
-    const minCheckbox = dataForm.querySelector('input[value="min"]');
+    const maxCheckbox = dataForm.select('input[value="max"]');
+    const avgCheckbox = dataForm.select('input[value="avg"]');
+    const minCheckbox = dataForm.select('input[value="min"]');
 
     let checkboxes = [maxCheckbox, avgCheckbox, minCheckbox];
 
     checkboxes.forEach(d => {
-        d.addEventListener("change", () => {
-            checkboxes.forEach(d => {
-                d.style.outline = "none";
+        d.on("change", () => {
+            checkboxes.forEach(cb => {
+                cb.style("outline", "none");
             });
         })
     });
-
+    
     drawGraph(animals, dataForm);
 
-    const buildButton = dataForm.querySelector('input[value="Построить"]');
-    buildButton.addEventListener('click', () => {
+    const buildButton = dataForm.select('input[value="Построить"]');
+    buildButton.on('click', () => {
         drawGraph(animals, dataForm);
     });
 
     createTable(animals, 'list');
 
-    const form = document.getElementById('filter');
-    const findBtn = form.querySelector('input[value="Найти"]');
-    const clearBtn = form.querySelector('input[value="Очистить фильтры"]');
+    const form = d3.select('#filter');
+    const findBtn = form.select('input[value="Найти"]');
+    const clearBtn = form.select('input[value="Очистить фильтры"]');
 
-    clearBtn.addEventListener('click', function() {
-        clearFilter('list', animals, form);
+    clearBtn.on('click', function() {
+        clearFilter('list', animals, form.node()); 
     });
 
-    const sortForm = document.getElementById('sort');
+    const sortForm = d3.select('#sort');
 
-    const resetSortBtn = sortForm.querySelector('input[value="Сбросить сортировку"]');
-    resetSortBtn.addEventListener('click', function() {
-        clearSort('list', sortForm);
+    const resetSortBtn = sortForm.select('input[value="Сбросить сортировку"]');
+    resetSortBtn.on('click', function() {
+        clearSort('list', sortForm.node()); 
     });
 
-    findBtn.addEventListener('click', function() {
-        resetSortForm(sortForm);
-        filterTable(animals, 'list', form);
+    findBtn.on('click', function() {
+        resetSortForm(sortForm.node()); 
+        filterTable(animals, 'list', form.node()); 
     });
+    
+    setSortSelects(animals, sortForm.node());
 
-    clearBtn.addEventListener('click', function() {
-        resetSortForm(sortForm);
-    });
-
-    setSortSelects(animals, sortForm);
-
-    const fieldsFirst = document.getElementById('fields1');
-    fieldsFirst.addEventListener('change', function() {
+    const fieldsFirst = d3.select('#fields1');
+    fieldsFirst.on('change', function() {
         changeNextSelect(this, 'fields2');
     });
 
-    const fieldsSecond = document.getElementById('fields2');
-    fieldsSecond.addEventListener('change', function() {
+    const fieldsSecond = d3.select('#fields2');
+    fieldsSecond.on('change', function() {
         changeNextSelect(this, 'fields3');
     });
 
-    const sortBtn = sortForm.querySelector('input[value="Сортировать"]');
-    sortBtn.addEventListener('click', function() {
-        sortTable('list', sortForm);
+    const sortBtn = sortForm.select('input[value="Сортировать"]');
+    sortBtn.on('click', function() {
+        sortTable('list', sortForm.node()); 
     });
 });
 
@@ -74,7 +70,7 @@ const createOption = (str, val) => {
 }
 
 const setSortSelect = (arr, sortSelect) => {
-    sortSelect.append(createOption('Нет', 0));
+    sortSelect.append(createOption('Нет', 0)); 
 
     arr.forEach((item, index) => {
         sortSelect.append(createOption(item, index + 1));
@@ -83,22 +79,23 @@ const setSortSelect = (arr, sortSelect) => {
 
 const setSortSelects = (data, dataForm) => {
     const head = Object.keys(data[0]);
-    const allSelect = dataForm.getElementsByTagName('select');
+    
+    const allSelect = dataForm.querySelectorAll('select');
 
     let i = 0;
     for(const item of allSelect){
-        setSortSelect(head, item);
+        setSortSelect(head, item); 
 
         if (i !== 0) {
-            item.disabled = true;
+            item.disabled = true; 
         }
-
         i += 1;
     }
 }
 
 const changeNextSelect = (curSelect, nextSelectId) => {
-    let nextSelect = document.getElementById(nextSelectId);
+    let nextSelect = d3.select(`#${nextSelectId}`).node();
+
     nextSelect.disabled = false;
     nextSelect.innerHTML = curSelect.innerHTML;
 
@@ -114,8 +111,8 @@ const changeNextSelect = (curSelect, nextSelectId) => {
     }
 
     if (nextSelectId === 'fields2') {
-        const fields3 = document.getElementById('fields3');
-        const fields1 = document.getElementById('fields1');
+        const fields3 = d3.select('#fields3').node();
+        const fields1 = d3.select('#fields1').node();
         fields3.innerHTML = fields1.innerHTML;
         fields3.disabled = true;
     }

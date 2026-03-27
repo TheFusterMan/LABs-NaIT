@@ -12,35 +12,12 @@ function createArrGraph(data, keyX, keyY) {
 }
 
 function drawGraph(data, dataForm) {
-    const keyX = document.querySelector('input[name="x_values"]:checked').value;
-    const keyY = document.querySelector('input[name="y_values"]:checked').value;
-
-    // создаем массив для построения графика
-    let arrGraph = createArrGraph(data, keyX, keyY);
-
     const svg = d3.select("svg")
     svg.selectAll('*').remove();
 
-    // создаем словарь с атрибутами области вывода графика
-    const attr_area = {
-        width: parseFloat(svg.style('width')),
-        height: parseFloat(svg.style('height')),
-        marginX: 50,
-        marginY: 100
-    }
-
-    // создаем шкалы преобразования и выводим оси
-    const [scX, scY] = createAxis(svg, arrGraph, attr_area, ["max", "min"]);
-
-    const collorsForOptions = {
-        "max": "red",
-        "avg": "yellow",
-        "min": "blue",
-    }
-
-    let maxCheckbox = dataForm.querySelector('input[value="max"]');
-    let avgCheckbox = dataForm.querySelector('input[value="avg"]');
-    let minCheckbox = dataForm.querySelector('input[value="min"]');
+    let maxCheckbox = dataForm.select('input[value="max"]').node();
+    let avgCheckbox = dataForm.select('input[value="avg"]').node();
+    let minCheckbox = dataForm.select('input[value="min"]').node();
 
     let checkboxes = [maxCheckbox, avgCheckbox, minCheckbox];
     let selectedOptions = checkboxes.filter(d => d.checked).map(d => d.value);
@@ -56,7 +33,30 @@ function drawGraph(data, dataForm) {
         svgNode.style.display = "block";
     }
 
-    let type = dataForm.querySelector("#type").value;
+    const keyX = d3.select('input[name="x_values"]:checked').node().value;
+    const keyY = d3.select('input[name="y_values"]:checked').node().value;
+
+    // создаем массив для построения графика
+    let arrGraph = createArrGraph(data, keyX, keyY);
+
+    // создаем словарь с атрибутами области вывода графика
+    const attr_area = {
+        width: parseFloat(svg.style('width')),
+        height: parseFloat(svg.style('height')),
+        marginX: 50,
+        marginY: 100
+    }
+
+    // создаем шкалы преобразования и выводим оси
+    const [scX, scY] = createAxis(svg, arrGraph, attr_area, selectedOptions);
+
+    const collorsForOptions = {
+        "max": "red",
+        "avg": "yellow",
+        "min": "blue",
+    }
+
+    let type = dataForm.select("#type").node().value;
 
     switch(type) {
         case "dots":
@@ -88,6 +88,9 @@ function createAxis(svg, data, attr_area, options_to_show) {
     }
     if (options_to_show.includes("max")) {
         values = values.concat(data.map(d => d.values[1]));
+    }
+    if (options_to_show.includes("avg")) {
+        values = values.concat(data.map(d => d.values[2]));
     }
 
 
@@ -153,10 +156,11 @@ function createPath(svg, data, scaleX, scaleY, attr_area, color, option) {
     const line = d3.line()
         .x(d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
         .y(d => scaleY(d.values[value_type]) + (
-            (d.values[0] === d.values[1] & option !== "avg")
+            (d.values[0] === d.values[1] && option !== "avg")
             ? (option === "max") ? -collision_offset : collision_offset
             : 0
-        ));
+        ))
+        .curve(d3.curveMonotoneX);
 
     svg.append("path")
         .datum(data)
