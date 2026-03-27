@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const width = 800;
-    const height = 600;
+    const width = 1920;
+    const height = 800;
     const svg = d3.select("svg")
         .attr("width", width)
         .attr("height", height) ;
 
     const settingForm = document.getElementById("setting");
 
-    const animateButton = settingForm.querySelector('input[value="Анимировать"]');
-    animateButton.addEventListener('click', () => runAnimation());
+    const animateButton = d3.select('input[value="Анимировать"]');
+    animateButton.on('click', () => runAnimation());
+    const clearButton = d3.select('input[value="Очистить"]');
+    clearButton.on('click', () => clear(svg));
 });
 
 const clear = (svg) => {

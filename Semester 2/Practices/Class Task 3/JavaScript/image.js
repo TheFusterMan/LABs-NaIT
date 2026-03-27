@@ -1,5 +1,3 @@
-// создаем изображение смайлик
-// рисуем его относительно точки (0, 0)
 function drawCircle(svg, isEmptyInside) {
     const width = svg.attr("width");
     const height = svg.attr("height");

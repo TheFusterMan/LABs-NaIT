@@ -1,7 +1,3 @@
-// Входные данные:
-//   data - исходный массив (например, buildings)
-//   key - поле, по которому осуществляется группировка
-
 function createArrGraph(data, keyX, keyY) {
     const groupObj = d3.group(data, d => d[keyX]);
 
@@ -16,7 +12,6 @@ function createArrGraph(data, keyX, keyY) {
 }
 
 function drawGraph(data, dataForm) {
-    // значения по оси ОХ
     const keyX = document.querySelector('input[name="x_values"]:checked').value;
     const keyY = document.querySelector('input[name="y_values"]:checked').value;
 
@@ -151,7 +146,7 @@ function createChart(svg, data, scaleX, scaleY, attr_area, color, option) {
 }
 
 function createPath(svg, data, scaleX, scaleY, attr_area, color, option) {
-    const collisionOffset = 4;
+    const collision_offset = 4;
     const line_width = "2";
     let value_type = option === "max" ? 1 : option === "min" ? 0 : 2;
 
@@ -159,7 +154,7 @@ function createPath(svg, data, scaleX, scaleY, attr_area, color, option) {
         .x(d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
         .y(d => scaleY(d.values[value_type]) + (
             (d.values[0] === d.values[1] & option !== "avg")
-            ? (option === "max") ? -collisionOffset : collisionOffset
+            ? (option === "max") ? -collision_offset : collision_offset
             : 0
         ));
 
