@@ -40,6 +40,7 @@ const clearSort = (idTable, sortForm) => {
     filterTable(animals, idTable, filterForm);
 };
 
+// точка входа
 const sortTable = (idTable, formData) => {
     const sortArr = createSortArr(formData);
 

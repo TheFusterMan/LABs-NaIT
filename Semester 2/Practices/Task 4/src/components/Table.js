@@ -3,6 +3,7 @@ import { useState } from "react";
 import TableHead from './TableHead.js';
 import TableBody from './TableBody.js';
 import Filter from "./Filter.js";
+import Sort from "./Sort";
 
 /*
    компонент, выводящий на страницу таблицу с пагинацией
@@ -38,12 +39,23 @@ const Table = (props) => {
 
     return(
         <>
-            <h4>Фильтры</h4>
-            <Filter
-                filtering={updateDataTable}
-                data={dataTable}
-                fullData={props.data}
-            />
+            <details open>
+                <summary>Фильтры</summary>
+                <Filter
+                    filtering={updateDataTable}
+                    data={dataTable}
+                    fullData={props.data}
+                />
+            </details>
+
+            <details open>
+                <summary>Сортировка</summary>
+                <Sort
+                    sorting={updateDataTable}
+                    data={dataTable}
+                    fullData={props.data}
+                />
+            </details>
 
             <table>
                 <TableHead head={Object.keys(props.data[0])}/>
