@@ -37,8 +37,15 @@ const ChartDraw = (props) => {
             .style("fill", "lightgrey");
     });
 
-    const indexOY = 1; // диаграмма для максимальных значений
-    let [min, max] = d3.extent(props.data.map(d => d.values[1]));
+    let dataToExtent = [];
+
+    props.oySwitches.forEach((switchOY, indexOY) => {
+        if (switchOY) {
+            dataToExtent.push(...props.data.map(d => d.values[indexOY]));
+        }
+    });
+
+    let [min, max] = d3.extent(dataToExtent);
 
     // формируем шкалы для осей
     const scaleX = useMemo(() => {
@@ -77,17 +84,40 @@ const ChartDraw = (props) => {
             .call(yAxis);
 
         //рисуем график
-        svg .selectAll(".dot")
-            .data(props.data)
-            .enter()
-            .append("circle")
-            .attr("r", 5)
-            .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
-            .attr("cy", d => scaleY(d.values[indexOY] ) )
-            .attr("transform", `translate(${margin.left}, ${margin.top})`)
-            .style("fill", "red")
+        props.oySwitches.forEach((switchOY, indexOY) => {
+            if (!switchOY) return;
 
-    }, [scaleX, scaleY, props.data]);
+            let colorsForIndeces = {
+                0: "red",
+                1: "blue"
+            }
+
+            if (props.type === "Точечная") {
+                svg .selectAll(".dot")
+                    .data(props.data)
+                    .enter()
+                    .append("circle")
+                    .attr("r", 5)
+                    .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
+                    .attr("cy", d => scaleY(d.values[indexOY] ) )
+                    .attr("transform", `translate(${margin.left}, ${margin.top})`)
+                    .style("fill", colorsForIndeces[indexOY])
+            }
+            else if (props.type === "Гистограмма") {
+                const barWidth = 6;
+
+                svg .selectAll(".bar")
+                    .data(props.data)
+                    .enter()
+                    .append("rect")
+                    .attr("x", d => scaleX(d.labelX) + scaleX.bandwidth() / 2 + margin.left - barWidth * indexOY)
+                    .attr("y", d => scaleY(d.values[indexOY]) + margin.top)
+                    .attr("width", barWidth)
+                    .attr("height", d => boundsHeight - scaleY(d.values[indexOY]))
+                    .style("fill", colorsForIndeces[indexOY])
+            }
+        });
+    }, [scaleX, scaleY, props.data, props.type]);
 
     return (
         <svg ref={ chartRef }>  </svg>

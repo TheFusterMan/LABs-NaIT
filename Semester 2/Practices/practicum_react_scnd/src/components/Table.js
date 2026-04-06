@@ -13,8 +13,8 @@ const Table = (props) => {
     const [activePage, setActivePage] = useState("1");
     const changeActive = (event) => setActivePage(event.target.innerHTML);
 
-    const [dataTable, setDataTable] = useState(props.data);
-    const updateDataTable = (value) => setDataTable(value);
+    const dataTable = props.filteredData;
+    const updateDataTable = (value) => props.setFilteredData(value);
 
     //количество страниц разбиения таблицы
     const n = Math.ceil(dataTable.length / props.amountRows);
