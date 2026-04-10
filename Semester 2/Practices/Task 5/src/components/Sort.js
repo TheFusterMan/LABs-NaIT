@@ -8,12 +8,6 @@ const Sort = (props) => {
         { desc: false, label: 'Третий уровень', selected: 0, options: allOptions },
     ];
     const [levels, setLevels] = useState(getInitialLevelsState);
-    const [prevFlag, setPrevFlag] = useState(props.resetFlag);
-
-    if (prevFlag !== props.resetFlag) {
-        setPrevFlag(props.resetFlag);
-        setLevels(getInitialLevelsState());
-    }
 
     const handleSubmit= (event) => {
         event.preventDefault();

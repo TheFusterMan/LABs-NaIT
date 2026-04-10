@@ -53,7 +53,7 @@ const Filter = (props) => {
     }
 
     const handleReset= (event) => {
-        props.onReset();
+        props.setFilterFunction((data) => data);
     }
 
     return (

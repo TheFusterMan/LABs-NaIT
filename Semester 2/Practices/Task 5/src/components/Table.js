@@ -12,10 +12,10 @@ import Sort from "./Sort";
 */
 const Table = (props) => {
     const [activePage, setActivePage] = useState("1");
+    const changeActive = (event) => setActivePage(event.target.innerHTML);
+
     const [filter, setFilter] = useState(() => (data) => data)
     const [sorter, setSorter] = useState(() => (data) => data);
-    const [resetSortFlag, setResetSortFlag] = useState(false);
-
     const dataTable = sorter(filter(props.data));
 
     //количество страниц разбиения таблицы
@@ -28,7 +28,7 @@ const Table = (props) => {
     const pages = arr.map((item, index) =>
         <span
             key={ index }
-            onClick={ (event) => setActivePage(event.target.innerHTML) }
+            onClick={ changeActive }
             className={ "page-num ".concat(item == activePage ? "selected" : "") }
         >
             { item }
@@ -38,34 +38,27 @@ const Table = (props) => {
     return(
         <>
             <details open>
+                <summary>График</summary>
+
+            </details>
+            <details>
                 <summary>Фильтры</summary>
                 <Filter
                     setFilterFunction={(filteringFunction) => {
                         setFilter(() => filteringFunction);
                         setActivePage(1);
                     }}
-                    onReset={() => {
-                        setFilter(() => (data) => data);
-                        setSorter(() => (data) => data);
-                        setResetSortFlag(!resetSortFlag);
-                        setActivePage("1");
-                    }}
                 />
             </details>
 
-            <details open>
+            <details>
                 <summary>Сортировка</summary>
                 <Sort
                     setSortFunction={(sortingFunction) => {
                         setSorter(() => sortingFunction);
                         setActivePage(1);
                     }}
-                    onReset={() => {
-                        setFilter(() => (data) => data)
-                        setActivePage("1");
-                    }}
                     keys={Object.keys(props.data[0])}
-                    resetFlag={resetSortFlag}
                 />
             </details>
 
