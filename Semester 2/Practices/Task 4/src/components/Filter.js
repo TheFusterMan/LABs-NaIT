@@ -36,21 +36,24 @@ const Filter = (props) => {
         }
 
         //фильтруем данные по значениям всех полей формы
-        let arr = props.fullData;
-        for(const key in filterField) {
-            arr = arr.filter(item =>
-                ["Количество", "Цена, руб."].includes(key)
-                    ? filterNums(item[key], filterField[key][0], filterField[key][1])
-                    : item[key].toLowerCase().includes(filterField[key])
-            );
+        const filterFunction = (data) => {
+            for (const key in filterField) {
+                data = data.filter(item =>
+                    ["Количество", "Цена, руб."].includes(key)
+                        ? filterNums(item[key], filterField[key][0], filterField[key][1])
+                        : item[key].toLowerCase().includes(filterField[key])
+                );
+            }
+
+            return data;
         }
 
         //передаем родительскому компоненту новое состояние - отфильтрованный массив
-        props.filtering(arr);
+        props.setFilterFunction(filterFunction);
     }
 
     const handleReset= (event) => {
-        props.filtering(props.fullData);
+        props.setFilterFunction((data) => data);
     }
 
     return (

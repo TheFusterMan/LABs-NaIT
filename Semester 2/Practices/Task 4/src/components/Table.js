@@ -14,11 +14,9 @@ const Table = (props) => {
     const [activePage, setActivePage] = useState("1");
     const changeActive = (event) => setActivePage(event.target.innerHTML);
 
-    const [dataTable, setDataTable] = useState(props.data);
-    const updateDataTable = (value) => {
-        setDataTable(value);
-        setActivePage(1);
-    }
+    const [filter, setFilter] = useState(() => (data) => data)
+    const [sorter, setSorter] = useState(() => (data) => data);
+    const dataTable = sorter(filter(props.data));
 
     //количество страниц разбиения таблицы
     const n = Math.ceil(dataTable.length / props.amountRows);
@@ -42,18 +40,21 @@ const Table = (props) => {
             <details open>
                 <summary>Фильтры</summary>
                 <Filter
-                    filtering={updateDataTable}
-                    data={dataTable}
-                    fullData={props.data}
+                    setFilterFunction={(filteringFunction) => {
+                        setFilter(() => filteringFunction);
+                        setActivePage(1);
+                    }}
                 />
             </details>
 
             <details open>
                 <summary>Сортировка</summary>
                 <Sort
-                    sorting={updateDataTable}
-                    data={dataTable}
-                    fullData={props.data}
+                    setSortFunction={(sortingFunction) => {
+                        setSorter(() => sortingFunction);
+                        setActivePage(1);
+                    }}
+                    keys={Object.keys(props.data[0])}
                 />
             </details>
 

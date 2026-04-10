@@ -1,8 +1,7 @@
 import { useState } from "react";
 
 const Sort = (props) => {
-    const keys = Object.keys(props.fullData[0]);
-    const allOptions = getOptionsArray(keys);
+    const allOptions = getOptionsArray(props.keys);
     const getInitialLevelsState = () => [
         { desc: false, label: 'Первый уровень', selected: 0, options: allOptions },
         { desc: false, label: 'Второй уровень', selected: 0, options: allOptions },
@@ -12,38 +11,40 @@ const Sort = (props) => {
 
     const handleSubmit= (event) => {
         event.preventDefault();
-        const sortArr = createSortArr(levels, keys);
+        const sortArr = createSortArr(levels, props.keys);
 
-        if (sortArr.length === 0){
-            return;
-        }
-
-        let sortedData = [...props.data].sort((first, second) => {
-            for (let { key, direction } of sortArr) {
-                const firstValue = first[key];
-                const secondValue = second[key];
-                let comparison = 0;
-
-                if (key === "Количество" || key === "Цена, руб.") {
-                    comparison = parseFloat(firstValue) - parseFloat(secondValue);
-                } else {
-                    comparison = firstValue.localeCompare(secondValue);
-                }
-
-                if (comparison !== 0) {
-                    return (direction ? -comparison : comparison);
-                }
+        const sortFunction = (data) => {
+            if (sortArr.length === 0){
+                return data;
             }
 
-            return 0;
-        });
+            return [...data].sort((first, second) => {
+                for (let { key, direction } of sortArr) {
+                    const firstValue = first[key];
+                    const secondValue = second[key];
+                    let comparison = 0;
 
-        props.sorting(sortedData);
+                    if (key === "Количество" || key === "Цена, руб.") {
+                        comparison = parseFloat(firstValue) - parseFloat(secondValue);
+                    } else {
+                        comparison = firstValue.localeCompare(secondValue);
+                    }
+
+                    if (comparison !== 0) {
+                        return (direction ? -comparison : comparison);
+                    }
+                }
+
+                return 0;
+            });
+        }
+
+        props.setSortFunction(sortFunction);
     }
 
     const handleReset= () => {
         setLevels(getInitialLevelsState());
-        props.sorting(props.fullData);
+        props.setSortFunction((data) => data);
     }
 
     const handleChange= (level_index, value) => {
