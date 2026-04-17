@@ -99,7 +99,7 @@ const ChartDraw = (props) => {
                     .append("circle")
                     .attr("r", 5)
                     .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
-                    .attr("cy", d => scaleY(d.values[indexOY] ) )
+                    .attr("cy", d => scaleY(d.values[indexOY]) + ((d.values[0] === d.values[1]) ? (indexOY === 1 ? 2 : -2) : 0))
                     .attr("transform", `translate(${margin.left}, ${margin.top})`)
                     .style("fill", colorsForIndeces[indexOY])
             }

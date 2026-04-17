@@ -88,28 +88,61 @@ const ChartDraw = (props) => {
         //рисуем график
         selectedOptions.forEach((option) => {
             if (props.type === "Точечная") {
+                let radius = 4;
+                const getYOffset = (d, key) => {
+                    if (d.values[0] === d.values[1] && key !== "avg") {
+                        return key === "max" ? -radius : radius;
+                    }
+                    return 0;
+                };
+
                 svg .selectAll(".dot")
                     .data(props.data)
                     .enter()
                     .append("circle")
-                    .attr("r", 4)
+                    .attr("r", radius)
                     .attr("cx", d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
-                    .attr("cy", d => scaleY(d.values[indexOY] ) )
+                    .attr("cy", d => scaleY(d.values[option.valueIndex]) + getYOffset(d, option.key, radius) )
                     .attr("transform", `translate(${margin.left}, ${margin.top})`)
-                    .style("fill", colorsForIndeces[indexOY])
+                    .style("fill", option.color)
             }
             else if (props.type === "Гистограмма") {
-                const barWidth = 6;
+                const width = 6;
+                const getXOffset = (key) => {
+                    return key !== "avg" ? (key === "max" ? -width : width) : 0;
+                };
 
                 svg .selectAll(".bar")
                     .data(props.data)
                     .enter()
                     .append("rect")
-                    .attr("x", d => scaleX(d.labelX) + scaleX.bandwidth() / 2 + margin.left - barWidth * indexOY)
-                    .attr("y", d => scaleY(d.values[indexOY]) + margin.top)
-                    .attr("width", barWidth)
-                    .attr("height", d => boundsHeight - scaleY(d.values[indexOY]))
-                    .style("fill", colorsForIndeces[indexOY])
+                    .attr("x", d => scaleX(d.labelX) + scaleX.bandwidth() / 2 - getXOffset(option.key))
+                    .attr("y", d => scaleY(d.values[option.valueIndex]) + margin.top)
+                    .attr("width", width)
+                    .attr("height", d => boundsHeight - scaleY(d.values[option.valueIndex]))
+                    .style("fill", option.color)
+            }
+            else if (props.type === "График") {
+                let radius = 4;
+                const getYOffset = (d, key) => {
+                    if (d.values[0] === d.values[1] && key !== "avg") {
+                        return key === "max" ? -radius : radius;
+                    }
+                    return 0;
+                };
+
+                const line = d3.line()
+                    .x(d => scaleX(d.labelX) + scaleX.bandwidth() / 2)
+                    .y(d => scaleY(d.values[option.valueIndex]) + getYOffset(d, option.key))
+                    .curve(d3.curveMonotoneX);
+
+                svg.append("path")
+                    .datum(props.data)
+                    .attr("d", line)
+                    .attr("transform", `translate(${margin.left}, ${margin.top})`)
+                    .style("stroke-width", 2)
+                    .style("stroke", option.color)
+                    .style("fill", "none");
             }
         });
     }, [scaleX, scaleY, props.data, props.type]);

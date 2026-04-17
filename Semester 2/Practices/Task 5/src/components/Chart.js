@@ -83,18 +83,35 @@ const Chart = (props) => {
                 </p>
 
                 <p> Результат
+                    <br/>
                     <label>
-                        <input type="checkbox" name="max" defaultChecked={results[0]}/>
+                        <input
+                            type="checkbox"
+                            name="max"
+                            defaultChecked={results[0]}
+                            onChange={() => setError(false)}
+                            style={ error ? { outline: "2px solid red", display: "inline-block" } : {} }
+                        />
                         Максимальное значение
                     </label>
                     <br/>
                     <label>
-                        <input type="checkbox" name="avg"/>
+                        <input
+                            type="checkbox"
+                            name="avg"
+                            onChange={() => setError(false)}
+                            style={ error ? { outline: "2px solid red", display: "inline-block" } : {} }
+                        />
                         Среднее значение
                     </label>
                     <br/>
                     <label>
-                        <input type="checkbox" name="min"/>
+                        <input
+                            type="checkbox"
+                            name="min"
+                            onChange={() => setError(false)}
+                            style={ error ? { outline: "2px solid red", display: "inline-block" } : {} }
+                        />
                         Минимальное значение
                     </label>
                     <br/>
