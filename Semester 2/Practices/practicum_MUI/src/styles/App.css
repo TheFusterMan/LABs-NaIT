@@ -1,5 +1,5 @@
 .App {
-  text-align: left;
+  text-align: center;
 }
 
 .App-logo {
@@ -35,48 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.hide {
-  display: none;
-}
-
-div {
-  text-align: left;
-  margin-top: 20px;
-}
-
-.page-num {
-  margin: 15px;
-}
-
-.page-num:hover {
-  cursor: pointer;
-  font-size: 18px;
-  color: darkblue;
-}
-
-.selected {
-  color: blue;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-h4, form {
-  text-align: left;
-}
-
-svg {
-  width: 800px;
-  height: 400px;
-}
-
-svg path, line {
-  fill: none;
-  stroke: black;
-  width: 1px;
-}
-
-svg text {
-  font: 8px Verdana;
 }

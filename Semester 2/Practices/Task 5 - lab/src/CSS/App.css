@@ -1,5 +1,5 @@
 .App {
-  text-align: left;
+  text-align: center;
 }
 
 .App-logo {
@@ -62,21 +62,6 @@ div {
   font-size: 18px;
 }
 
-h4, form {
+summary, form {
   text-align: left;
-}
-
-svg {
-  width: 800px;
-  height: 400px;
-}
-
-svg path, line {
-  fill: none;
-  stroke: black;
-  width: 1px;
-}
-
-svg text {
-  font: 8px Verdana;
 }
