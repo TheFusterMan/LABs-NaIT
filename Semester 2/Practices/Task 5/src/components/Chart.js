@@ -53,8 +53,6 @@ const Chart = (props) => {
                     <input type="radio" name="ox" value="Категория" defaultChecked={ox === "Категория"}/>
                     Категория
                     <br/>
-                    <input type="radio" name="ox" value="Порода"/>
-                    Порода
                 </div>
 
                 <p> Значение по оси OY </p>

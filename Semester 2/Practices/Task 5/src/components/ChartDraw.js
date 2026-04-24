@@ -16,7 +16,7 @@ const ChartDraw = (props) => {
     // задаем отступы в svg-элементе
     const  margin = {
         top:10,
-        bottom:60,
+        bottom:100,
         left:40,
         right:10
     };
@@ -33,7 +33,7 @@ const ChartDraw = (props) => {
             .attr("x", margin.left)
             .attr("y", margin.top)
             .attr("width",  boundsWidth)
-            .attr("height",  boundsWidth)
+            .attr("height",  boundsHeight)
             .style("fill", "lightgrey");
     });
 
@@ -107,7 +107,7 @@ const ChartDraw = (props) => {
                     .style("fill", option.color)
             }
             else if (props.type === "Гистограмма") {
-                const width = 6;
+                const width = 4;
                 const getXOffset = (key) => {
                     return key !== "avg" ? (key === "max" ? -width : width) : 0;
                 };
@@ -116,10 +116,11 @@ const ChartDraw = (props) => {
                     .data(props.data)
                     .enter()
                     .append("rect")
-                    .attr("x", d => scaleX(d.labelX) + scaleX.bandwidth() / 2 - getXOffset(option.key))
+                    .attr("x", d => scaleX(d.labelX) + scaleX.bandwidth() / 2 + getXOffset(option.key))
                     .attr("y", d => scaleY(d.values[option.valueIndex]) + margin.top)
                     .attr("width", width)
                     .attr("height", d => boundsHeight - scaleY(d.values[option.valueIndex]))
+                    .attr("transform", `translate(${margin.left - width / 2})`)
                     .style("fill", option.color)
             }
             else if (props.type === "График") {
