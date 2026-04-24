@@ -12,7 +12,7 @@ module.exports = {
     filename: "index.[contenthash].js",
     assetModuleFilename: path.join("images", "[name].[contenthash][ext]"),
   },
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: path.join(__dirname, "src", "index.tsx"),
   module: {
     rules: [
       {

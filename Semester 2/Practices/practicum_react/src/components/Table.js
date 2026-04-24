@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import TableContent from './TableContent.js';
+import TableContent from './TableContent.tsx';
 import TableBody from './TableBody.js';
 
 const Table = (props) => {

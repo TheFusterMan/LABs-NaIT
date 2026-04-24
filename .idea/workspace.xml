@@ -5,48 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 5/With Use Context/src/components/DrawInnerCube.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Lectures/Lecture 5/With Use Context/src/components/DrawInnerInnerCube.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/bear.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/dog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/dolphine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/eagle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/elephant.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/lion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/monkey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/tiger.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/images/wolf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Class Task 6.2/src/CSS/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Class Task 6.2/src/CSS/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/CSS/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/CSS/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/Chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/ChartDraw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/Filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/Sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/Table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/TableBody.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/TableHead.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/components/TableRow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5 - lab/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5/src/CSS/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 5/src/CSS/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5/src/components/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 5/src/components/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 5/src/components/ChartDraw.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 5/src/components/ChartDraw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 1/Task 4.5 CW/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 1/Task 4.5 CW/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 1/Task 4.5 HW/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 1/Task 4.5 HW/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 1/Task 5/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 1/Task 5/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/data.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_MUI/src/components/BuildCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_MUI/src/components/BuildCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_react/src/components/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_react/src/components/Table.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +86,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/Task 6/src/images",
+    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/Class Task 6.2/src",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -133,17 +102,17 @@
     "npm.start.executor": "Run",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Users\\pleaz\\WebstormProjects\\LABs-NaIT\\Semester 2\\Practices\\Task 6\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\pleaz\\WebstormProjects\\LABs-NaIT\\Semester 2\\Practices\\practicum_MUI\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Class Task 6.2\src" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 6\src\images" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 5\src\components" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Lectures\Lecture 4" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 4\src\components" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_MUI\src" />
@@ -157,22 +126,6 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Semester 1/Task 4/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Semester 1/Task 3.5 HW/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="list.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LABs-NaIT/Semester 2/Practices/Task 3/list.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/Semester 2/Practices/Task 5/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="start (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/Semester 2/Practices/Task 6/package.json" />
       <command value="run" />
@@ -183,20 +136,50 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start (3)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Semester 2/Practices/Class Task 6/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (4)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Semester 2/Practices/Class Task 6.2/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Semester 2/Practices/practicum_MUI/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
-      <item itemvalue="JavaScript Debug.list.html" />
+      <item itemvalue="npm.start (4)" />
       <item itemvalue="npm.start (2)" />
-      <item itemvalue="npm.start (1)" />
+      <item itemvalue="npm.start (3)" />
+      <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (4)" />
+        <item itemvalue="npm.start (3)" />
         <item itemvalue="npm.start (2)" />
+        <item itemvalue="npm.start" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
-        <item itemvalue="npm.start (1)" />
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.list.html" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +355,7 @@
       <workItem from="1776944479951" duration="3735000" />
       <workItem from="1777001901965" duration="3424000" />
       <workItem from="1777012563657" duration="1969000" />
-      <workItem from="1777016883800" duration="941000" />
+      <workItem from="1777016883800" duration="6983000" />
     </task>
     <servers />
   </component>

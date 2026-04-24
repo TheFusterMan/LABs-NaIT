@@ -26,7 +26,10 @@ function BuildCard({ building, index } : ComponentProps) {
     return (
         <Card sx={{
             display: 'flex',
-            flexDirection: (index % 2) ? 'row-reverse' : 'row'
+            flexDirection: {
+                xs: 'column-reverse',
+                sm: (index % 2) ? 'row-reverse' : 'row'
+            }
         }}>
             <Box>
                 <CardContent>
@@ -39,7 +42,11 @@ function BuildCard({ building, index } : ComponentProps) {
                         </StyledTypography>
                     ))}
                 </CardContent>
-                <CardActions sx={{ justifyContent: index % 2 ? 'end' : 'left'}} >
+                <CardActions sx={{ justifyContent: {
+                        sm: index % 2 ? 'end' : 'left',
+                        xs: 'center'
+                }
+                }} >
                     <Button size="small">Подробнее</Button>
                 </CardActions>
             </Box>

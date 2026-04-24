@@ -91,13 +91,7 @@ function Navbar({ active } : ComponentProps) {
                                         selected={active === "2"}
                                         sx={{ '&:hover': { backgroundColor: 'lightblue' } }}
                                     >
-                                        Список
-                                    </MenuItem>
-                                    <MenuItem
-                                        selected={active === "3"}
-                                        sx={{ '&:hover': { backgroundColor: 'lightblue' } }}
-                                    >
-                                        Контакты
+                                        Каталог товаров
                                     </MenuItem>
                                 </MenuList>
                             </Box>
