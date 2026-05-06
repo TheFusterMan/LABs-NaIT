@@ -20,9 +20,10 @@ interface ComponentProps {
         title: string,
         description: string[],
     };
+    type: 1 | 2;
 }
 
-function CentralCard({ animal } : ComponentProps) {
+function CentralArticle({ animal, type } : ComponentProps) {
     return (
         <Card sx={{
             display: 'flex',
@@ -57,4 +58,4 @@ function CentralCard({ animal } : ComponentProps) {
     )
 }
 
-export default CentralCard;
+export default CentralArticle;
