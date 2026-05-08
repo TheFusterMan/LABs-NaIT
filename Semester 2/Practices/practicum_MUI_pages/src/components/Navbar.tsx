@@ -61,9 +61,11 @@ function Navbar({ active } : ComponentProps) {
                                 Список зданий
                             </Button>
                         </Link>
+                        <Link to="/chart">
                             <Button variant={active === "3" ? "contained" : "text"} color="info" size="medium">
                                 Диаграммы
                             </Button>
+                        </Link>
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' }}}>
                         <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>

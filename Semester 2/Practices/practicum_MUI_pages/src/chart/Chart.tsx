@@ -18,7 +18,7 @@ function Chart() {
 
     const handleChange = (event: SelectChangeEvent) => {
         setGroup(event.target.value as tSelect);
-        setGroupData(group === "Страна" ? countries : group === "Тип" ? types : years);
+        setGroupData(event.target.value as tSelect === "Страна" ? countries : event.target.value as tSelect === "Тип" ? types : years);
     };
 
     return (
