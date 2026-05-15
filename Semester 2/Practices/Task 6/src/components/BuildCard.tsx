@@ -30,7 +30,9 @@ function BuildCard({ building, index } : ComponentProps) {
         }}>
             <Box>
                 <CardContent>
-                    <Typography gutterBottom variant="h5" >
+                    <Typography gutterBottom variant="h5" sx={{
+                        textAlign: "center"
+                    }} >
                         { building.title }
                     </Typography>
                     { building.description.map((item, ind) => (
@@ -39,7 +41,7 @@ function BuildCard({ building, index } : ComponentProps) {
                         </StyledTypography>
                     ))}
                 </CardContent>
-                <CardActions sx={{ justifyContent: index % 2 ? 'end' : 'left'}} >
+                <CardActions sx={{ justifyContent: index % 2 ?'left' : 'end' }} >
                     <Button size="small">Подробнее</Button>
                 </CardActions>
             </Box>

@@ -11,6 +11,51 @@ import Wolf from './images/wolf.jpg';
 
 const structures = [
     {
+        img: Dog,
+        title: "",
+        description: [
+            ``
+        ],
+        cols: 1,
+        rows: 1
+    },
+    {
+        img: Lion,
+        title: "",
+        description: [
+            ``
+        ],
+        cols: 2,
+        rows: 2
+    },
+    {
+        img: Cat,
+        title: "",
+        description: [
+            ``
+        ],
+        cols: 1,
+        rows: 1
+    },
+    {
+        img: Tiger,
+        title: "",
+        description: [
+            ``
+        ],
+        cols: 2,
+        rows: 1
+    },
+    {
+        img: Elephant,
+        title: "",
+        description: [
+            ``
+        ],
+        cols: 1,
+        rows: 1
+    },
+    {
         img: Bear,
         title: "Медведь",
         description: [
@@ -47,6 +92,7 @@ const structures = [
         ]
     },
     {
+        img: '',
         title: "Мир открытий",
         description: [
             `Наш интерактивный каталог создан для того, чтобы познакомить вас с удивительным разнообразием фауны нашей планеты. От глубин океанов до горных вершин — животный мир поражает своими механизмами адаптации. Мы верим, что глубокие знания биологии — это первый и самый важный шаг к сохранению природы для будущих поколений. Узнайте больше о редких видах и их среде обитания.`

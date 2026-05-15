@@ -11,6 +11,8 @@ function App() {
             <Navbar
                 active="1"
             />
+            <Gallery/>
+            <Content/>
             <Footer/>
         </div>
     );

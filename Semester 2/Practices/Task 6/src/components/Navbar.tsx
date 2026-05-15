@@ -47,17 +47,14 @@ function Navbar({ active } : ComponentProps) {
             <Container maxWidth="xl">
                 <StyledToolbar>
                     <Typography variant="h6" sx={{ color: '#5d8aa8' }}>
-                        Самые высокие здания и сооружения
+                        Самые популярные животные
                     </Typography>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Button variant={active === "1" ? "contained" : "text"} color="info" size="medium">
-                            Главная
+                            Самые популярные животные
                         </Button>
                         <Button variant={active === "2" ? "contained" : "text"} color="info" size="medium">
-                            Список зданий
-                        </Button>
-                        <Button variant={active === "3" ? "contained" : "text"} color="info" size="medium">
-                            Контакты
+                            Каталог
                         </Button>
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' }}}>
@@ -91,7 +88,7 @@ function Navbar({ active } : ComponentProps) {
                                         selected={active === "2"}
                                         sx={{ '&:hover': { backgroundColor: 'lightblue' } }}
                                     >
-                                        Каталог товаров
+                                        Каталог
                                     </MenuItem>
                                 </MenuList>
                             </Box>

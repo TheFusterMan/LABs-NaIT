@@ -1,0 +1,65 @@
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import animals from "../../data";
+import SidebarCard from "./SidebarCard"
+import CentralCard from "./CentralCard"
+import CentralArticle from "./CentralArticle";
+
+const leftSidebarCardData = animals.slice(5, 7);
+const centerCardData = animals.slice(7, 8);
+const centralArticleData = animals.slice(10, 11);
+const rightSidebarCardData = animals.slice(8, 10);
+
+function Content() {
+    return (
+        <Container maxWidth="xl" sx={{ my: 5 }}>
+            <Grid container spacing={{ xs: 3, md: 6 }}>
+
+                <Grid
+                    size={{ xs: 12, md: 6, lg: 3 }}
+                    sx={{ order: { xs: 2, lg: 1 } }}
+                >
+                    <Grid container spacing={3}>
+                        {leftSidebarCardData.map((item, index) => (
+                            <Grid size={12} key={index}>
+                                <SidebarCard animal={ item } imagePosition={ "left" } imageIndex={index + 5}/>
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+                <Grid
+                    size={{ xs: 12, md: 12, lg: 6 }}
+                    sx={{ order: { xs: 1, lg: 2 } }}
+                >
+                    <Grid container spacing={3}>
+                        {centerCardData.map((item, index) => (
+                            <Grid size={12} key={index}>
+                                <CentralCard animal={ item } imageIndex={index + 7} />
+                            </Grid>
+                        ))}
+                        {centralArticleData.map((item, index) => (
+                            <Grid size={12} key={index}>
+                                <CentralArticle animal={ item } />
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+                <Grid
+                    size={{ xs: 12, md: 6, lg: 3 }}
+                    sx={{ order: { xs: 3, lg: 3 } }}
+                >
+                    <Grid container spacing={3}>
+                        {rightSidebarCardData.map((item, index) => (
+                            <Grid size={12} key={index}>
+                                <SidebarCard animal={ item } imagePosition={ "right" } imageIndex={index + 8} />
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </Container>
+    );
+}
+
+export default Content;

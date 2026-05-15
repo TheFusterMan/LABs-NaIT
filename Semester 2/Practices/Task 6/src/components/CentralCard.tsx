@@ -20,42 +20,45 @@ interface ComponentProps {
         title: string,
         description: string[],
     };
-    type: 1 | 2;
 }
 
-function CentralArticle({ animal, type } : ComponentProps) {
+function CentralCard({ animal } : ComponentProps) {
     return (
-        <Card sx={{
-            display: 'flex',
-        }}>
-            <Box>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" sx={{
-                        textAlign: "center"
-                    }} >
-                        { animal.title }
-                    </Typography>
-                    <Grid container spacing={5}>
-                        { animal.description.map((item, ind) => (
-                            <Grid size={5}>
-                                <StyledTypography key={ind} variant="body2">
-                                    { item }
-                                </StyledTypography>
-                            </Grid>
-                        ))}
-                    </Grid>
-                </CardContent>
-                <CardActions>
-                    <Button size="small">Подробнее</Button>
-                </CardActions>
+        <Card>
+            <Box sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column-reverse', lg: 'row' },
+            }}>
+                <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                    <CardContent sx={{ flexGrow: 1 }}>
+                        <Typography gutterBottom variant="h5" sx={{ textAlign: "center" }} >
+                            { animal.title }
+                        </Typography>
+                        <Grid container spacing={3}>
+                            { animal.description.map((item, ind) => (
+                                <Grid size={{ xs: 12, md: 6 }} key={ind}>
+                                    <StyledTypography variant="body2">
+                                        { item }
+                                    </StyledTypography>
+                                </Grid>
+                            ))}
+                        </Grid>
+                    </CardContent>
+                    <CardActions sx={{ justifyContent: 'flex-end' }}>
+                        <Button size="small" sx={{ textDecoration: 'underline', color: 'warning.main' }}>Подробнее»</Button>
+                    </CardActions>
+                </Box>
+                <CardMedia
+                    component="img"
+                    alt={ animal.title }
+                    image={ animal.img }
+                    sx={{
+                        width: {xs: "100%", lg: "47%"},
+                    }}
+                />
             </Box>
-            <CardMedia
-                component="img"
-                alt={ animal.title }
-                image={ animal.img }
-            />
         </Card>
     )
 }
 
-export default CentralArticle;
+export default CentralCard;
