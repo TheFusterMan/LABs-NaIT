@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Class Task 7/src/building/RatingContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/animal/Animal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/chart/Chart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/chart/components/GroupChart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/chart/components/GroupGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/chart/components/SettingChart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/chart/groupdata.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/list/List.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/list/components/AnimalsGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 7/src/main/Main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/Testing.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/Matching.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/Quiz.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/quizData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/store.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/quizSlice.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/BuildCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/BuildCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/CentralArticle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/CentralArticle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/CentralCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/CentralCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/SidebarCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/components/SidebarCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/Task 6/src/data.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_MUI_pages/src/chart/components/GroupGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_MUI_pages/src/chart/components/GroupGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicum_MUI_pages/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicum_MUI_pages/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/Testing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/Testing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/Matching.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/Matching.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/Quiz.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/Quiz.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/SortableList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,11 +115,11 @@
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 6\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicm_MUI_DragNDrop\src\testing\features" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 7\src\list" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 7\src\main\components" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicm_MUI_DragNDrop\src" />
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_MUI_pages\src\chart" />
-      <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\practicum_MUI\src" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.list.html">
@@ -194,10 +175,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.start (4)" />
         <item itemvalue="npm.start (3)" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.start (1)" />
         <item itemvalue="JavaScript Debug.list.html" />
       </list>
     </recent_temporary>
@@ -389,7 +370,7 @@
       <workItem from="1778760310184" duration="1078000" />
       <workItem from="1778797610727" duration="307000" />
       <workItem from="1778799795543" duration="16471000" />
-      <workItem from="1778830373098" duration="2528000" />
+      <workItem from="1778830373098" duration="8182000" />
     </task>
     <servers />
   </component>

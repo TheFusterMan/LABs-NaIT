@@ -1,11 +1,25 @@
 import { Grid, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
-import { tTasks } from "../quizData"
+import { useMemo } from 'react';
+import { tTasks } from "../quizData";
+import SortableList from './SortableList';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { addList } from './quizSlice';
 
 interface ComponentProps {
-    tasks: tTasks;
+    index: number,
+    tasks: tTasks
 }
 
-function Matching({tasks}: ComponentProps) {
+function Matching({index, tasks}: ComponentProps) {
+    const answers = useMemo(() => {
+        return tasks.map(item => item.answer).sort(() => Math.random() - 0.5);
+    }, [tasks]);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(addList({ index, items: answers }));
+    }, []);
 
     return (
         <Grid container spacing={2}>
@@ -27,7 +41,7 @@ function Matching({tasks}: ComponentProps) {
             </Grid>
 
             <Grid size={6}>
-                Здесь будет блок с ответами
+                <SortableList index={index} answers={answers}/>
             </Grid>
         </Grid>
     );

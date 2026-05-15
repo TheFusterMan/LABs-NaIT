@@ -1,4 +1,4 @@
-import Quiz from "./components/Quiz"
+import Quiz from "./features/Quiz"
 import Navbar from "./../components/Navbar"
 import Footer from "./../components/Footer"
 

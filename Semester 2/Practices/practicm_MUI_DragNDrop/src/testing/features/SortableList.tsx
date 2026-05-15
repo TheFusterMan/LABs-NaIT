@@ -2,23 +2,28 @@ import { DndContext, closestCenter } from '@dnd-kit/core';
 import { SortableContext, verticalListSortingStrategy, arrayMove } from '@dnd-kit/sortable';
 import { useState } from 'react';
 import List from '@mui/material/List';
-import SortableItem from './SortableItem'
+import SortableItem from '../components/SortableItem'
+import { useDispatch, useSelector } from 'react-redux';
+import { setDraggedItems } from './quizSlice';
+import { RootState } from '../../store';
 
 interface ComponentProps {
-    answers: string[];
+    index: number,
+    answers: string[]
 }
 
-function SortableList({ answers }: ComponentProps ) {
-    const [draggedItems, setDraggedItems] = useState(answers);
+function SortableList({ index, answers }: ComponentProps ) {
+    const dispatch = useDispatch();
+    const arr = useSelector((state: RootState) => state.lists.lists[index])
+    const draggedItems = arr || [];
 
     const handleDragEnd = (event: any) => {
         const { active, over } = event;
         if (active.id !== over.id) {
-            setDraggedItems((draggedItems) => {
-                const oldIndex = draggedItems.indexOf(active.id);
-                const newIndex = draggedItems.indexOf(over.id);
-                return arrayMove(draggedItems, oldIndex, newIndex);
-            });
+            const oldIndex = draggedItems.indexOf(active.id);
+            const newIndex = draggedItems.indexOf(over.id);
+            const newList = arrayMove(draggedItems, oldIndex, newIndex);
+            dispatch(setDraggedItems({ index, items: newList }));
         }
     };
 
@@ -28,7 +33,7 @@ function SortableList({ answers }: ComponentProps ) {
                              strategy={verticalListSortingStrategy}>
                 <List>
                     {draggedItems.map((item) => (
-                        <SortableItem key={ item } id={ item } />
+                        <SortableItem key={ item } item={ item } />
                     ))}
                 </List>
             </SortableContext>
