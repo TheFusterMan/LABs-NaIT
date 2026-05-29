@@ -1,0 +1,61 @@
+/* Общие стили страницы */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121214;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+/* Карточка - родительский элемент */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* 
+    МАГИЯ ЗДЕСЬ:
+    inset(0) означает обрезку точно по границам элемента (сверху, справа, снизу, слева на 0px).
+    round 16px автоматически скругляет углы обрезки маски, заменяя border-radius.
+    Этот метод заставляет браузер обрезать даже фиксированный фоновый слой внутри.
+  */
+  clip-path: inset(0 round 16px);
+  
+  /* Эстетическая рамка для визуального отделения карточки */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card::before {
+  content: '';
+  position: fixed; /* Фиксирует градиент относительно экрана */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  /* Яркий градиент вместо картинки, чтобы эффект был отчетливо виден */
+  background: linear-gradient(135deg, #c33764, #1d2671); 
+  
+  z-index: -1;
+  will-change: transform;
+}
+
+/* Контент внутри карточки */
+.card-content {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Текст должен быть поверх фона */
+}

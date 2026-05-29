@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9215a151-0fd4-49e7-89df-f968c2e0c16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/store.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/quizSlice.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/Testing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/Testing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/Matching.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/Matching.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/Quiz.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/Quiz.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/components/SortableList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Semester 2/Practices/practicm_MUI_DragNDrop/src/testing/features/SortableList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,64 +40,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.CT 3.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.D3 HW.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.PractD3.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.htm.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (3).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.list.html (1).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.list.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t1.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t2.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t3.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t4.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.t5.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.ДЗ.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.Лаба.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.chart.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.code.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t1.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t10.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t2.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t3.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t4.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t5.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t5_alt.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t6.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.t9.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/Task 7/src&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.eject.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start (1).executor&quot;: &quot;Run&quot;,
-    &quot;npm.start (2).executor&quot;: &quot;Run&quot;,
-    &quot;npm.start (3).executor&quot;: &quot;Run&quot;,
-    &quot;npm.start (4).executor&quot;: &quot;Run&quot;,
-    &quot;npm.start (5).executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\pleaz\\WebstormProjects\\LABs-NaIT\\Semester 2\\Practices\\practicum_MUI_pages\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.CT 3.executor": "Run",
+    "JavaScript Debug.D3 HW.executor": "Run",
+    "JavaScript Debug.PractD3.executor": "Run",
+    "JavaScript Debug.index.htm.executor": "Run",
+    "JavaScript Debug.index.html (1).executor": "Run",
+    "JavaScript Debug.index.html (2).executor": "Run",
+    "JavaScript Debug.index.html (3).executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.list.html (1).executor": "Run",
+    "JavaScript Debug.list.html.executor": "Run",
+    "JavaScript Debug.t1.html.executor": "Run",
+    "JavaScript Debug.t2.html.executor": "Run",
+    "JavaScript Debug.t3.html.executor": "Run",
+    "JavaScript Debug.t4.html.executor": "Run",
+    "JavaScript Debug.t5.html.executor": "Run",
+    "JavaScript Debug.ДЗ.executor": "Run",
+    "JavaScript Debug.Лаба.executor": "Run",
+    "Node.js.chart.js.executor": "Run",
+    "Node.js.code.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "Node.js.script.js.executor": "Run",
+    "Node.js.t1.js.executor": "Run",
+    "Node.js.t10.js.executor": "Run",
+    "Node.js.t2.js.executor": "Run",
+    "Node.js.t3.js.executor": "Run",
+    "Node.js.t4.js.executor": "Run",
+    "Node.js.t5.js.executor": "Run",
+    "Node.js.t5_alt.js.executor": "Run",
+    "Node.js.t6.js.executor": "Run",
+    "Node.js.t9.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/pleaz/WebstormProjects/LABs-NaIT/Semester 2/Practices/Task 7",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.eject.executor": "Run",
+    "npm.start (1).executor": "Run",
+    "npm.start (2).executor": "Run",
+    "npm.start (3).executor": "Run",
+    "npm.start (4).executor": "Run",
+    "npm.start (5).executor": "Run",
+    "npm.start.executor": "Run",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Users\\pleaz\\WebstormProjects\\LABs-NaIT\\Semester 2\\Practices\\practicum_MUI_pages\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pleaz\WebstormProjects\LABs-NaIT\Semester 2\Practices\Task 7\src" />
@@ -168,9 +160,9 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.list.html" />
-      <item itemvalue="npm.start (4)" />
-      <item itemvalue="npm.start (3)" />
       <item itemvalue="npm.start (1)" />
+      <item itemvalue="npm.start (3)" />
+      <item itemvalue="npm.start (4)" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
@@ -370,7 +362,8 @@
       <workItem from="1778760310184" duration="1078000" />
       <workItem from="1778797610727" duration="307000" />
       <workItem from="1778799795543" duration="16471000" />
-      <workItem from="1778830373098" duration="8182000" />
+      <workItem from="1778830373098" duration="8552000" />
+      <workItem from="1779018328550" duration="85000" />
     </task>
     <servers />
   </component>
